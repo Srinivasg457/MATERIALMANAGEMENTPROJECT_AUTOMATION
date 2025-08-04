@@ -144,18 +144,18 @@ public class WorkroomLoginPage {
     }
 
 
-    public void Email(String email) {
-        // waithelper.WaitForElement(txtEmail,10);
-//        txtEmail.click();
-//        txtEmail.clear();
-//        txtEmail.sendKeys(email);
- //       WebElement txtEmail = ldriver.findElement(By.xpath(locators.get("EmailAddress")));
-            setupElements();
-            txtEmail.click();
-            txtEmail.clear();
-            txtEmail.sendKeys(email);
-
-    }
+//    public void Email(String email) {
+//        // waithelper.WaitForElement(txtEmail,10);
+////        txtEmail.click();
+////        txtEmail.clear();
+////        txtEmail.sendKeys(email);
+// //       WebElement txtEmail = ldriver.findElement(By.xpath(locators.get("EmailAddress")));
+//            setupElements();
+//            txtEmail.click();
+//            txtEmail.clear();
+//            txtEmail.sendKeys(email);
+//
+//    }
 
     public void password(String password) {
 

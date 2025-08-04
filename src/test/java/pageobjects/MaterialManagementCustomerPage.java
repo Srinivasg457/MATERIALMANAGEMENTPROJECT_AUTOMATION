@@ -1,17 +1,14 @@
 package pageobjects;
 
+import org.apache.http.auth.InvalidCredentialsException;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import stepDefinations.BaseClass;
 import utilities.EmailReading;
 import utilities.WaitHelper;
 
-import javax.mail.AuthenticationFailedException;
-import javax.mail.Session;
-import javax.mail.Store;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
@@ -21,10 +18,8 @@ import java.util.Properties;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import static stepDefinations.BaseClass.randomString;
 
-
-public class WorkroomEmployeesModulePage {
+public class MaterialManagementCustomerPage {
 
   public EmailReading emailu;
     public WebDriver ldriver;
@@ -33,7 +28,7 @@ public class WorkroomEmployeesModulePage {
     public static Properties configprop;
 
     //constructor
-    public WorkroomEmployeesModulePage(WebDriver rdriver) throws IOException {
+    public MaterialManagementCustomerPage(WebDriver rdriver) throws IOException {
         ldriver = rdriver;
         PageFactory.initElements(rdriver, this);
         waithelper = new WaitHelper(ldriver);
@@ -106,6 +101,85 @@ public class WorkroomEmployeesModulePage {
     By Toastmessagerightcorner=By.xpath(configprop.getProperty("Toastmessagerightcorner"));
     By ToastMessages=By.xpath(configprop.getProperty("ToastMessages"));
     By EmployeePasswordUpdate=By.xpath(configprop.getProperty("EmployeePasswordUpdate"));
+
+
+
+//    sharepoint application
+    By Email=By.xpath((configprop.getProperty("sharepointemail")));
+    By nextButton=By.xpath(configprop.getProperty("NextButton"));
+    By password=By.xpath(configprop.getProperty("sharepointpassword"));
+    By signinButton=By.xpath(configprop.getProperty("signinButton"));
+    By ConfirmButton=By.xpath(configprop.getProperty("yesButton"));
+
+    public void sharepointEmail(String email) {
+
+
+
+        try {
+            WebElement SharePointEmail = waithelper.WaitForElement1(Email, 10);
+            SharePointEmail.click();
+            SharePointEmail.clear();
+            SharePointEmail.sendKeys(email);
+        }  catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
+        }
+
+
+
+
+
+    }
+
+    public void sharepointEmailnextButton( ) {
+
+
+        try {
+            WebElement SharePointEmailNextButton = waithelper.WaitForElement1(nextButton, 10);
+            SharePointEmailNextButton.click();
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
+        }
+
+
+
+    }
+
+    public void sharepointpassword(String pwd) {
+
+
+
+        try {
+            WebElement SharePointPassword = waithelper.WaitForElement1(password, 10);
+            SharePointPassword.click();
+            SharePointPassword.clear();
+            SharePointPassword.sendKeys(pwd);
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
+        }
+
+
+
+    }
+
+    public void sharepointSigninButton( ) {
+
+        try {
+            WebElement AccountSigninButton = waithelper.WaitForElement1(signinButton, 10);
+            AccountSigninButton.click();
+            WebElement confirmMessage=waithelper.WaitForElement1(ConfirmButton,10);
+            confirmMessage.click();
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
+        }
+
+
+
+    }
+
+
+
+
+
 
 
     //  This Method helps to click the employeeModule

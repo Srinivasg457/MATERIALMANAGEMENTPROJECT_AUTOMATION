@@ -2,7 +2,7 @@ package stepDefinations;
 
 import io.cucumber.java.en.*;
 import io.qameta.allure.*;
-import pageobjects.WorkroomEmployeesModulePage;
+import pageobjects.MaterialManagementCustomerPage;
 
 import java.io.IOException;
 
@@ -16,48 +16,84 @@ import java.io.IOException;
 @Feature("Create Employee Feature")
 @Story("User will be on the Employee page")
 @Severity(SeverityLevel.CRITICAL)
-public class WorkRoomEmployeesModuleSteps extends BaseClass {
+public class materialmanagementCustomerSteps extends BaseClass {
 
 
-    public WorkRoomEmployeesModuleSteps() throws IOException {
-        AddEmployees = new WorkroomEmployeesModulePage(driver);
+    public materialmanagementCustomerSteps() throws IOException {
+        AddEmployees = new MaterialManagementCustomerPage(driver);
+
+    }
+
+    @When("the user enters their email {string}")
+    public void the_user_enters_their_email(String email) {
+        logger.info("*** Enter The Share Point Email Id ***");
+        AddEmployees.sharepointEmail(email);
+    }
+    @When("the user clicks the Submit button")
+    public void the_user_clicks_the_submit_button() {
+        logger.info("*** click the next button ***");
+        AddEmployees.sharepointEmailnextButton();
+    }
+    @Then("the user enters their password {string}")
+    public void the_user_enters_their_password(String pwd) {
+        logger.info("*** Enter The Password ***");
+        AddEmployees.sharepointpassword(pwd);
+    }
+    @Then("the user clicks the login button")
+    public void the_user_clicks_the_login_button() {
+        AddEmployees.sharepointSigninButton();
     }
 
 
-    @Then("user will create new employee by filling the employee form in the employee module")
-    public void user_will_create_new_employee_by_filling_the_employee_form_in_the_employee_module() throws InterruptedException {
-        logger.info("*** Moving to employee page ***");
-        AddEmployees.EmployeesPage();
-        logger.info("*** Clicked Add Employee Button ***");
-        AddEmployees.addEmployeeButton();
-//        logger.info("*** Checking and selcting the Department Dropdown ***");
-//        AddEmployees.departmentDropDown();
-        logger.info("*** Filling up employee name ***");
-        AddEmployees.employeename();
-        logger.info("*** Filling up employee email ***");
-        AddEmployees.EmployeeEmail();
-        logger.info("*** Filling up employee phonenumber ***");
-        AddEmployees.employeePhoneNumber();
-        logger.info("*** Filling up employee Address ***");
-        AddEmployees.employeeAddress();
-        logger.info("*** Filling up employee City ***");
-        AddEmployees.EmployeeCity();
-        logger.info("*** Selecting the Employee country ***");
-        AddEmployees.employeeCountry();
-        logger.info("*** Clicked show radio button ***");
-        AddEmployees.showRadiobutton();
-        logger.info("*** Upload employee image ***");
-        AddEmployees.uploadEmployeeImage();
-        logger.info("*** Clicked on save button***");
-        AddEmployees.saveButton();
-        logger.info("*** Check for the Toast Message ***");
-        AddEmployees.statusMessage();
-        logger.info("*** Verifying invitation email ***");
-        AddEmployees.verifyInvitationEmail() ;
 
-        logger.info("*** Switched to update password ***");
-        AddEmployees.switchToNewTab();
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    @Then("user will create new employee by filling the employee form in the employee module")
+//    public void user_will_create_new_employee_by_filling_the_employee_form_in_the_employee_module() throws InterruptedException {
+//        logger.info("*** Moving to employee page ***");
+//        AddEmployees.EmployeesPage();
+//        logger.info("*** Clicked Add Employee Button ***");
+//        AddEmployees.addEmployeeButton();
+////        logger.info("*** Checking and selcting the Department Dropdown ***");
+////        AddEmployees.departmentDropDown();
+//        logger.info("*** Filling up employee name ***");
+//        AddEmployees.employeename();
+//        logger.info("*** Filling up employee email ***");
+//        AddEmployees.EmployeeEmail();
+//        logger.info("*** Filling up employee phonenumber ***");
+//        AddEmployees.employeePhoneNumber();
+//        logger.info("*** Filling up employee Address ***");
+//        AddEmployees.employeeAddress();
+//        logger.info("*** Filling up employee City ***");
+//        AddEmployees.EmployeeCity();
+//        logger.info("*** Selecting the Employee country ***");
+//        AddEmployees.employeeCountry();
+//        logger.info("*** Clicked show radio button ***");
+//        AddEmployees.showRadiobutton();
+//        logger.info("*** Upload employee image ***");
+//        AddEmployees.uploadEmployeeImage();
+//        logger.info("*** Clicked on save button***");
+//        AddEmployees.saveButton();
+//        logger.info("*** Check for the Toast Message ***");
+//        AddEmployees.statusMessage();
+//        logger.info("*** Verifying invitation email ***");
+//        AddEmployees.verifyInvitationEmail() ;
+//
+//        logger.info("*** Switched to update password ***");
+//        AddEmployees.switchToNewTab();
+//    }
 
 
 //    @Step("user will see the Pop up message saying to create the category First")

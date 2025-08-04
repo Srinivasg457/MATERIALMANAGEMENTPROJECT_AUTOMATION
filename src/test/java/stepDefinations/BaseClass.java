@@ -7,11 +7,7 @@ import org.openqa.selenium.WebDriver;
 import pageobjects.*;
 import utilities.EmailReading;
 
-import javax.mail.*;
-import javax.mail.search.FlagTerm;
 import java.util.Properties;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 
 public class BaseClass {
@@ -25,7 +21,7 @@ public class BaseClass {
     public ChataakCatalogModulePage catalog;
 
     //    for work room project here below
-    public WorkroomEmployeesModulePage AddEmployees;
+    public MaterialManagementCustomerPage AddEmployees;
 //    public BaseClass EmailUtils;
     public static EmailReading emailu;
 

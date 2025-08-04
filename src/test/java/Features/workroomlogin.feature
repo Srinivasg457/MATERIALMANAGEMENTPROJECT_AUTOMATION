@@ -1,14 +1,14 @@
-Feature: workroom login
+Feature: Material Management Customer Module
 
   # Background for common steps
   Background:
     Given the user launches the Chrome browser
-    And the user navigates to the login page with the URL "https://work-room.io/auth/login"
+    And the user navigates to the login page with the URL "https://limitscaleindia.sharepoint.com/sites/Learning-test2/SitePages/MaterialInward.aspx"
 @sanity
-  Scenario: Login with the valid Email and password
-    When the user enters their email "Limitscale@gmail.com" and password "1234"
-    And the user clicks the Login button
-    Then the user should see the status message
+#  Scenario: Addition of The Customers
+#    When the user enters their email "Srinivas.g2limitscale.io"
+#    And the user clicks the Login button
+#    Then the user should see the status message
 
 #@regression
 #  Scenario Outline: Login Field DataDriven Testing

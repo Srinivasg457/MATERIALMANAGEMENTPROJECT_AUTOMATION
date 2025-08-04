@@ -23,14 +23,13 @@ public class Workroomsteps extends BaseClass {
         driver.get(url);
     }
 
-    @When("the user enters their email {string} and password {string}")
-    public void the_user_enters_their_email_and_password(String email, String password) {
-        logger.info("************* Enter the Email *****************");
-        lp.Email(email);
-        logger.info("************* Enter the Password *****************");
-        lp.password(password);
-
-    }
+//    @When("the user enters their email {string} and password {string}")
+//    public void the_user_enters_their_email_and_password(String email, String password) {
+//        logger.info("************* Enter the Email *****************");
+//        logger.info("************* Enter the Password *****************");
+//        lp.password(password);
+//
+//    }
 
     @When("the user clicks the Login button")
     public void the_user_clicks_the_login_button() throws InterruptedException {
