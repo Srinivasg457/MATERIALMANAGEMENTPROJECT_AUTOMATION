@@ -174,7 +174,7 @@ public void setup() throws IOException, MalformedURLException {
     configprop.load(configProfile);
 
     // Logger setup
-    logger = Logger.getLogger("WorkRoomWebApplication");
+    logger = Logger.getLogger("MaterialManagementSharePointApplication");
     String log4jPath = System.getProperty("user.dir") + "/src/test/resources/log4j.properties";
     PropertyConfigurator.configure(log4jPath);
     logger.setLevel(Level.DEBUG);
