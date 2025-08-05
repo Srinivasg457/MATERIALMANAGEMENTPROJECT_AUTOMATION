@@ -95,7 +95,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git branch: 'main', url: 'https://github.com/Srinivasg457/WORK-ROOM_LIVE_WEB_AUTOMATION.git'
+                git branch: 'srinivas', url: 'https://github.com/Srinivasg457/MATERIALMANAGEMENTPROJECT_AUTOMATION.git'
             }
         }
 
