@@ -4,7 +4,7 @@ Feature: Material Management Customer Module
   Background:
     Given the user launches the Chrome browser
     And the user navigates to the login page with the URL "https://limitscaleindia.sharepoint.com/sites/Learning-test2/SitePages/MaterialInward.aspx"
-  @sanity
+#  @sanity
 #  Scenario: Login to the share point application
 #    When the user enters their email "Srinivas.g@limitscale.io"
 #    And the user clicks the Submit button
