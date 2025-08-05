@@ -18,6 +18,9 @@ import java.util.Properties;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import static stepDefinations.BaseClass.randomNumber;
+import static stepDefinations.BaseClass.randomString;
+
 
 public class MaterialManagementCustomerPage {
 
@@ -110,6 +113,23 @@ public class MaterialManagementCustomerPage {
     By password=By.xpath(configprop.getProperty("sharepointpassword"));
     By signinButton=By.xpath(configprop.getProperty("signinButton"));
     By ConfirmButton=By.xpath(configprop.getProperty("yesButton"));
+    By masterdatasidemenu=By.xpath(configprop.getProperty("masterdatasidemenu"));
+    By customermasterdata=By.xpath(configprop.getProperty("customermasterdata"));
+    By AddMasterDataButton=By.xpath(configprop.getProperty("AddMasterDataButton"));
+    By customeroption=By.xpath(configprop.getProperty("customeroption"));
+    By cusname=By.xpath(configprop.getProperty("cusname"));
+    By cusprojectnumber=By.xpath(configprop.getProperty("cusprojectnumber"));
+    By cuscode=By.xpath(configprop.getProperty("cuscode"));
+    By cusemail=By.xpath(configprop.getProperty("cusemail"));
+    By cusphone=By.xpath(configprop.getProperty("cusphone"));
+    By cuscity=By.xpath(configprop.getProperty("cuscity"));
+    By cusstate=By.xpath(configprop.getProperty("cusstate"));
+    By cuspostalcode=By.xpath(configprop.getProperty("cuspostalcode"));
+    By cusAddress=By.xpath(configprop.getProperty("cusAddress"));
+    By cusContactperson=By.xpath(configprop.getProperty("cusContactperson"));
+    By customersubmitbutton=By.xpath(configprop.getProperty("customersubmitbutton"));
+    By successOkconfirmbuttonn=By.xpath(configprop.getProperty("successOkconfirmbuttonn"));
+    By successtext=By.xpath(configprop.getProperty("successtext"));
 
     public void sharepointEmail(String email) {
 
@@ -175,6 +195,163 @@ public class MaterialManagementCustomerPage {
 
 
     }
+
+    public void sharepointmasterDataSidemenu( ) {
+
+        try {
+            WebElement mastersidemenu = waithelper.WaitForElement1(masterdatasidemenu, 10);
+            mastersidemenu.click();
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
+        }
+
+    }
+
+    public void sharepointcustomermasterdata( ) {
+
+        try {
+            WebElement customermenu = waithelper.WaitForElement1(customermasterdata, 10);
+            customermenu.click();
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
+        }
+
+    }
+
+    public void sharepointAddMasterDataButton( ) {
+       //here we are clicking the '+' icon for adding the master data
+        try {
+            WebElement AddMasterButton = waithelper.WaitForElement1(AddMasterDataButton, 10);
+            AddMasterButton.click();
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
+        }
+
+    }
+
+    public void sharepointcustomeroption( ) {
+        //here we are clicking the '+' icon for adding the master data
+        try {
+            WebElement customerselection = waithelper.WaitForElement1(customeroption, 10);
+            customerselection.click();
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
+        }
+
+    }
+
+    public void sharepointcustomerMasterDataRequiredField( ) {
+        //here we are clicking the '+' icon for adding the master data
+        try {
+            WebElement nameofCustomer = waithelper.WaitForElement1(cusname, 10);
+            nameofCustomer.click();
+            nameofCustomer.clear();
+            nameofCustomer.sendKeys(randomString());
+
+            WebElement customerprojectnumber = waithelper.WaitForElement1(cusprojectnumber, 10);
+            customerprojectnumber.click();
+            customerprojectnumber.clear();
+            customerprojectnumber.sendKeys(randomNumber());
+
+
+            WebElement customerCode = waithelper.WaitForElement1(cuscode, 10);
+            customerCode.click();
+            customerCode.clear();
+            customerCode.sendKeys(randomNumber());
+
+
+            WebElement customeremail = waithelper.WaitForElement1(cusemail, 10);
+            customeremail.click();
+            customeremail.clear();
+            customeremail.sendKeys(randomString()+"@gmail.com");
+
+
+            WebElement customerphonenumber = waithelper.WaitForElement1(cusphone, 10);
+            customerphonenumber.click();
+            customerphonenumber.clear();
+            customerphonenumber.sendKeys(randomNumber());
+
+
+            WebElement customercity = waithelper.WaitForElement1(cuscity, 10);
+            customercity.click();
+            customercity.clear();
+            customercity.sendKeys(randomString());
+
+
+
+            WebElement customerstate = waithelper.WaitForElement1(cusstate, 10);
+            customerstate.click();
+            customerstate.clear();
+            customerstate.sendKeys(randomString());
+
+
+
+            WebElement customerpostalcode = waithelper.WaitForElement1(cuspostalcode, 10);
+            customerpostalcode.click();
+            customerpostalcode.clear();
+            customerpostalcode.sendKeys(randomNumber());
+
+
+
+
+            WebElement customerAddress = waithelper.WaitForElement1(cusAddress, 10);
+            customerAddress.click();
+            customerAddress.clear();
+            customerAddress.sendKeys(randomString()+ " "+ randomString()+ " "+ randomString()+ " "+ randomString()+ " "+ randomString()+ " "+ randomString()+ " "+ randomString()+ " "+ randomString()+ " "+ randomString()+ " "+ randomString());
+
+
+
+            WebElement customerContactperson = waithelper.WaitForElement1(cusContactperson, 10);
+            customerContactperson.click();
+            customerContactperson.clear();
+            customerContactperson.sendKeys(randomString());
+
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
+        }
+
+    }
+
+
+    public void sharepointcustomersubmitform( ) {
+        //here we are clicking the '+' icon for adding the master data
+        try {
+            WebElement customersubmitform = waithelper.WaitForElement1(customersubmitbutton, 10);
+            customersubmitform.click();
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
+        }
+
+    }
+
+
+    public void sharepointSuccessConfirmOKButton( ) {
+        //here we are clicking the '+' icon for adding the master data
+        try {
+
+
+            WebElement successtextmessage = waithelper.WaitForElement1(successtext, 10);
+            String successmsg=successtextmessage.getText();
+            System.out.println(successmsg);
+
+                    if(successmsg.equalsIgnoreCase(configprop.getProperty("message"))){
+                   Assert.assertTrue(true);
+                    }else{
+                        Assert.fail();
+                    }
+
+            WebElement SuccessConfirmButton = waithelper.WaitForElement1(successOkconfirmbuttonn, 10);
+            SuccessConfirmButton.click();
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
+        }
+
+    }
+
+
+
+
+
 
 
 

@@ -5,8 +5,18 @@ Feature: Material Management Customer Module
     Given the user launches the Chrome browser
     And the user navigates to the login page with the URL "https://limitscaleindia.sharepoint.com/sites/Learning-test2/SitePages/MaterialInward.aspx"
   @sanity
-  Scenario: Addition of The Customers
-    When the user enters their email "Srinivas.g@limitscale.io"
-    And the user clicks the Submit button
-    Then the user enters their password "Limitscale@05"
-    And the user clicks the login button
+#  Scenario: Login to the share point application
+#    When the user enters their email "Srinivas.g@limitscale.io"
+#    And the user clicks the Submit button
+#    Then the user enters their password "Limitscale@05"
+#    And the user clicks the login button
+
+    Scenario: Moving to Customer Module And Fill up The Required Details And Submit The Form
+      When the user enters their email "Srinivas.g@limitscale.io"
+      And the user clicks the Submit button
+      Then the user enters their password "Limitscale@05"
+      And the user clicks the login button
+      Then click the master side menu
+      And click the custmer side menu
+      Then Click on the Add button and select the customer dropdown
+      Then Fill all the required customer details

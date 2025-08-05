@@ -41,10 +41,40 @@ public class materialmanagementCustomerSteps extends BaseClass {
     }
     @Then("the user clicks the login button")
     public void the_user_clicks_the_login_button() {
+        logger.info("*** clicked on the sign in Button ***");
         AddEmployees.sharepointSigninButton();
     }
 
 
+          //    Adding the Customer Details Master Data
+
+    @Then("click the master side menu")
+    public void click_the_master_side_menu() {
+        logger.info("*** clicked on the master side menu ***");
+        AddEmployees.sharepointmasterDataSidemenu( );
+    }
+    @Then("click the custmer side menu")
+    public void click_the_custmer_side_menu() {
+        logger.info("*** clicked on the customer sub menu ***");
+        AddEmployees.sharepointcustomermasterdata( );
+    }
+    @Then("Click on the Add button and select the customer dropdown")
+    public void click_on_the_add_button_and_select_the_customer_dropdown() {
+        logger.info("*** clicked on the '+' icon ***");
+        AddEmployees.sharepointAddMasterDataButton( );
+        logger.info("*** Selected the Customer ***");
+        AddEmployees.sharepointcustomeroption( );
+
+    }
+    @Then("Fill all the required customer details")
+    public void fill_all_the_required_customer_details() {
+        logger.info("*** Filing up the Customer All the Required field ***");
+        AddEmployees.sharepointcustomerMasterDataRequiredField();
+        logger.info("*** clicked the submit button ***");
+        AddEmployees.sharepointcustomersubmitform( );
+        logger.info("*** clicked the Success ok Button ***");
+        AddEmployees.sharepointSuccessConfirmOKButton();
+    }
 
 
 
