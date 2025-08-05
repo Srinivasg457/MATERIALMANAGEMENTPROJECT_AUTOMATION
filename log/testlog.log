@@ -846,3 +846,9 @@
 2025-08-05 09:34:51,503 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
 2025-08-05 09:34:52,393 - WorkRoomWebApplication -INFO - *** click the next button ***
 2025-08-05 09:34:52,508 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-08-05 09:50:34,493 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-08-05 09:50:35,996 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-08-05 09:50:37,417 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-08-05 09:50:38,235 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-08-05 09:50:39,128 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-08-05 09:50:39,233 - WorkRoomWebApplication -INFO - *** Enter The Password ***
