@@ -1,9 +1,13 @@
 package hooks;
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -164,62 +168,134 @@ public class MaterialManagementWebApphooks extends BaseClass {
 //    }
 
 
+//
+//@Before
+//public void setup() throws IOException, MalformedURLException {
+//    // Load config.properties
+//    configprop = new Properties();
+//    String configPath = System.getProperty("user.dir") + "/src/test/resources/config.properties";
+//    FileInputStream configProfile = new FileInputStream(configPath);
+//    configprop.load(configProfile);
+//
+//    // Logger setup
+//    logger = Logger.getLogger("MaterialManagementSharePointApplication");
+//    String log4jPath = System.getProperty("user.dir") + "/src/test/resources/log4j.properties";
+//    PropertyConfigurator.configure(log4jPath);
+//    logger.setLevel(Level.DEBUG);
+//
+//    String br = configprop.getProperty("browser");
+//    String hubURL = configprop.getProperty("hubURL"); // e.g. http://localhost:4444/wd/hub
+//
+//    switch (br.toLowerCase()) {
+//        case "chrome":
+//            ChromeOptions chromeOptions = new ChromeOptions();
+//            chromeOptions.addArguments("--headless=new"); // Use --headless for older versions
+//            chromeOptions.addArguments("--no-sandbox");
+//            chromeOptions.addArguments("--disable-dev-shm-usage");
+//            chromeOptions.addArguments("--disable-gpu");
+//            chromeOptions.addArguments("--remote-allow-origins=*");
+//            logger.info("************* Remote WebDriver Launched in Headless Mode *****************");
+//            driver = new RemoteWebDriver(new URL(hubURL), chromeOptions);
+//            break;
+//
+//        case "firefox":
+//            FirefoxOptions firefoxOptions = new FirefoxOptions();
+//            firefoxOptions.addArguments("--headless");
+//            firefoxOptions.addArguments("--no-sandbox");
+//            firefoxOptions.addArguments("--disable-dev-shm-usage");
+//
+//            driver = new RemoteWebDriver(new URL(hubURL), firefoxOptions);
+//            break;
+//
+//        case "edge":
+//            EdgeOptions edgeOptions = new EdgeOptions();
+//            edgeOptions.addArguments("--headless=new");
+//            edgeOptions.addArguments("--no-sandbox");
+//            edgeOptions.addArguments("--disable-dev-shm-usage");
+//            edgeOptions.addArguments("--disable-gpu");
+//
+//            driver = new RemoteWebDriver(new URL(hubURL), edgeOptions);
+//            break;
+//
+//        default:
+//            throw new RuntimeException("Browser not supported: " + br);
+//    }
+//
+//    logger.info("************* Remote WebDriver Launched in Headless Mode *****************");
+//    driver.manage().window().maximize();
+//}
 
-@Before
-public void setup() throws IOException, MalformedURLException {
-    // Load config.properties
-    configprop = new Properties();
-    String configPath = System.getProperty("user.dir") + "/src/test/resources/config.properties";
-    FileInputStream configProfile = new FileInputStream(configPath);
-    configprop.load(configProfile);
 
-    // Logger setup
-    logger = Logger.getLogger("MaterialManagementSharePointApplication");
-    String log4jPath = System.getProperty("user.dir") + "/src/test/resources/log4j.properties";
-    PropertyConfigurator.configure(log4jPath);
-    logger.setLevel(Level.DEBUG);
 
-    String br = configprop.getProperty("browser");
-    String hubURL = configprop.getProperty("hubURL"); // e.g. http://localhost:4444/wd/hub
 
-    switch (br.toLowerCase()) {
-        case "chrome":
-            ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.addArguments("--headless=new"); // Use --headless for older versions
-            chromeOptions.addArguments("--no-sandbox");
-            chromeOptions.addArguments("--disable-dev-shm-usage");
-            chromeOptions.addArguments("--disable-gpu");
-            chromeOptions.addArguments("--remote-allow-origins=*");
-            logger.info("************* Remote WebDriver Launched in Headless Mode *****************");
-            driver = new RemoteWebDriver(new URL(hubURL), chromeOptions);
-            break;
+    //chnages for running multiple scenarios
 
-        case "firefox":
-            FirefoxOptions firefoxOptions = new FirefoxOptions();
-            firefoxOptions.addArguments("--headless");
-            firefoxOptions.addArguments("--no-sandbox");
-            firefoxOptions.addArguments("--disable-dev-shm-usage");
 
-            driver = new RemoteWebDriver(new URL(hubURL), firefoxOptions);
-            break;
 
-        case "edge":
-            EdgeOptions edgeOptions = new EdgeOptions();
-            edgeOptions.addArguments("--headless=new");
-            edgeOptions.addArguments("--no-sandbox");
-            edgeOptions.addArguments("--disable-dev-shm-usage");
-            edgeOptions.addArguments("--disable-gpu");
 
-            driver = new RemoteWebDriver(new URL(hubURL), edgeOptions);
-            break;
+        @Before(order = 0)
+        public void loadProperties() throws IOException {
+            // Load config.properties
+            configprop = new Properties();
+            String configPath = System.getProperty("user.dir") + "/src/test/resources/config.properties";
+            FileInputStream configProfile = new FileInputStream(configPath);
+            configprop.load(configProfile);
 
-        default:
-            throw new RuntimeException("Browser not supported: " + br);
-    }
+            // Logger setup
+            logger = Logger.getLogger("MaterialManagementSharePointApplication");
+            String log4jPath = System.getProperty("user.dir") + "/src/test/resources/log4j.properties";
+            PropertyConfigurator.configure(log4jPath);
+            logger.setLevel(Level.DEBUG);
+        }
 
-    logger.info("************* Remote WebDriver Launched in Headless Mode *****************");
-    driver.manage().window().maximize();
-}
+        @Before(order = 1)
+        public void launchBrowser() throws MalformedURLException {
+            String br = configprop.getProperty("browser");
+            String hubURL = configprop.getProperty("hubURL");
+
+            switch (br.toLowerCase()) {
+                case "chrome":
+                    ChromeOptions chromeOptions = new ChromeOptions();
+                    chromeOptions.addArguments("--headless");
+                    chromeOptions.addArguments("--no-sandbox");
+                    chromeOptions.addArguments("--disable-dev-shm-usage");
+                    chromeOptions.addArguments("--disable-gpu");
+                    chromeOptions.addArguments("--remote-allow-origins=*");
+                    driver = new RemoteWebDriver(new URL(hubURL), chromeOptions);
+                    break;
+
+                case "firefox":
+                    FirefoxOptions firefoxOptions = new FirefoxOptions();
+                    firefoxOptions.addArguments("--headless");
+                    firefoxOptions.addArguments("--no-sandbox");
+                    firefoxOptions.addArguments("--disable-dev-shm-usage");
+                    driver = new RemoteWebDriver(new URL(hubURL), firefoxOptions);
+                    break;
+
+                default:
+                    throw new RuntimeException("Browser not supported: " + br);
+            }
+
+            driver.manage().window().maximize();
+        }
+
+        @After(order = 0)
+        public void tearDown(Scenario scenario) {
+            if (scenario.isFailed()) {
+                // Take screenshot
+                byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                scenario.attach(screenshot, "image/png", scenario.getName());
+            }
+        }
+
+        @After(order = 1)
+        public void quitBrowser() {
+            if (driver != null) {
+                driver.quit();
+            }
+        }
+
+
 
 
 

@@ -9,7 +9,6 @@ import utilities.EmailReading;
 
 import java.util.Properties;
 
-
 public class BaseClass {
     //    public WebDriver driver;
     public static WebDriver driver; // Make it static to share across classes
@@ -19,6 +18,10 @@ public class BaseClass {
     public static Logger logger;
     public static Properties configprop;
     public ChataakCatalogModulePage catalog;
+
+
+
+
 
     //    for work room project here below
     public MaterialManagementCustomerPage AddEmployees;
