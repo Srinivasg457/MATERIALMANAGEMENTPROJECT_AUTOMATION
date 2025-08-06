@@ -2,9 +2,13 @@ package stepDefinations;
 
 import io.cucumber.java.en.*;
 import io.qameta.allure.*;
+import org.junit.Assert;
+import org.openqa.selenium.WebDriverException;
 import pageobjects.MaterialManagementCustomerPage;
 
 import java.io.IOException;
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeoutException;
 
 //@Epic("Chataak Platform")
 //@Feature("SignUp Feature")
@@ -77,6 +81,29 @@ public class materialmanagementCustomerSteps extends BaseClass {
     }
 
 
+    //Here We Will Get The information  For The error Message Present Or Not
+    //eg like : This Fiels Is Required
+    @Then("click the Save Button And Find The Error Mesage")
+    public void click_the_save_button_and_find_the_error_mesage() {
+        try {
+            logger.info("*** Clicking the Submit Button ***");
+            AddEmployees.sharepointcustomersubmitform();
+
+            logger.info("*** Checking For The Error Message ***");
+            AddEmployees.sharepointcustomerErrorMessage();
+
+        } catch (NoSuchElementException e) {
+            logger.error("Element not found: " + e.getMessage());
+            Assert.fail("Required elements for validation were not found");
+        } catch (WebDriverException e) {
+            logger.error("WebDriver error occurred: " + e.getMessage());
+            Assert.fail("Browser interaction failed: " + e.getMessage());
+        } catch (Exception e) {
+            logger.error("Unexpected error during validation: ", e);
+            Assert.fail("Test failed due to unexpected error: " + e.getMessage());
+        }
+
+    }
 
 
 

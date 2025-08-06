@@ -82,7 +82,33 @@ public class MaterialManagementWebApphooks extends BaseClass {
 //
 //
 //    }
-
+//    @After
+//    public void tearDown(Scenario scenario) {
+//        try {
+//            if (scenario.isFailed()) {
+//                // Take a screenshot if scenario fails
+//                if (driver != null) {
+//                    TakesScreenshot ts = (TakesScreenshot) driver;
+//                    byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);
+//
+//                    scenario.attach(screenshot, "image/png", "Failed Step Screenshot");
+//                    // Also attach to Allure report
+//                    //  Allure.addAttachment("Allure Screenshot", "image/png", new ByteArrayInputStream(screenshot), ".png");
+//
+//
+//                }
+//            }
+//        } catch (Exception e) {
+//            System.out.println("Failed to capture screenshot: " + e.getMessage());
+//        }
+//        finally {
+//            if (driver != null) {
+//                logger.info("************* Quitting Browser *****************");
+//                driver.quit(); // This closes all windows and ends the WebDriver session
+//                logger.info("************* Browser Closed Successfully *****************");
+//            }
+//        }
+//    }
 
 
 //For Docker Image
@@ -294,6 +320,14 @@ public class MaterialManagementWebApphooks extends BaseClass {
                 driver.quit();
             }
         }
+
+
+
+
+
+
+
+
 
 
 

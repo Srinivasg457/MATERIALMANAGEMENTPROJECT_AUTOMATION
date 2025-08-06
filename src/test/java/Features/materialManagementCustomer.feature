@@ -11,6 +11,7 @@ Feature: Material Management Customer Module
     Then the user enters their password "Limitscale@05"
     And the user clicks the login button
 
+   @smoke
   Scenario: Moving to Customer Module And Fill up The Required Details And Submit The Form
     When the user enters their email "Srinivas.g@limitscale.io"
     And the user clicks the Submit button
@@ -20,3 +21,14 @@ Feature: Material Management Customer Module
     And click the custmer side menu
     Then Click on the Add button and select the customer dropdown
     Then Fill all the required customer details
+
+     @regression
+     Scenario: Moving to Customer Module And Fill up The Required Details And Submit The Form
+       When the user enters their email "Srinivas.g@limitscale.io"
+       And the user clicks the Submit button
+       Then the user enters their password "Limitscale@05"
+       And the user clicks the login button
+       Then click the master side menu
+       And click the custmer side menu
+       Then Click on the Add button and select the customer dropdown
+       Then click the Save Button And Find The Error Mesage
