@@ -83,7 +83,7 @@ public class materialmanagementCustomerSteps extends BaseClass {
 
     //Here We Will Get The information  For The error Message Present Or Not
     //eg like : This Fiels Is Required
-    @Then("click the Save Button And Find The Error Mesage")
+    @Then("click the Save Button And Find The Error Message")
     public void click_the_save_button_and_find_the_error_mesage() {
         try {
             logger.info("*** Clicking the Submit Button ***");

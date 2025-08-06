@@ -23,7 +23,7 @@ Feature: Material Management Customer Module
     Then Fill all the required customer details
 
      @regression
-     Scenario: Moving to Customer Module And Fill up The Required Details And Submit The Form
+     Scenario: Moving to Customer Module And Find The Error Mesage
        When the user enters their email "Srinivas.g@limitscale.io"
        And the user clicks the Submit button
        Then the user enters their password "Limitscale@05"
@@ -31,4 +31,4 @@ Feature: Material Management Customer Module
        Then click the master side menu
        And click the custmer side menu
        Then Click on the Add button and select the customer dropdown
-       Then click the Save Button And Find The Error Mesage
+       Then click the Save Button And Find The Error Message
