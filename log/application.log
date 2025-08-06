@@ -1254,3 +1254,11 @@
 2025-08-05 14:21:57,845 [main] INFO WorkRoomWebApplication - *** Filing up the Customer All the Required field ***
 2025-08-05 14:22:03,117 [main] INFO WorkRoomWebApplication - *** clicked the submit button ***
 2025-08-05 14:22:03,345 [main] INFO WorkRoomWebApplication - *** clicked the Success ok Button ***
+2025-08-06 13:02:30,646 [main] INFO MaterialManagementSharePointApplication - ************* Remote WebDriver Launched in Headless Mode *****************
+2025-08-06 13:02:32,630 [main] INFO MaterialManagementSharePointApplication - ************* Remote WebDriver Launched in Headless Mode *****************
+2025-08-06 13:02:33,543 [main] INFO MaterialManagementSharePointApplication - ************* Get The Application URL  *****************
+2025-08-06 13:02:34,537 [main] INFO MaterialManagementSharePointApplication - *** Enter The Share Point Email Id ***
+2025-08-06 13:02:35,298 [main] INFO MaterialManagementSharePointApplication - *** click the next button ***
+2025-08-06 13:02:35,401 [main] INFO MaterialManagementSharePointApplication - *** Enter The Password ***
+2025-08-06 13:02:36,715 [main] INFO MaterialManagementSharePointApplication - *** clicked on the sign in Button ***
+2025-08-06 13:02:38,432 [main] INFO MaterialManagementSharePointApplication - ************* Remote WebDriver Launched in Headless Mode *****************
