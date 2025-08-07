@@ -67,7 +67,8 @@ public class MaterialManagementMateialModulePage extends BaseClass {
     By submitbutton=By.xpath(configprop.getProperty("customersubmitbutton"));
     By successtext=By.xpath(configprop.getProperty("successtext"));
     By successOkconfirmbuttonn=By.xpath(configprop.getProperty("successOkconfirmbuttonn"));
-
+    //Error message xpath
+    By ErrorMessage=By.xpath(configprop.getProperty("ErrorMessage"));
 
     //Actions Method
     // Here we click on the share point sub menu
@@ -179,6 +180,57 @@ public class MaterialManagementMateialModulePage extends BaseClass {
         }
 
     }
+
+
+
+    // for Identifying The Error Messages
+    public void sharepointMaterialErrorMessage() {
+        try {
+            // Wait for error messages to appear (using visibility check)
+            WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(ErrorMessage));
+
+            // Find all error message elements
+            List<WebElement> errorMessages = ldriver.findElements(ErrorMessage);
+            int count = 0;
+
+            // Count and print each error message
+            System.out.println("Validation Errors Found:");
+            for (WebElement error : errorMessages) {
+                count++;
+                System.out.println(count + ") " + error.getText());
+
+                // Additional validation - ensure error is actually displayed
+                if (!error.isDisplayed()) {
+                    Assert.fail("Error message is present but not visible: " + error.getText());
+                }
+            }
+
+            // Assert the expected count (2 in this case)
+            int expectedErrorCount = 2;
+            if (count == expectedErrorCount) {
+                System.out.println("Test Passed: Found exactly " + expectedErrorCount + " error messages");
+                Assert.assertTrue(true);
+            } else {
+                System.out.println("Test Failed: Expected " + expectedErrorCount +
+                        " errors but found " + count);
+                Assert.fail("Expected " + expectedErrorCount +
+                        " validation errors but found " + count);
+            }
+
+        } catch (TimeoutException e) {
+            System.out.println("Timeout waiting for error messages: " + e.getMessage());
+            Assert.fail("Error messages did not appear within timeout period");
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
+            e.printStackTrace();
+            Assert.fail("Unexpected error occurred while checking error messages");
+        }
+    }
+
+
+
+
 
 
 }

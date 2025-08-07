@@ -39,4 +39,13 @@ public class materialmanagementMaterialModuleSteps extends BaseClass {
     }
 
 
+ //Checking the Presence of the error message in the form
+    @Then("click submit Button then check the Error Message details")
+    public void click_submit_button_then_check_the_error_message_details() {
+        logger.info("*** click submit Button ***");
+        material.sharepointMaterialSubmitBtn();
+        logger.info("***  check the Error Message details ***");
+        material.sharepointMaterialErrorMessage();
+    }
+
 }
