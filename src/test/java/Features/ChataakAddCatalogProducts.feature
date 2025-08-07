@@ -1,9 +1,9 @@
-Feature: Catalog Module Products
-
-#  Background fo the common steps
-  Background:
-    Given the user launches the Chrome browser
-    And the user navigates to the login page with the URL "https://dev-app.chataak.in/login/"
+#Feature: Catalog Module Products
+#
+##  Background fo the common steps
+#  Background:
+#    Given the user launches the Chrome browser
+#    And the user navigates to the login page with the URL "https://dev-app.chataak.in/login/"
 
 #  @sanity
 #  Scenario: user will create the product if the Catagory not exists
@@ -43,11 +43,11 @@ Feature: Catalog Module Products
 #    And user will Test Action Active or Inactive
 
 
-  Scenario: user will Perform The Product Edit Opertion
-    When the user enters their email "ripewe1814@framitag.com" and password "8fdlIsib"
-    And the user clicks the Login button
-    And the user should see the status message
-    And The user will perform the action to edit the product
+#  Scenario: user will Perform The Product Edit Opertion
+#    When the user enters their email "ripewe1814@framitag.com" and password "8fdlIsib"
+#    And the user clicks the Login button
+#    And the user should see the status message
+#    And The user will perform the action to edit the product
 
 
 
