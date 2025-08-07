@@ -2,9 +2,7 @@ package stepDefinations;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import pageobjects.ChataakCatalogModulePage;
 import pageobjects.ChataakSignUpPage;
-import pageobjects.ChataakStoresPage;
 
 import java.io.IOException;
 

@@ -1436,3 +1436,102 @@
 2025-08-06 15:49:56,907 [main] INFO MaterialManagementSharePointApplication - *** Selected the Customer ***
 2025-08-06 15:49:57,905 [main] INFO MaterialManagementSharePointApplication - *** Clicking the Submit Button ***
 2025-08-06 15:49:58,449 [main] INFO MaterialManagementSharePointApplication - *** Checking For The Error Message ***
+2025-08-07 10:12:02,330 [main] INFO MaterialManagementSharePointApplication - ************* Get The Application URL  *****************
+2025-08-07 10:12:03,892 [main] INFO MaterialManagementSharePointApplication - *** Enter The Share Point Email Id ***
+2025-08-07 10:12:04,811 [main] INFO MaterialManagementSharePointApplication - *** click the next button ***
+2025-08-07 10:12:04,954 [main] INFO MaterialManagementSharePointApplication - *** Enter The Password ***
+2025-08-07 10:12:06,400 [main] INFO MaterialManagementSharePointApplication - *** clicked on the sign in Button ***
+2025-08-07 10:12:08,682 [main] INFO MaterialManagementSharePointApplication - ************* Get The Application URL  *****************
+2025-08-07 10:12:09,836 [main] INFO MaterialManagementSharePointApplication - *** Enter The Share Point Email Id ***
+2025-08-07 10:12:10,800 [main] INFO MaterialManagementSharePointApplication - *** click the next button ***
+2025-08-07 10:12:10,945 [main] INFO MaterialManagementSharePointApplication - *** Enter The Password ***
+2025-08-07 10:12:12,498 [main] INFO MaterialManagementSharePointApplication - *** clicked on the sign in Button ***
+2025-08-07 10:12:14,215 [main] INFO MaterialManagementSharePointApplication - *** clicked on the master side menu ***
+2025-08-07 10:12:18,414 [main] INFO MaterialManagementSharePointApplication - *** clicked on the customer sub menu ***
+2025-08-07 10:12:20,076 [main] INFO MaterialManagementSharePointApplication - *** clicked on the '+' icon ***
+2025-08-07 10:12:20,562 [main] INFO MaterialManagementSharePointApplication - *** Selected the Customer ***
+2025-08-07 10:12:21,521 [main] INFO MaterialManagementSharePointApplication - *** Filing up the Customer All the Required field ***
+2025-08-07 10:12:24,213 [main] INFO MaterialManagementSharePointApplication - *** clicked the submit button ***
+2025-08-07 10:12:24,340 [main] INFO MaterialManagementSharePointApplication - *** clicked the Success ok Button ***
+2025-08-07 10:12:25,777 [main] INFO MaterialManagementSharePointApplication - ************* Get The Application URL  *****************
+2025-08-07 10:12:26,983 [main] INFO MaterialManagementSharePointApplication - *** Enter The Share Point Email Id ***
+2025-08-07 10:12:27,760 [main] INFO MaterialManagementSharePointApplication - *** click the next button ***
+2025-08-07 10:12:27,881 [main] INFO MaterialManagementSharePointApplication - *** Enter The Password ***
+2025-08-07 10:12:29,517 [main] INFO MaterialManagementSharePointApplication - *** clicked on the sign in Button ***
+2025-08-07 10:12:31,201 [main] INFO MaterialManagementSharePointApplication - *** clicked on the master side menu ***
+2025-08-07 10:12:34,575 [main] INFO MaterialManagementSharePointApplication - *** clicked on the customer sub menu ***
+2025-08-07 10:12:35,929 [main] INFO MaterialManagementSharePointApplication - *** clicked on the '+' icon ***
+2025-08-07 10:12:36,392 [main] INFO MaterialManagementSharePointApplication - *** Selected the Customer ***
+2025-08-07 10:12:37,568 [main] INFO MaterialManagementSharePointApplication - *** Clicking the Submit Button ***
+2025-08-07 10:12:38,050 [main] INFO MaterialManagementSharePointApplication - *** Checking For The Error Message ***
+2025-08-07 11:44:41,958 [main] INFO MaterialManagementSharePointApplication - ************* Get The Application URL  *****************
+2025-08-07 11:44:49,580 [main] INFO MaterialManagementSharePointApplication - *** Enter The Share Point Email Id ***
+2025-08-07 11:44:50,346 [main] INFO MaterialManagementSharePointApplication - *** click the next button ***
+2025-08-07 11:44:50,455 [main] INFO MaterialManagementSharePointApplication - *** Enter The Password ***
+2025-08-07 11:44:51,983 [main] INFO MaterialManagementSharePointApplication - *** clicked on the sign in Button ***
+2025-08-07 11:44:53,237 [main] INFO MaterialManagementSharePointApplication - *** clicked on the master side menu ***
+2025-08-07 11:44:57,589 [main] INFO MaterialManagementSharePointApplication - *** click the Materials side menu ***
+2025-08-07 11:45:00,482 [main] INFO MaterialManagementSharePointApplication - *** Click on the Add '+' button ***
+2025-08-07 11:45:01,031 [main] INFO MaterialManagementSharePointApplication - *** select the Materials dropdown ***
+2025-08-07 11:45:02,488 [main] INFO MaterialManagementSharePointApplication - *** Fill all the required material details***
+2025-08-07 11:45:03,262 [main] INFO MaterialManagementSharePointApplication - *** Fill all the required material details and Clicked The submit Button***
+2025-08-07 11:45:04,482 [main] INFO MaterialManagementSharePointApplication - *** Checking and Clicked The Success Ok Button***
+2025-08-07 11:46:01,684 [main] INFO WorkRoomWebApplication - ************* Launching CHROME Browser *****************
+2025-08-07 11:46:03,019 [main] INFO WorkRoomWebApplication - ************* Browser Launched and Maximized *****************
+2025-08-07 11:46:14,809 [main] INFO WorkRoomWebApplication - ************* Get The Application URL  *****************
+2025-08-07 11:46:31,456 [main] INFO WorkRoomWebApplication - *** Enter The Share Point Email Id ***
+2025-08-07 11:46:32,356 [main] INFO WorkRoomWebApplication - *** click the next button ***
+2025-08-07 11:46:32,462 [main] INFO WorkRoomWebApplication - *** Enter The Password ***
+2025-08-07 11:46:33,686 [main] INFO WorkRoomWebApplication - *** clicked on the sign in Button ***
+2025-08-07 11:46:34,858 [main] INFO WorkRoomWebApplication - *** clicked on the master side menu ***
+2025-08-07 11:46:53,646 [main] INFO WorkRoomWebApplication - *** click the Materials side menu ***
+2025-08-07 11:46:55,722 [main] INFO WorkRoomWebApplication - *** Click on the Add '+' button ***
+2025-08-07 11:46:56,211 [main] INFO WorkRoomWebApplication - *** select the Materials dropdown ***
+2025-08-07 11:46:58,420 [main] INFO WorkRoomWebApplication - *** Fill all the required material details***
+2025-08-07 11:46:59,268 [main] INFO WorkRoomWebApplication - *** Fill all the required material details and Clicked The submit Button***
+2025-08-07 11:47:00,606 [main] INFO WorkRoomWebApplication - *** Checking and Clicked The Success Ok Button***
+2025-08-07 11:47:00,759 [main] INFO WorkRoomWebApplication - ************* Quitting Browser *****************
+2025-08-07 11:47:00,896 [main] INFO WorkRoomWebApplication - ************* Browser Closed Successfully *****************
+2025-08-07 11:49:03,192 [main] INFO WorkRoomWebApplication - ************* Launching CHROME Browser *****************
+2025-08-07 11:49:04,361 [main] INFO WorkRoomWebApplication - ************* Browser Launched and Maximized *****************
+2025-08-07 11:49:05,309 [main] INFO WorkRoomWebApplication - ************* Get The Application URL  *****************
+2025-08-07 11:49:23,480 [main] INFO WorkRoomWebApplication - *** Enter The Share Point Email Id ***
+2025-08-07 11:49:24,255 [main] INFO WorkRoomWebApplication - *** click the next button ***
+2025-08-07 11:49:24,389 [main] INFO WorkRoomWebApplication - *** Enter The Password ***
+2025-08-07 11:49:25,242 [main] INFO WorkRoomWebApplication - *** clicked on the sign in Button ***
+2025-08-07 11:49:26,556 [main] INFO WorkRoomWebApplication - *** clicked on the master side menu ***
+2025-08-07 11:49:53,518 [main] INFO WorkRoomWebApplication - *** click the Materials side menu ***
+2025-08-07 11:49:55,971 [main] INFO WorkRoomWebApplication - *** Click on the Add '+' button ***
+2025-08-07 11:49:56,502 [main] INFO WorkRoomWebApplication - *** select the Materials dropdown ***
+2025-08-07 11:49:57,890 [main] INFO WorkRoomWebApplication - *** Fill all the required material details***
+2025-08-07 11:49:58,606 [main] INFO WorkRoomWebApplication - *** Fill all the required material details and Clicked The submit Button***
+2025-08-07 11:49:58,755 [main] INFO WorkRoomWebApplication - Submit button clicked successfully.
+2025-08-07 11:49:58,755 [main] INFO WorkRoomWebApplication - *** Checking and Clicked The Success Ok Button***
+2025-08-07 11:49:59,447 [main] INFO WorkRoomWebApplication - ************* Quitting Browser *****************
+2025-08-07 11:49:59,566 [main] INFO WorkRoomWebApplication - ************* Browser Closed Successfully *****************
+2025-08-07 11:51:59,942 [main] INFO MaterialManagementSharePointApplication - ************* Get The Application URL  *****************
+2025-08-07 11:52:00,982 [main] INFO MaterialManagementSharePointApplication - *** Enter The Share Point Email Id ***
+2025-08-07 11:52:02,027 [main] INFO MaterialManagementSharePointApplication - *** click the next button ***
+2025-08-07 11:52:02,155 [main] INFO MaterialManagementSharePointApplication - *** Enter The Password ***
+2025-08-07 11:52:03,714 [main] INFO MaterialManagementSharePointApplication - *** clicked on the sign in Button ***
+2025-08-07 11:52:05,446 [main] INFO MaterialManagementSharePointApplication - *** clicked on the master side menu ***
+2025-08-07 11:52:10,927 [main] INFO MaterialManagementSharePointApplication - *** click the Materials side menu ***
+2025-08-07 11:52:12,826 [main] INFO MaterialManagementSharePointApplication - *** Click on the Add '+' button ***
+2025-08-07 11:52:13,325 [main] INFO MaterialManagementSharePointApplication - *** select the Materials dropdown ***
+2025-08-07 11:52:14,545 [main] INFO MaterialManagementSharePointApplication - *** Fill all the required material details***
+2025-08-07 11:52:15,305 [main] INFO MaterialManagementSharePointApplication - *** Fill all the required material details and Clicked The submit Button***
+2025-08-07 11:52:15,454 [main] INFO MaterialManagementSharePointApplication - Submit button clicked successfully.
+2025-08-07 11:52:15,455 [main] INFO MaterialManagementSharePointApplication - *** Checking and Clicked The Success Ok Button***
+2025-08-07 11:52:56,958 [main] INFO MaterialManagementSharePointApplication - ************* Get The Application URL  *****************
+2025-08-07 11:52:59,267 [main] INFO MaterialManagementSharePointApplication - *** Enter The Share Point Email Id ***
+2025-08-07 11:53:00,066 [main] INFO MaterialManagementSharePointApplication - *** click the next button ***
+2025-08-07 11:53:00,185 [main] INFO MaterialManagementSharePointApplication - *** Enter The Password ***
+2025-08-07 11:53:01,648 [main] INFO MaterialManagementSharePointApplication - *** clicked on the sign in Button ***
+2025-08-07 11:53:02,935 [main] INFO MaterialManagementSharePointApplication - *** clicked on the master side menu ***
+2025-08-07 11:53:27,766 [main] INFO MaterialManagementSharePointApplication - *** click the Materials side menu ***
+2025-08-07 11:53:30,622 [main] INFO MaterialManagementSharePointApplication - *** Click on the Add '+' button ***
+2025-08-07 11:53:31,129 [main] INFO MaterialManagementSharePointApplication - *** select the Materials dropdown ***
+2025-08-07 11:53:33,175 [main] INFO MaterialManagementSharePointApplication - *** Fill all the required material details***
+2025-08-07 11:53:33,982 [main] INFO MaterialManagementSharePointApplication - *** Fill all the required material details and Clicked The submit Button***
+2025-08-07 11:53:34,122 [main] INFO MaterialManagementSharePointApplication - Submit button clicked successfully.
+2025-08-07 11:53:34,123 [main] INFO MaterialManagementSharePointApplication - *** Checking and Clicked The Success Ok Button***

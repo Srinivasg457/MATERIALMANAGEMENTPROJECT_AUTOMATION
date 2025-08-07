@@ -13,7 +13,7 @@ public class Workroomsteps extends BaseClass {
         lp = new WorkroomLoginPage(driver);
         sp = new ChataakStoresPage(driver);
         signUppage = new ChataakSignUpPage(driver);
-        catalog = new ChataakCatalogModulePage(driver);
+        catalog = new MaterialManagementMateialModulePage(driver);
 
     }
 

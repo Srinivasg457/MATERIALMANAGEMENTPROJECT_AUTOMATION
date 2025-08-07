@@ -17,17 +17,18 @@ public class BaseClass {
     public ChataakSignUpPage signUppage;
     public static Logger logger;
     public static Properties configprop;
-    public ChataakCatalogModulePage catalog;
+    public MaterialManagementMateialModulePage catalog;
 
 
 
 
 
     //    for work room project here below
-    public MaterialManagementCustomerPage AddEmployees;
+    public MaterialManagementCustomerPage AddCustomer;
 //    public BaseClass EmailUtils;
     public static EmailReading emailu;
 
+    public MaterialManagementMateialModulePage material;
 
 
 
