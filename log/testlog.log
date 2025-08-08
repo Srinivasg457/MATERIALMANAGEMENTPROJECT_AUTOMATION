@@ -1975,3 +1975,45 @@ Session ID: 120feda5aa200aeb56d9fdbe11ae234c
 2025-08-08 15:57:58,452 - MaterialManagementSharePointApplication -INFO - *** click submit Button ***
 2025-08-08 15:57:59,007 - MaterialManagementSharePointApplication -INFO - Submit button clicked successfully.
 2025-08-08 15:57:59,007 - MaterialManagementSharePointApplication -INFO - ***  check the Error Message details ***
+2025-08-08 17:38:12,192 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2025-08-08 17:38:12,971 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-08-08 17:38:14,166 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-08-08 17:38:15,076 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-08-08 17:38:15,248 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-08-08 17:38:17,320 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-08-08 17:38:19,204 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-08-08 17:38:24,464 - WorkRoomWebApplication -INFO - *** click the subContractor side menu ***
+2025-08-08 17:38:27,193 - WorkRoomWebApplication -INFO - *** Click on the SubContractor Add button  ***
+2025-08-08 17:38:28,450 - WorkRoomWebApplication -INFO - ***  select the subContractor dropdown ***
+2025-08-08 17:38:38,599 - WorkRoomWebApplication -INFO - ***  Fill all the SubContractor required  details  ***
+2025-08-08 17:40:15,469 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2025-08-08 17:40:16,232 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-08-08 17:40:17,334 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-08-08 17:40:18,438 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-08-08 17:40:18,615 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-08-08 17:40:20,062 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-08-08 17:40:21,700 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-08-08 17:40:29,446 - WorkRoomWebApplication -INFO - *** click the subContractor side menu ***
+2025-08-08 17:40:31,708 - WorkRoomWebApplication -INFO - *** Click on the SubContractor Add button  ***
+2025-08-08 17:40:32,165 - WorkRoomWebApplication -INFO - ***  select the subContractor dropdown ***
+2025-08-08 17:40:33,926 - WorkRoomWebApplication -INFO - ***  Fill all the SubContractor required  details  ***
+2025-08-08 17:40:37,748 - WorkRoomWebApplication -INFO - ***  Click The Submit Button ***
+2025-08-08 17:40:37,988 - WorkRoomWebApplication -INFO - Submit button clicked successfully.
+2025-08-08 17:40:37,988 - WorkRoomWebApplication -INFO - ***  Click The Success Button ***
+2025-08-08 17:40:38,998 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2025-08-08 17:40:39,125 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2025-08-08 18:25:08,876 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2025-08-08 18:25:10,271 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-08-08 18:25:12,832 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-08-08 18:25:14,563 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-08-08 18:25:14,973 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-08-08 18:25:17,026 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-08-08 18:25:19,785 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-08-08 18:25:25,421 - WorkRoomWebApplication -INFO - *** click the subContractor side menu ***
+2025-08-08 18:25:28,785 - WorkRoomWebApplication -INFO - *** Click on the SubContractor Add button  ***
+2025-08-08 18:25:29,321 - WorkRoomWebApplication -INFO - ***  select the subContractor dropdown ***
+2025-08-08 18:25:31,340 - WorkRoomWebApplication -INFO - ***  click Sucontractor submit Button  ***
+2025-08-08 18:25:31,857 - WorkRoomWebApplication -INFO - Submit button clicked successfully.
+2025-08-08 18:25:31,858 - WorkRoomWebApplication -INFO - ***   check the Error Message details ***
+2025-08-08 18:25:33,407 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2025-08-08 18:25:33,636 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************

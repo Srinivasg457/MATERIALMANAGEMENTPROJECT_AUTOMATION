@@ -1,4 +1,4 @@
-Feature: Material Management Customer Module
+Feature: Material Management Material Module
 
   # Background for common steps
   Background:

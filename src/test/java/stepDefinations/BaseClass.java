@@ -31,7 +31,7 @@ public class BaseClass {
     public MaterialManagementMateialModulePage material;
     public MaterialManagementSupplierMasterDataPage supplier;
 
-
+    public MaterialManagementSubContractorMasterDataPage subcontractor;
 
     public static String randomString() {
         String generatedString1 = RandomStringUtils.randomAlphanumeric(8);
