@@ -11,7 +11,7 @@ public class Workroomsteps extends BaseClass {
     @Given("the user launches the Chrome browser")
     public void the_user_launches_the_chrome_browser() throws IOException {
         lp = new WorkroomLoginPage(driver);
-        sp = new ChataakStoresPage(driver);
+        sp = new MaterialManagementSupplierMasterDataPage(driver);
         signUppage = new ChataakSignUpPage(driver);
         catalog = new MaterialManagementMateialModulePage(driver);
 

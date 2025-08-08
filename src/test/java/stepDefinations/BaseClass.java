@@ -13,7 +13,7 @@ public class BaseClass {
     //    public WebDriver driver;
     public static WebDriver driver; // Make it static to share across classes
     public WorkroomLoginPage lp;
-    public ChataakStoresPage sp;
+    public MaterialManagementSupplierMasterDataPage sp;
     public ChataakSignUpPage signUppage;
     public static Logger logger;
     public static Properties configprop;
@@ -29,7 +29,7 @@ public class BaseClass {
     public static EmailReading emailu;
 
     public MaterialManagementMateialModulePage material;
-
+    public MaterialManagementSupplierMasterDataPage supplier;
 
 
 
