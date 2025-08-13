@@ -5,7 +5,9 @@ import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import stepDefinations.BaseClass;
 import utilities.EmailReading;
 import utilities.WaitHelper;
 
@@ -22,7 +24,7 @@ import static stepDefinations.BaseClass.randomNumber;
 import static stepDefinations.BaseClass.randomString;
 
 
-public class MaterialManagementCustomerPage {
+public class MaterialManagementCustomerPage extends BaseClass {
 
   public EmailReading emailu;
     public WebDriver ldriver;
@@ -80,33 +82,11 @@ public class MaterialManagementCustomerPage {
         return By.xpath(xpath);
     }
 
-    //Locators
-//
-    By EmploeesModuleSideMenu = By.xpath(configprop.getProperty("EmploeesModuleSideMenu"));
-    By AddNewEmployeeButton = By.xpath(configprop.getProperty("AddNewEmployee_Button"));
-    By DepartmentDropDown = By.xpath(configprop.getProperty("EmploeeDepartmentDropDown"));
-    By dropdownoptions = By.cssSelector(configprop.getProperty("dropdownoptions"));
-    By EmployeeNameTxtBox = By.xpath(configprop.getProperty("EmployeeNameTxtBox"));
-    By EmployeeEmailTxtBox = By.xpath(configprop.getProperty("EmployeeEmailTxtBox"));
-    By EmployeePhoneNumberTxtBox = By.xpath(configprop.getProperty("EmployeePhoneNumberTxtBox"));
-    By EmployeeAddressTxtBox = By.xpath(configprop.getProperty("EmployeeAddressTxtBox"));
-    By EmployeeCityTxtBox = By.xpath(configprop.getProperty("EmployeeCityTxtBox"));
-    By EmployeeCountryDropDown = By.xpath(configprop.getProperty("EmployeeCountryDropDown"));
-    By CountryOptions = By.xpath(configprop.getProperty("CountryOptions"));
-    By CountryList = By.xpath(configprop.getProperty("CountryList"));
-    By EmployeeShowRadioButton = By.xpath(configprop.getProperty("EmployeeShowRadioButton"));
-    By EmployeeHideRadioButton = By.xpath(configprop.getProperty("EmployeeHideRadioButton"));
-    By EmployeeImage=By.xpath(configprop.getProperty("EmployeeImage"));
-    By SaveButton=By.xpath(configprop.getProperty("SaveButton"));
-    By SuccessMessage=By.xpath(configprop.getProperty("SuccessMessage"));
-    By ExistedEmail=By.xpath(configprop.getProperty("ExistedEmail"));
-    By Toastmessagerightcorner=By.xpath(configprop.getProperty("Toastmessagerightcorner"));
-    By ToastMessages=By.xpath(configprop.getProperty("ToastMessages"));
-    By EmployeePasswordUpdate=By.xpath(configprop.getProperty("EmployeePasswordUpdate"));
 
 
 
-//    sharepoint application
+
+//    sharepoint application   Locators
     By Email=By.xpath((configprop.getProperty("sharepointemail")));
     By nextButton=By.xpath(configprop.getProperty("NextButton"));
     By password=By.xpath(configprop.getProperty("sharepointpassword"));
@@ -132,6 +112,15 @@ public class MaterialManagementCustomerPage {
     //Error message xpath
     By ErrorMessage=By.xpath(configprop.getProperty("ErrorMessage"));
 
+    //Customer Location
+    By CustomerStorageLocation=By.xpath(configprop.getProperty("CustomerStorageLocation"));
+    By SelectCustomerDropDown=By.xpath(configprop.getProperty("SelectCustomerDropDown"));
+    By SelectCustomerSite=By.xpath(configprop.getProperty("SelectCustomerSite"));
+    By CustomerSitesLocation_Button=By.xpath(configprop.getProperty("CustomerSitesLocation_Button"));
+    By txtBoxLocationName=By.xpath(configprop.getProperty("txtBoxLocationName"));
+    By SuccessMsgPopUp=By.xpath(configprop.getProperty("SuccessMsgPopUp"));
+
+    By Customer_TableHeader=By.xpath(configprop.getProperty("Customer_TableHeader"));
     public void sharepointEmail(String email) {
 
 
@@ -222,7 +211,7 @@ public class MaterialManagementCustomerPage {
     public void sharepointAddMasterDataButton( ) {
        //here we are clicking the '+' icon for adding the master data
         try {
-            WebElement AddMasterButton = waithelper.WaitForElement1(AddMasterDataButton, 10);
+            WebElement AddMasterButton = waithelper.WaitForElement1(AddMasterDataButton, 20);
             AddMasterButton.click();
         } catch (Exception e) {
             System.out.println("Unexpected error: " + e.getMessage());
@@ -395,344 +384,260 @@ public class MaterialManagementCustomerPage {
         }
     }
 
+   // Customer Location
 
 
+    public void sharepointCustomerLocationOption() {
+        // Maximum retry attempts for stale element
+        final int MAX_RETRIES = 3;
+        int attempts = 0;
 
+        while (attempts < MAX_RETRIES) {
+            try {
+                // Wait for and locate the element fresh each time
+                WebElement customersStorageLocation = waithelper.WaitForElement1(CustomerStorageLocation, 10);
 
+                // Verify element is visible and enabled
+                if (customersStorageLocation.isDisplayed() && customersStorageLocation.isEnabled()) {
+                    try {
+                        customersStorageLocation.click();
+                        // If click succeeds, log and return
+                        System.out.println("Successfully clicked Customer Storage Location option");
+                        return;
+                    } catch (StaleElementReferenceException e) {
+                        System.out.println("Stale element encountered on attempt " + (attempts + 1));
+                        attempts++;
+                        continue; // Retry
+                    }
+                } else {
+                    Assert.fail("Customer Storage Location Option is not available or not interactable");
+                }
+            } catch (NoSuchElementException e) {
+                Assert.fail("Customer Storage Location element not found: " + e.getMessage());
+            } catch (TimeoutException e) {
+                Assert.fail("Timed out waiting for Customer Storage Location element: " + e.getMessage());
+            } catch (Exception e) {
+                Assert.fail("Unexpected error: " + e.getMessage());
+            }
+            attempts++;
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //  This Method helps to click the employeeModule
-    public void EmployeesPage() throws InterruptedException {
-        ldriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        Thread.sleep(5000);
-
-        WebElement employeeModule = waithelper.WaitForElement1(EmploeesModuleSideMenu, 10);
-        employeeModule.click();
-
+        // If we exhausted all retries
+        Assert.fail("Failed to click Customer Storage Location option after " + MAX_RETRIES + " attempts");
     }
 
 
-    //Add Employee Button Click
-    public void addEmployeeButton() {
-        WebElement addEmployeeButton = waithelper.WaitForElement1(AddNewEmployeeButton, 10);
-        addEmployeeButton.click();
-    }
+    public void sharepointCustomersDropDown() {
+        try {
+            // Wait for the dropdown element to be visible and interactable
+            WebElement selectCustomersDropDown = waithelper.WaitForElement1(SelectCustomerDropDown, 10);
+            selectCustomersDropDown.click();
 
-    //DropDown Selecting for the Department
-    public void departmentDropDown() {
-        WebElement depDropdown = waithelper.WaitForElement1(DepartmentDropDown, 10);
-        depDropdown.click();
+            // Wait for the dropdown to appear and be clickable
+            Thread.sleep(1000);
 
-        WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(dropdownoptions));
+            // Create a Select object to interact with the dropdown
+            Select select = new Select(selectCustomersDropDown);
 
-        List<WebElement> options = ldriver.findElements(dropdownoptions);
+            // Check if the option exists before trying to select it
+            boolean optionFound = false;
+            for (WebElement option : select.getOptions()) {
+                if (option.getText().equals("aaaa")) {
+                    select.selectByVisibleText("aaaa");
+                    optionFound = true;
 
-        if (options.size() == 0) {
-            System.out.println("No options available in dropdown.");
-            ldriver.findElement(By.tagName("body")).click();
-        } else {
-            // If first option is "Select", skip it
-            int startIndex = options.get(0).getText().trim().equalsIgnoreCase("Select") ? 1 : 0;
+                    closeDropdown();
+                    break;
 
-            if (options.size() <= startIndex) {
-                System.out.println("No valid options available in dropdown.");
-                ldriver.findElement(By.tagName("body")).click();
-            } else {
-                Random rand = new Random();
-                int randomIndex = startIndex + rand.nextInt(options.size() - startIndex);
-
-                options = ldriver.findElements(dropdownoptions); // re-fetch to avoid stale elements
-
-                WebElement selectedOption = options.get(randomIndex);
-                String selectedText = selectedOption.getText();
-                selectedOption.click();
-
-                System.out.println("Randomly selected: " + selectedText);
-
-                // Print all dropdown options
-                for (WebElement printingOption : options) {
-                    System.out.println("The DropDown Option: " + printingOption.getText());
                 }
             }
 
-
-        }
-
-
-    }
-
-    //Sending Employee Name
-    public void employeename() {
-        WebElement EmployeeName = waithelper.WaitForElement1(EmployeeNameTxtBox, 10);
-        EmployeeName.click();
-        EmployeeName.clear();
-        EmployeeName.sendKeys(configprop.getProperty("Employeename"));
-    }
-
-    //Sending EmployeeEmail
-    public void EmployeeEmail() {
-        WebElement EmployeeEmail = waithelper.WaitForElement1(EmployeeEmailTxtBox, 10);
-        EmployeeEmail.click();
-        EmployeeEmail.clear();
-        EmployeeEmail.sendKeys(configprop.getProperty("EmployeeEmail"));
-        //EmployeeEmail.sendKeys(randomString()+"@gmail.com");
-    }
-
-    //Sending Employee Phone Number
-    public void employeePhoneNumber() {
-        WebElement EmployeePhoneNumber = waithelper.WaitForElement1(EmployeePhoneNumberTxtBox, 10);
-        EmployeePhoneNumber.click();
-        EmployeePhoneNumber.clear();
-        EmployeePhoneNumber.sendKeys(configprop.getProperty("EmployeePhoneNumber"));
-    }
-
-    //Sending Employee Address
-    public void employeeAddress() {
-        WebElement EmployeeAddress = waithelper.WaitForElement1(EmployeeAddressTxtBox, 10);
-        EmployeeAddress.click();
-        EmployeeAddress.clear();
-        EmployeeAddress.sendKeys(configprop.getProperty("EmployeeAddress"));
-    }
-
-    //Sending Employee city
-    public void EmployeeCity() {
-        WebElement EmployeeCity = waithelper.WaitForElement1(EmployeeCityTxtBox, 10);
-        EmployeeCity.click();
-        EmployeeCity.clear();
-        EmployeeCity.sendKeys(configprop.getProperty("EmployeeCity"));
-    }
-
-    //Select Country of the Employee
-    public void employeeCountry() {
-
-        WebElement EmployeeCountry = waithelper.WaitForElement1(EmployeeCountryDropDown, 10);
-        EmployeeCountry.click();
-
-        // Find and click the India option
-
-        waithelper.WaitForElement1(CountryOptions, 10);
-
-        List<WebElement> contries = ldriver.findElements(CountryList);
-
-
-        // Print all countries
-        System.out.println("Country List:");
-        for (WebElement co : contries) {
-            String countryName = co.getText().trim();
-            System.out.println("- " + countryName);
-
-            // Select 'India' if found
-            if (countryName.equalsIgnoreCase("India")) {
-                co.click();
-                System.out.println("Selected country: India");
-                break;
+            // If the option is not found, handle the situation (e.g., log a message or select default)
+            if (!optionFound) {
+                System.out.println("Option 'Example Customer' not found. Selecting a default option.");
+                select.selectByIndex(0);  // Select the first option (e.g., "-- Select Customer --")
+                closeDropdown();
             }
-
-
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
         }
-
-    }
-
-    //Select Show Radio button Show
-    public void showRadiobutton() {
-        WebElement ShowRadioButton = waithelper.WaitForElement1(EmployeeShowRadioButton, 10);
-        ShowRadioButton.click();
-    }
-
-
-    //Select Hide Radio button Show
-    public void hideRadioButton() {
-        WebElement HideRadioButton = waithelper.WaitForElement1(EmployeeHideRadioButton, 10);
-        HideRadioButton.click();
-    }
-
-//    public void uploadEmployeeImage(){
-//        WebElement image= waithelper.WaitForElement1(EmployeeImage,10);
-//        String filePath = System.getProperty("user.dir") + "/src/test/java/images/pexels-justin-shaifer-501272-1222271.jpg";
-//        image.sendKeys(filePath);
-//
-//    }
-
-    public void uploadEmployeeImage(){
-        WebElement image = waithelper.WaitForElement1(EmployeeImage, 10);
-
-        // Path as seen INSIDE the Docker container
-        String filePathInContainer = "/home/seluser/uploads/pexels-justin-shaifer-501272-1222271.jpg";
-
-        image.sendKeys(filePathInContainer);
     }
 
 
 
-    public void saveButton(){
-        WebElement Save= waithelper.WaitForElement1(SaveButton,10);
-        Save.click();
-    }
-
-//    public void statusMessage(){
-//
-//        WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
-//        wait.until(ExpectedConditions.or(
-//                ExpectedConditions.visibilityOfElementLocated(SuccessMessage),
-//                ExpectedConditions.visibilityOfElementLocated(ExistedEmail)
-//        ));
-//
-//
-//        if(success.isDisplayed()  ){
-//            Assert.assertTrue(true);
-//        }
-//        else if (emailexisted.isDisplayed()) {
-//            Assert.assertTrue(true);
-//            System.out.println(emailexisted.getText());
-//
-//        } else{
-//            Assert.fail("Unexpected message");
-//        }
-//    }
-
-
-
-    public void statusMessage() {
-        WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
-
+    public void sharepointSiteDropDown() {
         try {
-            // Wait until at least one toast message is visible
-            wait.until(ExpectedConditions.visibilityOfElementLocated(Toastmessagerightcorner));
+            // Wait for the dropdown element to be visible and interactable
+            WebElement SelectCustomersSite = waithelper.WaitForElement1(SelectCustomerSite, 10);
+            SelectCustomersSite.click();
 
-            // Now collect all visible toast messages
-            List<WebElement> toastMessages = ldriver.findElements(ToastMessages);
+            // Wait for the dropdown to appear and be clickable
+            Thread.sleep(1000);
 
-            if (toastMessages.isEmpty()) {
-                System.out.println("❌ No toast messages found.");
-                Assert.fail("No toast messages appeared.");
-            }
-            boolean toastFound = false;
-            // Print and assert each toast message
-            for (WebElement toast : toastMessages) {
-                if (toast.isDisplayed()) {
-                    String message = toast.getText();
-                    System.out.println("🔔 Toast Message: " + message);
-                    Assert.assertTrue(message,true);
+            // Create a Select object to interact with the dropdown
+            Select select = new Select(SelectCustomersSite);
 
-                    // Optionally assert specific expected messages
-                    Assert.assertFalse("Toast message is empty", message.trim().isEmpty());
-                    // Set flag to mark that at least one toast was found
-                    toastFound = true;
+            // Check if the option exists before trying to select it
+            boolean optionFound = false;
+            for (WebElement option : select.getOptions()) {
+                if (option.getText().equals("Kormangalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")) {
+                    select.selectByVisibleText("Kormangalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+                    optionFound = true;
+
+                    closeDropdown();
+                    break;
+
                 }
             }
 
-            if(toastFound==true){
-                System.out.println("The Toast found");
-                Assert.assertTrue(true);
+            // If the option is not found, handle the situation (e.g., log a message or select default)
+            if (!optionFound) {
+                System.out.println("Option 'Example Customer' not found. Selecting a default option.");
+                select.selectByIndex(0);  // Select the first option (e.g., "-- Select Customer --")
+                closeDropdown();
             }
-            else{
-                System.out.println("Toast didnt found");
-                Assert.fail();
-            }
-
-        } catch (TimeoutException e) {
-            Assert.fail("❌ Toast messages did not appear in expected time.");
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
         }
     }
 
 
 
-    public void verifyInvitationEmail() {
+    public void sharepointCustomerSitesLocationButton( ) {
+        //checking for The LocatinAdd button
         try {
-            String host = configprop.getProperty("email.host");
-            String user = configprop.getProperty("email.username");
-            String password = configprop.getProperty("email.password");
-            String subject = configprop.getProperty("email.subject.keyword");
+            WebElement CustomersSitesLocation_Button = waithelper.WaitForElement1(CustomerSitesLocation_Button, 20);
 
-            System.out.println("Attempting to retrieve invitation email...");
-            String invitationLink = EmailReading.getInvitationLink(host, user, password, subject, 60);
-
-
-
-
-            if (invitationLink != null) {
-                // Open in new tab using Selenium
-                ((JavascriptExecutor)ldriver).executeScript("window.open('" + invitationLink + "','_blank');");
-
-                // Switch to new tab
-                ArrayList<String> tabs = new ArrayList<>(ldriver.getWindowHandles());
-                ldriver.switchTo().window(tabs.get(1));
-
-                // Verify page loaded
-                WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
-                wait.until(ExpectedConditions.urlContains("work-room.io"));
-            } else {
-                Assert.fail("No invitation link found");
+            if(CustomersSitesLocation_Button.isDisplayed() && CustomersSitesLocation_Button.isEnabled()){
+                CustomersSitesLocation_Button.click();
             }
+            else {
+                System.out.println("Location Add Button Is Not Available");
+            }
+
+            WebElement txtBoxLocationsName = waithelper.WaitForElement1(txtBoxLocationName, 10);
+            txtBoxLocationsName.click();
+            txtBoxLocationsName.clear();
+            txtBoxLocationsName.sendKeys(" # "+randomNumber()+" "+randomString());
 
         } catch (Exception e) {
-            System.err.println("Error verifying invitation email: " + e.getMessage());
-            e.printStackTrace();
-            Assert.fail("Failed to verify invitation email: " + e.getMessage());
+            System.out.println("Unexpected error: " + e.getMessage());
         }
+
     }
 
 
-    public void switchToNewTab() {
-        String originalHandle = ldriver.getWindowHandle();
 
-        // Wait for a new tab to open
-        WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
-        wait.until(driver -> driver.getWindowHandles().size() > 1);
+    public void sharepointCustomerStorageLocationSuccessMsgPopUp() {
+        try {
+            // Wait for initial loading message (with stale element handling)
+            WebElement successMsgPopup = waitForElementWithStaleRetry(SuccessMsgPopUp, 20);
+            String initialMessage = successMsgPopup.getText();
+            System.out.println(initialMessage);
+            Assert.assertEquals("Initial message mismatch", "Please wait...", initialMessage.trim());
 
-        // Switch to the new tab
-        for (String handle : ldriver.getWindowHandles()) {
-            if (!handle.equals(originalHandle)) {
-                ldriver.switchTo().window(handle);
-                System.out.println("🔁 Switched to new tab: " + ldriver.getTitle());
-
+            // Wait for message to change (with stale element handling)
+            WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(20));
+            successMsgPopup = wait.until(driver -> {
                 try {
-                    // Wait and click the Show Radio Button
-                    WebElement PasswordUpdate = waithelper.WaitForElement1(EmployeePasswordUpdate, 10);
-                    PasswordUpdate.click();
-                    PasswordUpdate.clear();
-                    PasswordUpdate.sendKeys(configprop.getProperty("updatepassword"));
-                    System.out.println("✅ Clicked Show Radio Button in new tab.");
-                } catch (TimeoutException e) {
-                    throw new RuntimeException("❌ Show Radio Button not found in the new tab.", e);
+                    WebElement element = driver.findElement(SuccessMsgPopUp);
+                    return !element.getText().equals("Please wait...") ? element : null;
+                } catch (StaleElementReferenceException e) {
+                    return null; // Will cause the wait to retry
                 }
+            });
 
-                return;
-            }
+            // Verify final message
+            String finalMessage = successMsgPopup.getText();
+            System.out.println(finalMessage);
+            Assert.assertEquals("Final success message mismatch",
+                    "1 locations saved successfully",
+                    finalMessage.trim());
+
+            // Handle OK button with stale element protection
+            WebElement successOkButton = waitForElementWithStaleRetry(successOkconfirmbuttonn, 20);
+            Assert.assertTrue("Success OK button not displayed", successOkButton.isDisplayed());
+            Assert.assertTrue("Success OK button not enabled", successOkButton.isEnabled());
+            successOkButton.click();
+
+        } catch (Exception e) {
+            Assert.fail("Error in success message popup: " + e.getMessage());
+        }
+    }
+
+
+    public void sharepointcustomerGetTableList( ) {
+
+        try {
+            WebElement customersubmitform = waithelper.WaitForElement1(customersubmitbutton, 10);
+
+            WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(Customer_TableHeader));
+
+            List<WebElement> HeaderList = ldriver.findElements(Customer_TableHeader);
+
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
         }
 
-        throw new RuntimeException("❌ New tab not found after waiting.");
     }
+//    public void sharepointCustomerStorageLocationSuccessMsgPopUp( ) {
+//        //checking for The LocatinAdd button
+//        try {
+//            WebElement SuccessMsgPopUps = waithelper.WaitForElement1(SuccessMsgPopUp, 20);
+//
+//          String AddedLocationSuccessMsg=  SuccessMsgPopUps.getText();
+//          System.out.println(AddedLocationSuccessMsg);
+//
+//          if(AddedLocationSuccessMsg.equalsIgnoreCase("Please wait...")){
+//              Assert.assertTrue(true);
+//          }
+//          else{
+//              Assert.fail("Unxepected Success Message Displyed For The Adding Of The Site Location");
+//          }
+//
+//
+//           String finalMsg= SuccessMsgPopUps.getText();
+//            if(finalMsg.equalsIgnoreCase("1 locations saved successfully")){
+//                Assert.assertTrue(true);
+//            }
+//            else{
+//                Assert.fail("Unxepected Success Message Displyed For The Adding Of The Site Location");
+//            }
+//
+//            WebElement succesOkconfirmbuttonn = waithelper.WaitForElement1(successOkconfirmbuttonn, 20);
+//
+//            if(succesOkconfirmbuttonn.isDisplayed() && succesOkconfirmbuttonn.isEnabled()){
+//                succesOkconfirmbuttonn.click();
+//                Assert.assertTrue(true);
+//            }
+//            else{
+//                Assert.fail("Button Not Displayed or Enbled");
+//            }
+//
+//        } catch (Exception e) {
+//            System.out.println("Unexpected error: " + e.getMessage());
+//        }
+//
+//    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

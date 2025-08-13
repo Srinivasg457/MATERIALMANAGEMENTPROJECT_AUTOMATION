@@ -3,10 +3,16 @@ package stepDefinations;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pageobjects.*;
 import utilities.EmailReading;
 
+import java.time.Duration;
 import java.util.Properties;
 
 public class BaseClass {
@@ -73,7 +79,33 @@ public class BaseClass {
     }
 
 
+
+    protected void closeDropdown() {
+        try {
+            // Method 1: Click outside the dropdown
+            driver.findElement(By.tagName("body")).click();
+
+            // OR Method 2: Send ESC key
+            // driver.findElement(SelectCustomerDropDown).sendKeys(Keys.ESCAPE);
+
+            // Wait for dropdown to close
+//            new WebDriverWait(driver, Duration.ofSeconds(1))
+//                    .until(ExpectedConditions.invisibilityOfElementLocated(
+//                            By.xpath("//select[@id='" + SelectCustomerDropDown + "']/option[1]")));
+        } catch (Exception e) {
+            System.out.println("Warning: Could not properly close dropdown - " + e.getMessage());
+        }
+    }
+
+    // Helper method to handle stale elements
+    protected WebElement waitForElementWithStaleRetry(By locator, int timeoutSeconds) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
+        return wait.ignoring(StaleElementReferenceException.class)
+                .until(driver -> driver.findElement(locator));
+    }
+
 }
+
 
 
 

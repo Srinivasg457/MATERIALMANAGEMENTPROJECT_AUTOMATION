@@ -106,8 +106,49 @@ public class materialmanagementCustomerSteps extends BaseClass {
 
 
 
+    //  *****    Moving to The Customer Location and Performing The Action    **********
+
+    @Then("Click on the Add button and select the Storage Location dropdown")
+    public void click_on_the_add_button_and_select_the_storage_location_dropdown() {
+        logger.info("*** Click On The Add Button '+' Icon ***");
+        AddCustomer.sharepointAddMasterDataButton( );
+        logger.info("*** Selecting The Customer Location Option ***");
+        AddCustomer.sharepointCustomerLocationOption( );
+    }
+
+    @Then("Select The Customer DropDown And Select Option")
+    public void select_the_customer_drop_down_and_select_option() {
+        logger.info("*** Selecting The Customer Option  ***");
+        AddCustomer.sharepointCustomersDropDown( );
+
+    }
+
+    @Then("Select The SiteLocation if available")
+    public void select_the_site_location_if_available() {
+        logger.info("*** Select The SiteLocation if available ***");
+        AddCustomer.sharepointSiteDropDown();
+    }
 
 
+    @Then("Add The Loction And Click The Submit Button")
+    public void add_the_loction_and_click_the_submit_button() {
+        logger.info("*** Add The Loction  ***");
+        AddCustomer.sharepointCustomerSitesLocationButton( );
+        logger.info("***  Click The Submit Button ***");
+        AddCustomer.sharepointcustomersubmitform( );
+        logger.info("*** Success Message For The Location Validation Done ***");
+        AddCustomer.sharepointCustomerStorageLocationSuccessMsgPopUp( );
+
+
+    }
+
+
+//Get The Customer Details
+    @Then("Get The List of Data of Customers")
+    public void get_the_list_of_data_of_customers() {
+        logger.info("*** Get The List of Data of Customers  ***");
+        AddCustomer.sharepointcustomerGetTableList();
+    }
 
 
 
