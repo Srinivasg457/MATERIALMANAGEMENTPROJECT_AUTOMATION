@@ -189,18 +189,46 @@ public class MaterialManagementCustomerPage extends BaseClass {
 
     public void sharepointmasterDataSidemenu() {
         try {
-            // Try elementToBeClickable instead of visibility
-            WebElement mastersidemenu = waithelper.WaitForElement1(masterdatasidemenu, 30);
+            // Wait for element presence first
+            WebElement mastersidemenu = waithelper.WaitForElement1(
+                    masterdatasidemenu,
+                    30
+            );
 
-            // Scroll into view first
-            ((JavascriptExecutor) ldriver).executeScript("arguments[0].scrollIntoView(true);", mastersidemenu);
-            Thread.sleep(500); // small pause after scroll
+            // Set window size (important for headless)
+            ldriver.manage().window().setSize(new Dimension(1920, 1080));
 
-            // Click using JavaScript as a fallback
-            ((JavascriptExecutor) ldriver).executeScript("arguments[0].click();", mastersidemenu);
+            // Scroll into view
+            ((JavascriptExecutor) ldriver).executeScript(
+                    "arguments[0].scrollIntoView({block: 'center', inline: 'center'});",
+                    mastersidemenu
+            );
+
+            // Wait for element to be clickable
+            new WebDriverWait(ldriver, Duration.ofSeconds(10))
+                    .until(ExpectedConditions.elementToBeClickable(mastersidemenu));
+
+            // Try normal click first
+            try {
+                mastersidemenu.click();
+            } catch (ElementClickInterceptedException e) {
+                // If normal click fails, try actions
+                new Actions(ldriver)
+                        .moveToElement(mastersidemenu)
+                        .pause(Duration.ofMillis(500))
+                        .click()
+                        .perform();
+            } catch (Exception e) {
+                // Final fallback to JavaScript click
+                ((JavascriptExecutor) driver).executeScript(
+                        "arguments[0].click();",
+                        mastersidemenu
+                );
+            }
 
         } catch (Exception e) {
-            System.out.println("Error interacting with side menu: " + e.getMessage());
+            System.out.println("Failed to interact with Masters side menu: " + e.getMessage());
+            throw e; // Re-throw if you want the test to fail
         }
     }
 
