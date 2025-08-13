@@ -189,7 +189,7 @@ public class MaterialManagementCustomerPage extends BaseClass {
     public void sharepointmasterDataSidemenu( ) {
 
         try {
-            WebElement mastersidemenu = waithelper.WaitForElement1(masterdatasidemenu, 10);
+            WebElement mastersidemenu = waithelper.WaitForElement1(masterdatasidemenu, 30);
             mastersidemenu.click();
         } catch (Exception e) {
             System.out.println("Unexpected error: " + e.getMessage());
