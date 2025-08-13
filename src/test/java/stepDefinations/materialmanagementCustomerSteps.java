@@ -138,8 +138,6 @@ public class materialmanagementCustomerSteps extends BaseClass {
         AddCustomer.sharepointcustomersubmitform( );
         logger.info("*** Success Message For The Location Validation Done ***");
         AddCustomer.sharepointCustomerStorageLocationSuccessMsgPopUp( );
-
-
     }
 
 

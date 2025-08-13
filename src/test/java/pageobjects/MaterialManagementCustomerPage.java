@@ -3,6 +3,7 @@ package pageobjects;
 import org.apache.http.auth.InvalidCredentialsException;
 import org.junit.Assert;
 import org.openqa.selenium.*;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,10 +16,7 @@ import utilities.WaitHelper;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 import static stepDefinations.BaseClass.randomNumber;
@@ -187,61 +185,29 @@ public class MaterialManagementCustomerPage extends BaseClass {
     }
 
 
+
+
+
+
     public void sharepointmasterDataSidemenu() {
         try {
-            // Wait for element presence first
-            WebElement mastersidemenu = waithelper.WaitForElement1(
-                    masterdatasidemenu,
-                    30
-            );
+            WebElement mastersidemenu = waithelper.WaitForElement1(masterdatasidemenu, 30);
 
-            // Set window size (important for headless)
-            ldriver.manage().window().setSize(new Dimension(1920, 1080));
-
-            // Scroll into view
-            ((JavascriptExecutor) ldriver).executeScript(
-                    "arguments[0].scrollIntoView({block: 'center', inline: 'center'});",
-                    mastersidemenu
-            );
-
-            // Wait for element to be clickable
-            new WebDriverWait(ldriver, Duration.ofSeconds(10))
-                    .until(ExpectedConditions.elementToBeClickable(mastersidemenu));
-
-            // Try normal click first
+            // First try regular click
             try {
                 mastersidemenu.click();
-            } catch (ElementClickInterceptedException e) {
-                // If normal click fails, try actions
-                new Actions(ldriver)
-                        .moveToElement(mastersidemenu)
-                        .pause(Duration.ofMillis(500))
-                        .click()
-                        .perform();
             } catch (Exception e) {
-                // Final fallback to JavaScript click
-                ((JavascriptExecutor) driver).executeScript(
-                        "arguments[0].click();",
-                        mastersidemenu
-                );
+                // If regular click fails, use JavaScript click as fallback
+                System.out.println("Regular click failed, attempting JavaScript click...");
+                JavascriptExecutor js = (JavascriptExecutor) ldriver;
+                js.executeScript("arguments[0].click();", mastersidemenu);
             }
 
         } catch (Exception e) {
-            System.out.println("Failed to interact with Masters side menu: " + e.getMessage());
-            throw e; // Re-throw if you want the test to fail
+            System.out.println("Unexpected error: " + e.getMessage());
+            // You might want to add screenshot capture here for debugging
         }
     }
-
-//    public void sharepointmasterDataSidemenu( ) {
-//
-//        try {
-//            WebElement mastersidemenu = waithelper.WaitForElement1(masterdatasidemenu, 30);
-//            mastersidemenu.click();
-//        } catch (Exception e) {
-//            System.out.println("Unexpected error: " + e.getMessage());
-//        }
-//
-//    }
 
     public void sharepointcustomermasterdata( ) {
 
