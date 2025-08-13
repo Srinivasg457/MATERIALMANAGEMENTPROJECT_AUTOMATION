@@ -186,16 +186,39 @@ public class MaterialManagementCustomerPage extends BaseClass {
 
     }
 
-    public void sharepointmasterDataSidemenu( ) {
 
+    public void sharepointmasterDataSidemenu() {
         try {
+            // Wait for the side menu to be visible and clickable
             WebElement mastersidemenu = waithelper.WaitForElement1(masterdatasidemenu, 30);
-            mastersidemenu.click();
+
+            // Check if the element is displayed and enabled
+            if (mastersidemenu != null && mastersidemenu.isDisplayed() && mastersidemenu.isEnabled()) {
+                mastersidemenu.click();
+            } else {
+                System.out.println("Side menu is not interactable or visible.");
+            }
+        } catch (NoSuchElementException e) {
+            System.out.println("Side menu element not found: " + e.getMessage());
+        } catch (ElementNotInteractableException e) {
+            System.out.println("Side menu element is not interactable: " + e.getMessage());
+        } catch (TimeoutException e) {
+            System.out.println("Timed out waiting for side menu element: " + e.getMessage());
         } catch (Exception e) {
             System.out.println("Unexpected error: " + e.getMessage());
         }
-
     }
+    
+//    public void sharepointmasterDataSidemenu( ) {
+//
+//        try {
+//            WebElement mastersidemenu = waithelper.WaitForElement1(masterdatasidemenu, 30);
+//            mastersidemenu.click();
+//        } catch (Exception e) {
+//            System.out.println("Unexpected error: " + e.getMessage());
+//        }
+//
+//    }
 
     public void sharepointcustomermasterdata( ) {
 
