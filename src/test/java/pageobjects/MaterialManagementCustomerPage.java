@@ -3,6 +3,7 @@ package pageobjects;
 import org.apache.http.auth.InvalidCredentialsException;
 import org.junit.Assert;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -183,32 +184,26 @@ public class MaterialManagementCustomerPage extends BaseClass {
         }
 
 
-
     }
 
 
     public void sharepointmasterDataSidemenu() {
         try {
-            // Wait for the side menu to be visible and clickable
+            // Try elementToBeClickable instead of visibility
             WebElement mastersidemenu = waithelper.WaitForElement1(masterdatasidemenu, 30);
 
-            // Check if the element is displayed and enabled
-            if (mastersidemenu != null && mastersidemenu.isDisplayed() && mastersidemenu.isEnabled()) {
-                mastersidemenu.click();
-            } else {
-                System.out.println("Side menu is not interactable or visible.");
-            }
-        } catch (NoSuchElementException e) {
-            System.out.println("Side menu element not found: " + e.getMessage());
-        } catch (ElementNotInteractableException e) {
-            System.out.println("Side menu element is not interactable: " + e.getMessage());
-        } catch (TimeoutException e) {
-            System.out.println("Timed out waiting for side menu element: " + e.getMessage());
+            // Scroll into view first
+            ((JavascriptExecutor) ldriver).executeScript("arguments[0].scrollIntoView(true);", mastersidemenu);
+            Thread.sleep(500); // small pause after scroll
+
+            // Click using JavaScript as a fallback
+            ((JavascriptExecutor) ldriver).executeScript("arguments[0].click();", mastersidemenu);
+
         } catch (Exception e) {
-            System.out.println("Unexpected error: " + e.getMessage());
+            System.out.println("Error interacting with side menu: " + e.getMessage());
         }
     }
-    
+
 //    public void sharepointmasterDataSidemenu( ) {
 //
 //        try {

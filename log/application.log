@@ -2604,3 +2604,160 @@ Session ID: 120feda5aa200aeb56d9fdbe11ae234c
 2025-08-13 15:43:21,725 [main] INFO WorkRoomWebApplication - *** Add The Loction  ***
 2025-08-13 15:43:22,188 [main] INFO WorkRoomWebApplication - ***  Click The Submit Button ***
 2025-08-13 15:43:22,378 [main] INFO WorkRoomWebApplication - *** Success Message For The Location Validation Done ***
+2025-08-13 16:33:44,229 [main] INFO WorkRoomWebApplication - ************* Launching CHROME Browser *****************
+2025-08-13 16:33:45,367 [main] INFO WorkRoomWebApplication - ************* Browser Launched and Maximized *****************
+2025-08-13 16:33:46,360 [main] INFO WorkRoomWebApplication - ************* Get The Application URL  *****************
+2025-08-13 16:33:57,592 [main] INFO WorkRoomWebApplication - *** Enter The Share Point Email Id ***
+2025-08-13 16:33:58,898 [main] INFO WorkRoomWebApplication - *** click the next button ***
+2025-08-13 16:33:58,994 [main] INFO WorkRoomWebApplication - *** Enter The Password ***
+2025-08-13 16:34:00,227 [main] INFO WorkRoomWebApplication - *** clicked on the sign in Button ***
+2025-08-13 16:34:02,479 [main] INFO WorkRoomWebApplication - ************* Quitting Browser *****************
+2025-08-13 16:34:02,615 [main] INFO WorkRoomWebApplication - ************* Browser Closed Successfully *****************
+2025-08-13 16:34:02,686 [main] INFO WorkRoomWebApplication - ************* Launching CHROME Browser *****************
+2025-08-13 16:34:03,545 [main] INFO WorkRoomWebApplication - ************* Browser Launched and Maximized *****************
+2025-08-13 16:34:03,818 [main] INFO WorkRoomWebApplication - ************* Get The Application URL  *****************
+2025-08-13 16:34:04,662 [main] INFO WorkRoomWebApplication - *** Enter The Share Point Email Id ***
+2025-08-13 16:34:05,649 [main] INFO WorkRoomWebApplication - *** click the next button ***
+2025-08-13 16:34:05,780 [main] INFO WorkRoomWebApplication - *** Enter The Password ***
+2025-08-13 16:34:07,158 [main] INFO WorkRoomWebApplication - *** clicked on the sign in Button ***
+2025-08-13 16:34:08,321 [main] INFO WorkRoomWebApplication - *** clicked on the master side menu ***
+2025-08-13 16:34:11,115 [main] INFO WorkRoomWebApplication - *** clicked on the customer sub menu ***
+2025-08-13 16:34:12,515 [main] INFO WorkRoomWebApplication - *** clicked on the '+' icon ***
+2025-08-13 16:34:12,960 [main] INFO WorkRoomWebApplication - *** Selected the Customer ***
+2025-08-13 16:34:13,960 [main] INFO WorkRoomWebApplication - *** Filing up the Customer All the Required field ***
+2025-08-13 16:34:16,283 [main] INFO WorkRoomWebApplication - *** clicked the submit button ***
+2025-08-13 16:34:16,389 [main] INFO WorkRoomWebApplication - *** clicked the Success ok Button ***
+2025-08-13 16:34:17,061 [main] INFO WorkRoomWebApplication - ************* Quitting Browser *****************
+2025-08-13 16:34:17,176 [main] INFO WorkRoomWebApplication - ************* Browser Closed Successfully *****************
+2025-08-13 16:34:17,209 [main] INFO WorkRoomWebApplication - ************* Launching CHROME Browser *****************
+2025-08-13 16:34:18,253 [main] INFO WorkRoomWebApplication - ************* Browser Launched and Maximized *****************
+2025-08-13 16:34:18,551 [main] INFO WorkRoomWebApplication - ************* Get The Application URL  *****************
+2025-08-13 16:34:19,973 [main] INFO WorkRoomWebApplication - *** Enter The Share Point Email Id ***
+2025-08-13 16:34:20,938 [main] INFO WorkRoomWebApplication - *** click the next button ***
+2025-08-13 16:34:21,071 [main] INFO WorkRoomWebApplication - *** Enter The Password ***
+2025-08-13 16:34:22,346 [main] INFO WorkRoomWebApplication - *** clicked on the sign in Button ***
+2025-08-13 16:34:23,473 [main] INFO WorkRoomWebApplication - *** clicked on the master side menu ***
+2025-08-13 16:34:26,463 [main] INFO WorkRoomWebApplication - *** clicked on the customer sub menu ***
+2025-08-13 16:34:27,661 [main] INFO WorkRoomWebApplication - *** clicked on the '+' icon ***
+2025-08-13 16:34:28,109 [main] INFO WorkRoomWebApplication - *** Selected the Customer ***
+2025-08-13 16:34:29,100 [main] INFO WorkRoomWebApplication - *** Clicking the Submit Button ***
+2025-08-13 16:34:29,538 [main] INFO WorkRoomWebApplication - *** Checking For The Error Message ***
+2025-08-13 16:34:29,850 [main] INFO WorkRoomWebApplication - ************* Quitting Browser *****************
+2025-08-13 16:34:29,962 [main] INFO WorkRoomWebApplication - ************* Browser Closed Successfully *****************
+2025-08-13 16:34:29,986 [main] INFO WorkRoomWebApplication - ************* Launching CHROME Browser *****************
+2025-08-13 16:34:30,918 [main] INFO WorkRoomWebApplication - ************* Browser Launched and Maximized *****************
+2025-08-13 16:34:31,131 [main] INFO WorkRoomWebApplication - ************* Get The Application URL  *****************
+2025-08-13 16:34:31,984 [main] INFO WorkRoomWebApplication - *** Enter The Share Point Email Id ***
+2025-08-13 16:34:33,060 [main] INFO WorkRoomWebApplication - *** click the next button ***
+2025-08-13 16:34:33,219 [main] INFO WorkRoomWebApplication - *** Enter The Password ***
+2025-08-13 16:34:34,350 [main] INFO WorkRoomWebApplication - *** clicked on the sign in Button ***
+2025-08-13 16:34:35,813 [main] INFO WorkRoomWebApplication - *** clicked on the master side menu ***
+2025-08-13 16:34:38,616 [main] INFO WorkRoomWebApplication - *** clicked on the customer sub menu ***
+2025-08-13 16:34:39,723 [main] INFO WorkRoomWebApplication - *** Click On The Add Button '+' Icon ***
+2025-08-13 16:34:40,164 [main] INFO WorkRoomWebApplication - *** Selecting The Customer Location Option ***
+2025-08-13 16:34:41,158 [main] INFO WorkRoomWebApplication - *** Selecting The Customer Option  ***
+2025-08-13 16:34:43,030 [main] INFO WorkRoomWebApplication - *** Select The SiteLocation if available ***
+2025-08-13 16:34:44,353 [main] INFO WorkRoomWebApplication - *** Add The Loction  ***
+2025-08-13 16:34:44,637 [main] INFO WorkRoomWebApplication - ***  Click The Submit Button ***
+2025-08-13 16:34:44,735 [main] INFO WorkRoomWebApplication - *** Success Message For The Location Validation Done ***
+2025-08-13 16:34:45,431 [main] INFO WorkRoomWebApplication - ************* Quitting Browser *****************
+2025-08-13 16:34:45,543 [main] INFO WorkRoomWebApplication - ************* Browser Closed Successfully *****************
+2025-08-13 16:34:45,568 [main] INFO WorkRoomWebApplication - ************* Launching CHROME Browser *****************
+2025-08-13 16:34:46,639 [main] INFO WorkRoomWebApplication - ************* Browser Launched and Maximized *****************
+2025-08-13 16:34:46,898 [main] INFO WorkRoomWebApplication - ************* Get The Application URL  *****************
+2025-08-13 16:34:47,968 [main] INFO WorkRoomWebApplication - *** Enter The Share Point Email Id ***
+2025-08-13 16:34:49,231 [main] INFO WorkRoomWebApplication - *** click the next button ***
+2025-08-13 16:34:49,379 [main] INFO WorkRoomWebApplication - *** Enter The Password ***
+2025-08-13 16:34:50,656 [main] INFO WorkRoomWebApplication - *** clicked on the sign in Button ***
+2025-08-13 16:34:52,022 [main] INFO WorkRoomWebApplication - *** clicked on the master side menu ***
+2025-08-13 16:34:54,886 [main] INFO WorkRoomWebApplication - *** click the Suppliers side menu ***
+2025-08-13 16:34:56,910 [main] INFO WorkRoomWebApplication - *** Click on the Add button  ***
+2025-08-13 16:34:57,349 [main] INFO WorkRoomWebApplication - ***  select the Suppliers dropdown ***
+2025-08-13 16:34:58,396 [main] INFO WorkRoomWebApplication - ***  Fill all the Suppliers required  details and submit the details ***
+2025-08-13 16:35:00,676 [main] INFO WorkRoomWebApplication - ***  Click The Submit Button ***
+2025-08-13 16:35:00,804 [main] INFO WorkRoomWebApplication - Submit button clicked successfully.
+2025-08-13 16:35:00,805 [main] INFO WorkRoomWebApplication - ***  Click The Success Button ***
+2025-08-13 16:35:01,480 [main] INFO WorkRoomWebApplication - ************* Quitting Browser *****************
+2025-08-13 16:35:01,758 [main] INFO WorkRoomWebApplication - ************* Browser Closed Successfully *****************
+2025-08-13 16:35:01,797 [main] INFO WorkRoomWebApplication - ************* Launching CHROME Browser *****************
+2025-08-13 16:35:03,122 [main] INFO WorkRoomWebApplication - ************* Browser Launched and Maximized *****************
+2025-08-13 16:35:03,410 [main] INFO WorkRoomWebApplication - ************* Get The Application URL  *****************
+2025-08-13 16:35:04,462 [main] INFO WorkRoomWebApplication - *** Enter The Share Point Email Id ***
+2025-08-13 16:35:05,484 [main] INFO WorkRoomWebApplication - *** click the next button ***
+2025-08-13 16:35:05,613 [main] INFO WorkRoomWebApplication - *** Enter The Password ***
+2025-08-13 16:35:06,822 [main] INFO WorkRoomWebApplication - *** clicked on the sign in Button ***
+2025-08-13 16:35:08,048 [main] INFO WorkRoomWebApplication - *** clicked on the master side menu ***
+2025-08-13 16:35:10,751 [main] INFO WorkRoomWebApplication - *** click the Suppliers side menu ***
+2025-08-13 16:35:12,698 [main] INFO WorkRoomWebApplication - *** Click on the Add button  ***
+2025-08-13 16:35:13,247 [main] INFO WorkRoomWebApplication - ***  select the Suppliers dropdown ***
+2025-08-13 16:35:14,150 [main] INFO WorkRoomWebApplication - ***  click Supplier submit Button then check the Error Message details ***
+2025-08-13 16:35:14,605 [main] INFO WorkRoomWebApplication - Submit button clicked successfully.
+2025-08-13 16:35:14,606 [main] INFO WorkRoomWebApplication - ***  check the Error Message details ***
+2025-08-13 16:35:14,947 [main] INFO WorkRoomWebApplication - ************* Quitting Browser *****************
+2025-08-13 16:35:15,074 [main] INFO WorkRoomWebApplication - ************* Browser Closed Successfully *****************
+2025-08-13 16:35:15,100 [main] INFO WorkRoomWebApplication - ************* Launching CHROME Browser *****************
+2025-08-13 16:35:16,014 [main] INFO WorkRoomWebApplication - ************* Browser Launched and Maximized *****************
+2025-08-13 16:35:16,292 [main] INFO WorkRoomWebApplication - ************* Get The Application URL  *****************
+2025-08-13 16:35:17,417 [main] INFO WorkRoomWebApplication - *** Enter The Share Point Email Id ***
+2025-08-13 16:35:18,277 [main] INFO WorkRoomWebApplication - *** click the next button ***
+2025-08-13 16:35:18,439 [main] INFO WorkRoomWebApplication - *** Enter The Password ***
+2025-08-13 16:35:19,810 [main] INFO WorkRoomWebApplication - *** clicked on the sign in Button ***
+2025-08-13 16:35:21,115 [main] INFO WorkRoomWebApplication - *** clicked on the master side menu ***
+2025-08-13 16:35:24,046 [main] INFO WorkRoomWebApplication - *** click the subContractor side menu ***
+2025-08-13 16:35:26,141 [main] INFO WorkRoomWebApplication - *** Click on the SubContractor Add button  ***
+2025-08-13 16:35:26,626 [main] INFO WorkRoomWebApplication - ***  select the subContractor dropdown ***
+2025-08-13 16:35:27,618 [main] INFO WorkRoomWebApplication - ***  Fill all the SubContractor required  details  ***
+2025-08-13 16:35:30,189 [main] INFO WorkRoomWebApplication - ***  Click The Submit Button ***
+2025-08-13 16:35:30,329 [main] INFO WorkRoomWebApplication - Submit button clicked successfully.
+2025-08-13 16:35:30,330 [main] INFO WorkRoomWebApplication - ***  Click The Success Button ***
+2025-08-13 16:35:31,268 [main] INFO WorkRoomWebApplication - ************* Quitting Browser *****************
+2025-08-13 16:35:31,490 [main] INFO WorkRoomWebApplication - ************* Browser Closed Successfully *****************
+2025-08-13 16:35:31,513 [main] INFO WorkRoomWebApplication - ************* Launching CHROME Browser *****************
+2025-08-13 16:35:32,733 [main] INFO WorkRoomWebApplication - ************* Browser Launched and Maximized *****************
+2025-08-13 16:35:33,065 [main] INFO WorkRoomWebApplication - ************* Get The Application URL  *****************
+2025-08-13 16:35:33,993 [main] INFO WorkRoomWebApplication - *** Enter The Share Point Email Id ***
+2025-08-13 16:35:34,943 [main] INFO WorkRoomWebApplication - *** click the next button ***
+2025-08-13 16:35:35,334 [main] INFO WorkRoomWebApplication - *** Enter The Password ***
+2025-08-13 16:35:36,663 [main] INFO WorkRoomWebApplication - *** clicked on the sign in Button ***
+2025-08-13 16:35:37,810 [main] INFO WorkRoomWebApplication - *** clicked on the master side menu ***
+2025-08-13 16:35:40,909 [main] INFO WorkRoomWebApplication - *** click the subContractor side menu ***
+2025-08-13 16:35:42,763 [main] INFO WorkRoomWebApplication - *** Click on the SubContractor Add button  ***
+2025-08-13 16:35:43,214 [main] INFO WorkRoomWebApplication - ***  select the subContractor dropdown ***
+2025-08-13 16:35:44,138 [main] INFO WorkRoomWebApplication - ***  click Sucontractor submit Button  ***
+2025-08-13 16:35:44,596 [main] INFO WorkRoomWebApplication - Submit button clicked successfully.
+2025-08-13 16:35:44,596 [main] INFO WorkRoomWebApplication - ***   check the Error Message details ***
+2025-08-13 16:35:44,921 [main] INFO WorkRoomWebApplication - ************* Quitting Browser *****************
+2025-08-13 16:35:45,049 [main] INFO WorkRoomWebApplication - ************* Browser Closed Successfully *****************
+2025-08-13 16:35:45,080 [main] INFO WorkRoomWebApplication - ************* Launching CHROME Browser *****************
+2025-08-13 16:35:46,032 [main] INFO WorkRoomWebApplication - ************* Browser Launched and Maximized *****************
+2025-08-13 16:35:46,315 [main] INFO WorkRoomWebApplication - ************* Get The Application URL  *****************
+2025-08-13 16:35:47,430 [main] INFO WorkRoomWebApplication - *** Enter The Share Point Email Id ***
+2025-08-13 16:35:48,298 [main] INFO WorkRoomWebApplication - *** click the next button ***
+2025-08-13 16:35:48,398 [main] INFO WorkRoomWebApplication - *** Enter The Password ***
+2025-08-13 16:35:49,753 [main] INFO WorkRoomWebApplication - *** clicked on the sign in Button ***
+2025-08-13 16:35:50,948 [main] INFO WorkRoomWebApplication - *** clicked on the master side menu ***
+2025-08-13 16:36:21,948 [main] INFO WorkRoomWebApplication - *** click the Materials side menu ***
+2025-08-13 16:36:23,917 [main] INFO WorkRoomWebApplication - *** Click on the Add '+' button ***
+2025-08-13 16:36:24,433 [main] INFO WorkRoomWebApplication - *** select the Materials dropdown ***
+2025-08-13 16:36:25,513 [main] INFO WorkRoomWebApplication - *** Fill all the required material details***
+2025-08-13 16:36:26,264 [main] INFO WorkRoomWebApplication - *** Fill all the required material details and Clicked The submit Button***
+2025-08-13 16:36:26,395 [main] INFO WorkRoomWebApplication - Submit button clicked successfully.
+2025-08-13 16:36:26,395 [main] INFO WorkRoomWebApplication - *** Checking and Clicked The Success Ok Button***
+2025-08-13 16:36:27,056 [main] INFO WorkRoomWebApplication - ************* Quitting Browser *****************
+2025-08-13 16:36:27,166 [main] INFO WorkRoomWebApplication - ************* Browser Closed Successfully *****************
+2025-08-13 16:36:27,183 [main] INFO WorkRoomWebApplication - ************* Launching CHROME Browser *****************
+2025-08-13 16:36:28,108 [main] INFO WorkRoomWebApplication - ************* Browser Launched and Maximized *****************
+2025-08-13 16:36:28,385 [main] INFO WorkRoomWebApplication - ************* Get The Application URL  *****************
+2025-08-13 16:36:29,421 [main] INFO WorkRoomWebApplication - *** Enter The Share Point Email Id ***
+2025-08-13 16:36:30,634 [main] INFO WorkRoomWebApplication - *** click the next button ***
+2025-08-13 16:36:30,757 [main] INFO WorkRoomWebApplication - *** Enter The Password ***
+2025-08-13 16:36:32,073 [main] INFO WorkRoomWebApplication - *** clicked on the sign in Button ***
+2025-08-13 16:36:33,310 [main] INFO WorkRoomWebApplication - *** clicked on the master side menu ***
+2025-08-13 16:36:36,798 [main] INFO WorkRoomWebApplication - *** click the Materials side menu ***
+2025-08-13 16:36:38,987 [main] INFO WorkRoomWebApplication - *** Click on the Add '+' button ***
+2025-08-13 16:36:39,443 [main] INFO WorkRoomWebApplication - *** select the Materials dropdown ***
+2025-08-13 16:36:40,499 [main] INFO WorkRoomWebApplication - *** click submit Button ***
+2025-08-13 16:36:40,965 [main] INFO WorkRoomWebApplication - Submit button clicked successfully.
+2025-08-13 16:36:40,966 [main] INFO WorkRoomWebApplication - ***  check the Error Message details ***
+2025-08-13 16:36:41,053 [main] INFO WorkRoomWebApplication - ************* Quitting Browser *****************
+2025-08-13 16:36:41,179 [main] INFO WorkRoomWebApplication - ************* Browser Closed Successfully *****************
