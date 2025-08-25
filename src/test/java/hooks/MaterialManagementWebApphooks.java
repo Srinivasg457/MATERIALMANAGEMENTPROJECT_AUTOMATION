@@ -265,72 +265,84 @@ public class MaterialManagementWebApphooks extends BaseClass {
 
 
 
-        @Before(order = 0)
-        public void loadProperties() throws IOException {
-            // Load config.properties
-            configprop = new Properties();
-            String configPath = System.getProperty("user.dir") + "/src/test/resources/config.properties";
-            FileInputStream configProfile = new FileInputStream(configPath);
-            configprop.load(configProfile);
+@Before(order = 0)
+public void loadProperties() throws IOException {
+    // Load config.properties
+    configprop = new Properties();
+    String configPath = System.getProperty("user.dir") + "/src/test/resources/config.properties";
+    FileInputStream configProfile = new FileInputStream(configPath);
+    configprop.load(configProfile);
 
-            // Logger setup
-            logger = Logger.getLogger("MaterialManagementSharePointApplication");
-            String log4jPath = System.getProperty("user.dir") + "/src/test/resources/log4j.properties";
-            PropertyConfigurator.configure(log4jPath);
-            logger.setLevel(Level.DEBUG);
+    // Logger setup
+    logger = Logger.getLogger("MaterialManagementSharePointApplication");
+    String log4jPath = System.getProperty("user.dir") + "/src/test/resources/log4j.properties";
+    PropertyConfigurator.configure(log4jPath);
+    logger.setLevel(Level.DEBUG);
+}
+@Before(order = 1)
+public void launchBrowser() throws MalformedURLException {
+    String br = configprop.getProperty("browser");
+    String hubURL = configprop.getProperty("hubURL");
+
+    switch (br.toLowerCase()) {
+        case "chrome":
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("--headless=new"); // Use new headless mode
+            chromeOptions.addArguments("--no-sandbox");
+            chromeOptions.addArguments("--disable-dev-shm-usage");
+            chromeOptions.addArguments("--disable-gpu");
+            chromeOptions.addArguments("--remote-allow-origins=*");
+            chromeOptions.addArguments("--window-size=1920,1080"); // Use comma instead of x
+            chromeOptions.addArguments("--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36");
+            chromeOptions.addArguments("--disable-blink-features=AutomationControlled");
+            chromeOptions.addArguments("--exclude-switches=enable-automation");
+            chromeOptions.addArguments("--disable-web-security");
+            chromeOptions.addArguments("--allow-running-insecure-content");
+            chromeOptions.addArguments("--disable-features=VizDisplayCompositor");
+
+            // Set experimental options for better headless behavior
+            chromeOptions.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+            chromeOptions.setExperimentalOption("useAutomationExtension", false);
+
+            driver = new RemoteWebDriver(new URL(hubURL), chromeOptions);
+            break;
+
+        case "firefox":
+            FirefoxOptions firefoxOptions = new FirefoxOptions();
+            firefoxOptions.addArguments("--headless");
+            firefoxOptions.addArguments("--no-sandbox");
+            firefoxOptions.addArguments("--disable-dev-shm-usage");
+            firefoxOptions.addArguments("--width=1920");
+            firefoxOptions.addArguments("--height=1080");
+            driver = new RemoteWebDriver(new URL(hubURL), firefoxOptions);
+            break;
+
+        default:
+            throw new RuntimeException("Browser not supported: " + br);
+    }
+
+    // Set timeouts explicitly for remote driver
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+    driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+    driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(20));
+
+    logger.info("Browser launched in headless mode with enhanced options");
+}
+    @After(order = 0)
+    public void tearDown(Scenario scenario) {
+        if (scenario.isFailed()) {
+            // Take screenshot
+            byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenshot, "image/png", scenario.getName());
         }
+    }
 
-        @Before(order = 1)
-        public void launchBrowser() throws MalformedURLException {
-            String br = configprop.getProperty("browser");
-            String hubURL = configprop.getProperty("hubURL");
-
-            switch (br.toLowerCase()) {
-                case "chrome":
-                    ChromeOptions chromeOptions = new ChromeOptions();
-                    chromeOptions.addArguments("--headless");
-                    chromeOptions.addArguments("--no-sandbox");
-                    chromeOptions.addArguments("--disable-dev-shm-usage");
-                    chromeOptions.addArguments("--disable-gpu");
-                    chromeOptions.addArguments("--remote-allow-origins=*");
-                    chromeOptions.addArguments("--window-size=1920x1080"); // Ensure the window size is set
-                    driver = new RemoteWebDriver(new URL(hubURL), chromeOptions);
-                    break;
-
-                case "firefox":
-                    FirefoxOptions firefoxOptions = new FirefoxOptions();
-                    firefoxOptions.addArguments("--headless");
-                    firefoxOptions.addArguments("--no-sandbox");
-                    firefoxOptions.addArguments("--disable-dev-shm-usage");
-                    driver = new RemoteWebDriver(new URL(hubURL), firefoxOptions);
-                    break;
-
-                default:
-                    throw new RuntimeException("Browser not supported: " + br);
-            }
-
-            driver.manage().window().maximize();
+    @After(order = 1)
+    public void quitBrowser() {
+        if (driver != null) {
+            driver.quit();
         }
-
-
-        @After(order = 0)
-        public void tearDown(Scenario scenario) {
-            if (scenario.isFailed()) {
-                // Take screenshot
-                byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-                scenario.attach(screenshot, "image/png", scenario.getName());
-            }
-        }
-
-        @After(order = 1)
-        public void quitBrowser() {
-            if (driver != null) {
-                driver.quit();
-            }
-        }
-
-
-
+    }
 
 
 
