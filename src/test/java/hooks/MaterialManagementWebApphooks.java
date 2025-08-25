@@ -288,6 +288,7 @@ public class MaterialManagementWebApphooks extends BaseClass {
                     chromeOptions.addArguments("--disable-dev-shm-usage");
                     chromeOptions.addArguments("--disable-gpu");
                     chromeOptions.addArguments("--remote-allow-origins=*");
+                    chromeOptions.addArguments("--window-size=1920x1080"); // Ensure the window size is set
                     driver = new RemoteWebDriver(new URL(hubURL), chromeOptions);
                     break;
 
