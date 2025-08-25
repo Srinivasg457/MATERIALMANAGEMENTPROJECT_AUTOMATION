@@ -189,25 +189,60 @@ public class MaterialManagementCustomerPage extends BaseClass {
 
 
 
-    public void sharepointmasterDataSidemenu() {
+//    public void sharepointmasterDataSidemenu() {
+//        try {
+//            WebElement mastersidemenu = waithelper.WaitForElement1(masterdatasidemenu, 10);
+//
+//            // First try regular click
+//            try {
+//                mastersidemenu.click();
+//            } catch (Exception e) {
+//                // If regular click fails, use JavaScript click as fallback
+//                System.out.println("Regular click failed, attempting JavaScript click...");
+//                JavascriptExecutor js = (JavascriptExecutor) ldriver;
+//                js.executeScript("arguments[0].click();", mastersidemenu);
+//            }
+//
+//        } catch (Exception e) {
+//            System.out.println("Unexpected error: " + e.getMessage());
+//            // You might want to add screenshot capture here for debugging
+//        }
+//    }
+public void sharepointmasterDataSidemenu() {
+    try {
+        WebElement masterSideMenu = waithelper.WaitForElement1(masterdatasidemenu, 10);
+
+        // Attempt regular click first
         try {
-            WebElement mastersidemenu = waithelper.WaitForElement1(masterdatasidemenu, 30);
-
-            // First try regular click
-            try {
-                mastersidemenu.click();
-            } catch (Exception e) {
-                // If regular click fails, use JavaScript click as fallback
-                System.out.println("Regular click failed, attempting JavaScript click...");
-                JavascriptExecutor js = (JavascriptExecutor) ldriver;
-                js.executeScript("arguments[0].click();", mastersidemenu);
-            }
-
-        } catch (Exception e) {
-            System.out.println("Unexpected error: " + e.getMessage());
-            // You might want to add screenshot capture here for debugging
+            masterSideMenu.click();
+            System.out.println("Successfully clicked using regular click");
+            return; // Exit early if successful
+        } catch (ElementNotInteractableException e) {
+            System.out.println("Regular click intercepted, attempting JavaScript click...");
+        } catch (StaleElementReferenceException e) {
+            System.out.println("Element became stale, re-locating and retrying...");
+            masterSideMenu =waithelper.WaitForElement1(masterdatasidemenu, 5);
         }
+
+        // JavaScript click as fallback
+        try {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].click();", masterSideMenu);
+            System.out.println("Successfully clicked using JavaScript");
+        } catch (StaleElementReferenceException e) {
+            System.out.println("Element stale during JS click, re-locating...");
+            masterSideMenu = waithelper.WaitForElement1(masterdatasidemenu, 5);
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].click();", masterSideMenu);
+        }
+
+    } catch (TimeoutException e) {
+        System.out.println("Element not found within timeout: " + e.getMessage());
+        // Consider taking screenshot here
     }
+}
+
+
 
     public void sharepointcustomermasterdata( ) {
 
