@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/java/Features/1_materialManagementCustomer.feature",
+        features = "src/test/java/Features",
 
         //"src/test/java/Features/1_materialManagementCustomer.feature",
         //src/test/java/Features/workroomlogin.feature
