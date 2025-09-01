@@ -47,4 +47,14 @@ public class materialmanagementMaterialModuleSteps extends BaseClass {
         material.sharepointMaterialErrorMessage();
     }
 
+
+
+    //To Get The List of table Data of materials
+    @Then("Get The List of Data of Materials in the Table")
+    public void get_the_list_of_data_of_materials_in_the_table() {
+        logger.info("***  Printing TheMaterial Master Data List in The Table ***");
+        material.sharepointmaterialsGetTableList();
+    }
+
+
 }

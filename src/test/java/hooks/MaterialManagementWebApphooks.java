@@ -261,6 +261,7 @@ public class MaterialManagementWebApphooks extends BaseClass {
 
 
     //chnages for running multiple scenarios
+    //This Script Run For Clicking The Side Menu Masters
 
 
 

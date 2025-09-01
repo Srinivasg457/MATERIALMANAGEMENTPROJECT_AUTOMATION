@@ -47,4 +47,13 @@ public class materialManagementSuppliersMasterDataSteps extends BaseClass {
         supplier.sharepointSupplierErrorMessage();
     }
 
+    //Printing The Suppliers List From The Table
+    @Then("Get The List of Data of Suppliers in the Table")
+    public void get_the_list_of_data_of_suppliers_in_the_table() {
+        logger.info("*** Print The List of The Suppliers ***");
+        supplier.sharepointSupplierGetTableList();
+    }
+
+
+
 }

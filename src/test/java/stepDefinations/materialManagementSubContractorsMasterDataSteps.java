@@ -47,5 +47,12 @@ public class materialManagementSubContractorsMasterDataSteps extends BaseClass {
     }
 
 
+    //To Print The List of  Subcontractor master Data in The Tables
+    @Then("Get The List of Data of subContractor List Data in the Table")
+    public void get_the_list_of_data_of_sub_contractor_list_data_in_the_table() {
+        logger.info("***  Print The List of The Material Master Data ***");
+        subcontractor.sharepointSubContractorGetTableList();
+    }
+
 
 }

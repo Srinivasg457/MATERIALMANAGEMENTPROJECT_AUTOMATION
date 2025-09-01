@@ -3205,3 +3205,323 @@ Session ID: 120feda5aa200aeb56d9fdbe11ae234c
 2025-08-25 10:19:07,484 - MaterialManagementSharePointApplication -INFO - *** Add The Loction  ***
 2025-08-25 10:19:08,126 - MaterialManagementSharePointApplication -INFO - ***  Click The Submit Button ***
 2025-08-25 10:19:08,348 - MaterialManagementSharePointApplication -INFO - *** Success Message For The Location Validation Done ***
+2025-09-01 10:25:31,550 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 10:25:32,740 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 10:25:33,681 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 10:25:34,910 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 10:25:35,675 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 10:25:35,783 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 10:25:37,326 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 10:25:38,715 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 10:25:42,628 - WorkRoomWebApplication -INFO - *** clicked on the customer sub menu ***
+2025-09-01 10:25:44,354 - WorkRoomWebApplication -INFO - *** Get The List of Data of Customers  ***
+2025-09-01 10:33:03,623 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 10:33:04,735 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 10:33:05,687 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 10:33:06,738 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 10:33:07,620 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 10:33:07,730 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 10:33:08,995 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 10:33:10,326 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 10:33:14,049 - WorkRoomWebApplication -INFO - *** clicked on the customer sub menu ***
+2025-09-01 10:33:15,326 - WorkRoomWebApplication -INFO - *** Get The List of Data of Customers  ***
+2025-09-01 10:37:45,696 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 10:37:46,801 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 10:37:47,641 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 10:37:48,806 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 10:37:49,602 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 10:37:49,707 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 10:37:51,122 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 10:37:52,373 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 10:37:55,847 - WorkRoomWebApplication -INFO - *** clicked on the customer sub menu ***
+2025-09-01 10:37:57,958 - WorkRoomWebApplication -INFO - *** Get The List of Data of Customers  ***
+2025-09-01 10:47:19,534 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 10:47:20,602 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 10:47:21,495 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 10:47:22,433 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 10:47:23,348 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 10:47:23,449 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 10:47:24,850 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 10:47:26,133 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 10:47:29,429 - WorkRoomWebApplication -INFO - *** clicked on the customer sub menu ***
+2025-09-01 10:47:30,663 - WorkRoomWebApplication -INFO - *** Get The List of Data of Customers  ***
+2025-09-01 10:51:23,734 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 10:51:24,783 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 10:51:25,645 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 10:51:26,597 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 10:51:27,454 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 10:51:27,559 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 10:51:28,764 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 10:51:30,238 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 10:51:33,404 - WorkRoomWebApplication -INFO - *** clicked on the customer sub menu ***
+2025-09-01 10:51:36,403 - WorkRoomWebApplication -INFO - *** Get The List of Data of Customers  ***
+2025-09-01 11:35:18,757 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 11:35:19,903 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 11:35:20,950 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 11:35:22,451 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 11:35:23,376 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 11:35:23,552 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 11:35:25,081 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 11:35:26,465 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 11:35:30,477 - WorkRoomWebApplication -INFO - *** click the Materials side menu ***
+2025-09-01 11:35:32,868 - WorkRoomWebApplication -INFO - ***  Printing TheMaterial Master Data List in The Table ***
+2025-09-01 11:37:07,774 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 11:37:09,096 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 11:37:10,237 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 11:37:11,499 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 11:37:12,269 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 11:37:12,378 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 11:37:14,216 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 11:37:15,492 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 11:37:18,876 - WorkRoomWebApplication -INFO - *** clicked on the customer sub menu ***
+2025-09-01 11:37:20,372 - WorkRoomWebApplication -INFO - *** Get The List of Data of Customers  ***
+2025-09-01 11:42:03,795 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 11:42:04,966 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 11:42:05,924 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 11:42:11,558 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 11:42:12,309 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 11:42:12,420 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 11:42:13,711 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 11:42:14,938 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 11:42:18,187 - WorkRoomWebApplication -INFO - *** clicked on the customer sub menu ***
+2025-09-01 11:42:20,031 - WorkRoomWebApplication -INFO - *** Get The List of Data of Customers  ***
+2025-09-01 11:43:07,119 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 11:43:08,139 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 11:43:09,030 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 11:43:10,509 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 11:43:11,269 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 11:43:11,383 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 11:43:12,666 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 11:43:13,849 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 11:43:18,120 - WorkRoomWebApplication -INFO - *** click the Materials side menu ***
+2025-09-01 11:43:21,306 - WorkRoomWebApplication -INFO - ***  Printing TheMaterial Master Data List in The Table ***
+2025-09-01 11:47:02,286 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 11:47:03,484 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 11:47:04,368 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 11:47:05,367 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 11:47:06,273 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 11:47:06,382 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 11:47:07,775 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 11:47:09,549 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 11:47:12,275 - WorkRoomWebApplication -INFO - *** click the Materials side menu ***
+2025-09-01 11:47:14,998 - WorkRoomWebApplication -INFO - ***  Printing TheMaterial Master Data List in The Table ***
+2025-09-01 11:50:11,416 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 11:50:12,482 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 11:50:13,580 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 11:50:14,907 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 11:50:15,651 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 11:50:15,762 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 11:50:17,080 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 11:50:18,267 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 11:50:23,094 - WorkRoomWebApplication -INFO - *** click the Materials side menu ***
+2025-09-01 11:50:25,997 - WorkRoomWebApplication -INFO - ***  Printing TheMaterial Master Data List in The Table ***
+2025-09-01 12:02:39,996 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 12:02:41,033 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 12:02:41,947 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 12:02:43,221 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 12:02:44,507 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 12:02:44,602 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 12:02:46,003 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 12:02:47,252 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 12:02:50,864 - WorkRoomWebApplication -INFO - *** click the Materials side menu ***
+2025-09-01 12:02:53,074 - WorkRoomWebApplication -INFO - ***  Printing TheMaterial Master Data List in The Table ***
+2025-09-01 12:11:55,950 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 12:11:56,966 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 12:11:57,876 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 12:11:59,260 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 12:12:00,020 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 12:12:00,130 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 12:12:01,540 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 12:12:03,116 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 12:12:06,885 - WorkRoomWebApplication -INFO - *** click the Materials side menu ***
+2025-09-01 12:12:09,084 - WorkRoomWebApplication -INFO - ***  Printing TheMaterial Master Data List in The Table ***
+2025-09-01 12:18:45,779 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 12:18:46,821 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 12:18:47,676 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 12:18:49,001 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 12:18:49,754 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 12:18:49,866 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 12:18:51,273 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 12:18:52,578 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 12:18:55,771 - WorkRoomWebApplication -INFO - *** click the Materials side menu ***
+2025-09-01 12:18:57,925 - WorkRoomWebApplication -INFO - ***  Printing TheMaterial Master Data List in The Table ***
+2025-09-01 12:26:36,452 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 12:26:38,052 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 12:26:39,631 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 12:26:41,120 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 12:26:42,265 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 12:26:42,381 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 12:26:43,655 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 12:26:45,024 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 12:26:48,578 - WorkRoomWebApplication -INFO - *** click the Materials side menu ***
+2025-09-01 12:26:50,975 - WorkRoomWebApplication -INFO - ***  Printing TheMaterial Master Data List in The Table ***
+2025-09-01 12:53:55,178 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 12:53:56,566 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 12:53:57,652 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 12:53:58,725 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 12:53:59,655 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 12:53:59,765 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 12:54:01,122 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 12:54:02,442 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 12:54:06,193 - WorkRoomWebApplication -INFO - *** click the subContractor side menu ***
+2025-09-01 12:54:08,302 - WorkRoomWebApplication -INFO - ***  Print The List of The Material Master Data ***
+2025-09-01 12:55:46,978 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 12:55:48,249 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 12:55:49,376 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 12:55:50,629 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 12:55:51,444 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 12:55:51,550 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 12:55:52,969 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 12:55:54,198 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 12:55:58,023 - WorkRoomWebApplication -INFO - *** click the subContractor side menu ***
+2025-09-01 12:56:00,038 - WorkRoomWebApplication -INFO - ***  Print The List of The Material Master Data ***
+2025-09-01 13:07:27,938 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 13:07:28,991 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 13:07:29,868 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 13:07:31,065 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 13:07:31,925 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 13:07:32,028 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 13:07:33,509 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 13:07:35,032 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 13:07:38,740 - WorkRoomWebApplication -INFO - *** click the subContractor side menu ***
+2025-09-01 13:07:40,994 - WorkRoomWebApplication -INFO - ***  Print The List of The Material Master Data ***
+2025-09-01 14:23:19,217 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 14:23:20,402 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 14:23:21,593 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 14:23:23,591 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 14:23:24,379 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 14:23:24,504 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 14:23:25,794 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 14:23:27,192 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 14:23:33,947 - WorkRoomWebApplication -INFO - *** click the Suppliers side menu ***
+2025-09-01 14:23:36,932 - WorkRoomWebApplication -INFO - *** Print The List of The Suppliers ***
+2025-09-01 14:31:49,561 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 14:31:50,837 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 14:31:52,075 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 14:31:53,228 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 14:31:54,123 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 14:31:54,228 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 14:31:55,754 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 14:31:57,322 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 14:32:00,283 - WorkRoomWebApplication -INFO - *** click the Suppliers side menu ***
+2025-09-01 14:32:02,197 - WorkRoomWebApplication -INFO - *** Print The List of The Suppliers ***
+2025-09-01 14:37:46,450 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 14:37:47,691 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 14:37:48,820 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 14:37:50,258 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 14:37:51,061 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 14:37:51,190 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 14:37:52,576 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 14:37:53,902 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 14:38:06,609 - WorkRoomWebApplication -INFO - *** clicked on the customer sub menu ***
+2025-09-01 14:38:09,051 - WorkRoomWebApplication -INFO - *** Get The List of Data of Customers  ***
+2025-09-01 14:38:17,699 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 14:38:18,566 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 14:38:18,840 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 14:38:19,985 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 14:38:20,866 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 14:38:20,985 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 14:38:22,422 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 14:38:23,677 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 14:38:27,156 - WorkRoomWebApplication -INFO - *** click the Suppliers side menu ***
+2025-09-01 14:38:29,203 - WorkRoomWebApplication -INFO - *** Print The List of The Suppliers ***
+2025-09-01 14:38:32,261 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 14:38:33,125 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 14:38:33,548 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 14:38:34,679 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 14:38:35,611 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 14:38:35,801 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 14:38:37,181 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 14:38:38,560 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 14:38:42,125 - WorkRoomWebApplication -INFO - *** click the subContractor side menu ***
+2025-09-01 14:38:44,486 - WorkRoomWebApplication -INFO - ***  Print The List of The Material Master Data ***
+2025-09-01 14:38:47,381 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-09-01 14:38:48,132 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-09-01 14:38:48,584 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 14:38:49,883 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 14:38:51,034 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 14:38:51,189 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 14:38:52,663 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 14:38:54,073 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 14:38:59,107 - WorkRoomWebApplication -INFO - *** click the Materials side menu ***
+2025-09-01 14:39:01,122 - WorkRoomWebApplication -INFO - ***  Printing TheMaterial Master Data List in The Table ***
+2025-09-01 14:46:11,527 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2025-09-01 14:46:12,569 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 14:46:13,794 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 14:46:15,441 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 14:46:15,597 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 14:46:16,991 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 14:46:18,917 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 14:46:22,774 - WorkRoomWebApplication -INFO - *** clicked on the customer sub menu ***
+2025-09-01 14:46:25,866 - WorkRoomWebApplication -INFO - *** Get The List of Data of Customers  ***
+2025-09-01 14:46:37,594 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2025-09-01 14:46:37,691 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2025-09-01 14:46:38,417 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2025-09-01 14:46:38,554 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 14:46:39,855 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 14:46:41,363 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 14:46:41,534 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 14:46:43,313 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 14:46:45,045 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 14:46:48,481 - WorkRoomWebApplication -INFO - *** click the Suppliers side menu ***
+2025-09-01 14:46:50,356 - WorkRoomWebApplication -INFO - *** Print The List of The Suppliers ***
+2025-09-01 14:46:54,165 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2025-09-01 14:46:54,256 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2025-09-01 14:46:54,761 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2025-09-01 14:46:54,886 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 14:46:56,069 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 14:46:57,402 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 14:46:57,553 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 14:46:59,566 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 14:47:01,031 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 14:47:05,006 - WorkRoomWebApplication -INFO - *** click the subContractor side menu ***
+2025-09-01 14:47:07,235 - WorkRoomWebApplication -INFO - ***  Print The List of The Material Master Data ***
+2025-09-01 14:47:10,798 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2025-09-01 14:47:10,894 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2025-09-01 14:47:11,450 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2025-09-01 14:47:11,525 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 14:47:12,819 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 14:47:14,064 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-09-01 14:47:14,256 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-09-01 14:47:15,842 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 14:47:17,556 - WorkRoomWebApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 14:47:21,068 - WorkRoomWebApplication -INFO - *** click the Materials side menu ***
+2025-09-01 14:47:23,586 - WorkRoomWebApplication -INFO - ***  Printing TheMaterial Master Data List in The Table ***
+2025-09-01 14:47:38,829 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2025-09-01 14:47:38,932 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2025-09-01 14:49:02,054 - MaterialManagementSharePointApplication -INFO - Browser launched in headless mode with enhanced options
+2025-09-01 14:49:02,833 - MaterialManagementSharePointApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 14:49:04,316 - MaterialManagementSharePointApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 14:49:05,331 - MaterialManagementSharePointApplication -INFO - *** click the next button ***
+2025-09-01 14:49:05,450 - MaterialManagementSharePointApplication -INFO - *** Enter The Password ***
+2025-09-01 14:49:07,100 - MaterialManagementSharePointApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 14:49:08,698 - MaterialManagementSharePointApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 14:49:12,041 - MaterialManagementSharePointApplication -INFO - *** clicked on the customer sub menu ***
+2025-09-01 14:49:13,275 - MaterialManagementSharePointApplication -INFO - *** Get The List of Data of Customers  ***
+2025-09-01 14:49:23,706 - MaterialManagementSharePointApplication -INFO - Browser launched in headless mode with enhanced options
+2025-09-01 14:49:23,760 - MaterialManagementSharePointApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 14:49:24,721 - MaterialManagementSharePointApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 14:49:25,750 - MaterialManagementSharePointApplication -INFO - *** click the next button ***
+2025-09-01 14:49:25,879 - MaterialManagementSharePointApplication -INFO - *** Enter The Password ***
+2025-09-01 14:49:27,534 - MaterialManagementSharePointApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 14:49:45,154 - MaterialManagementSharePointApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 14:49:48,944 - MaterialManagementSharePointApplication -INFO - *** click the Suppliers side menu ***
+2025-09-01 14:49:51,192 - MaterialManagementSharePointApplication -INFO - *** Print The List of The Suppliers ***
+2025-09-01 14:49:55,122 - MaterialManagementSharePointApplication -INFO - Browser launched in headless mode with enhanced options
+2025-09-01 14:49:55,179 - MaterialManagementSharePointApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 14:49:56,041 - MaterialManagementSharePointApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 14:49:56,964 - MaterialManagementSharePointApplication -INFO - *** click the next button ***
+2025-09-01 14:49:57,071 - MaterialManagementSharePointApplication -INFO - *** Enter The Password ***
+2025-09-01 14:49:58,356 - MaterialManagementSharePointApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 14:49:59,435 - MaterialManagementSharePointApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 14:50:02,706 - MaterialManagementSharePointApplication -INFO - *** click the subContractor side menu ***
+2025-09-01 14:50:04,696 - MaterialManagementSharePointApplication -INFO - ***  Print The List of The Material Master Data ***
+2025-09-01 14:50:08,519 - MaterialManagementSharePointApplication -INFO - Browser launched in headless mode with enhanced options
+2025-09-01 14:50:08,558 - MaterialManagementSharePointApplication -INFO - ************* Get The Application URL  *****************
+2025-09-01 14:50:09,478 - MaterialManagementSharePointApplication -INFO - *** Enter The Share Point Email Id ***
+2025-09-01 14:50:10,399 - MaterialManagementSharePointApplication -INFO - *** click the next button ***
+2025-09-01 14:50:10,508 - MaterialManagementSharePointApplication -INFO - *** Enter The Password ***
+2025-09-01 14:50:11,952 - MaterialManagementSharePointApplication -INFO - *** clicked on the sign in Button ***
+2025-09-01 14:50:13,227 - MaterialManagementSharePointApplication -INFO - *** clicked on the master side menu ***
+2025-09-01 14:50:16,709 - MaterialManagementSharePointApplication -INFO - *** click the Materials side menu ***
+2025-09-01 14:50:18,868 - MaterialManagementSharePointApplication -INFO - ***  Printing TheMaterial Master Data List in The Table ***

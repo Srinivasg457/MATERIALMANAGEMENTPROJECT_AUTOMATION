@@ -120,6 +120,9 @@ public class MaterialManagementCustomerPage extends BaseClass {
     By SuccessMsgPopUp=By.xpath(configprop.getProperty("SuccessMsgPopUp"));
 
     By Customer_TableHeader=By.xpath(configprop.getProperty("Customer_TableHeader"));
+    By Customer_List=By.cssSelector(configprop.getProperty("CustomerList"));
+    By Customer_Data=By.tagName(configprop.getProperty("CustomerTableData"));
+
     public void sharepointEmail(String email) {
 
 
@@ -613,21 +616,88 @@ public void sharepointmasterDataSidemenu() {
     }
 
 
-    public void sharepointcustomerGetTableList( ) {
-
+    public void sharepointcustomerGetTableList() {
         try {
-            WebElement customersubmitform = waithelper.WaitForElement1(customersubmitbutton, 10);
+            int currentPage = 1;
+            int totalPages = getTotalPages();
+            int totalCustomers = 0;
 
-            WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
-            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(Customer_TableHeader));
+            System.out.println("=== CUSTOMERS LIST (ALL PAGES) ===");
+            System.out.println("Total pages to process: " + totalPages);
+            System.out.println();
 
-            List<WebElement> HeaderList = ldriver.findElements(Customer_TableHeader);
+            do {
+                System.out.println("--- PAGE " + currentPage + " ---");
+
+                // Wait for table to load
+                ldriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
+                List<WebElement> rows = ldriver.findElements(Customer_List);
+
+                if (rows.isEmpty()) {
+                    System.out.println("No customers found on page " + currentPage);
+                } else {
+                    // Print table header for each page
+                    System.out.println("┌──────────────────────┬──────────────────────┬──────────────────────┬──────────────────────────────┐");
+                    System.out.println("│ Customer Name        │ ABB Project Number   │ Contact Person       │ Email Address                │");
+                    System.out.println("├──────────────────────┼──────────────────────┼──────────────────────┼──────────────────────────────┤");
+
+                    // Print rows for current page
+                    for (WebElement row : rows) {
+                        List<WebElement> cells = row.findElements(Customer_Data);
+
+
+
+                        if (cells.size() >= 4) {
+                            String customerName = formatCell(cells.get(0).getText(), 20);
+                            String projectNumber = formatCell(cells.get(1).getText(), 20);
+                            String contactPerson = formatCell(cells.get(2).getText(), 20);
+                            String emailAddress = formatCell(cells.get(3).getText(), 28);
+
+                            System.out.println("│ " + customerName + " │ " + projectNumber + " │ " + contactPerson + " │ " + emailAddress + " │");
+                        }
+                    }
+
+                    // Print footer for current page
+                    System.out.println("└──────────────────────┴──────────────────────┴──────────────────────┴──────────────────────────────┘");
+                    System.out.println("Page " + currentPage + ": " + rows.size() + " customers");
+
+                    totalCustomers += rows.size();
+                }
+
+                System.out.println();
+
+                // Move to next page if available
+                if (currentPage < totalPages) {
+                    navigateToNextPage();
+                    currentPage++;
+                } else {
+                    break; // Exit loop when we reach the last page
+                }
+
+            } while (currentPage <= totalPages);
+
+            // Print final summary
+            System.out.println("==========================================");
+            System.out.println("TOTAL CUSTOMERS ACROSS ALL PAGES: " + totalCustomers);
+            System.out.println("==========================================");
 
         } catch (Exception e) {
-            System.out.println("Unexpected error: " + e.getMessage());
+            System.out.println("Error: " + e.getMessage());
+            e.printStackTrace();
         }
-
     }
+
+
+
+
+
+
+
+
+
+
+
 //    public void sharepointCustomerStorageLocationSuccessMsgPopUp( ) {
 //        //checking for The LocatinAdd button
 //        try {

@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import static stepDefinations.BaseClass.randomNumber;
 import static stepDefinations.BaseClass.randomString;
@@ -101,6 +102,13 @@ public class MaterialManagementSubContractorMasterDataPage extends BaseClass {
     By successOkconfirmbuttonn=By.xpath(configprop.getProperty("successOkconfirmbuttonn"));
     //Error message xpath
     By ErrorMessage=By.xpath(configprop.getProperty("ErrorMessage"));
+
+
+    By subContractor_List=By.cssSelector(configprop.getProperty("subContractorList"));
+    By subcontractor_Data=By.tagName(configprop.getProperty("CustomerTableData"));
+
+
+
     //Actions Method
     // Here we click on the share point sub menu
     public void sharepointSubcontractorsSideMenu( ) {
@@ -306,6 +314,83 @@ public class MaterialManagementSubContractorMasterDataPage extends BaseClass {
             Assert.fail("Unexpected error occurred while checking error messages");
         }
     }
+
+
+    //To Get The List Of The SubContractor Master Data From The List
+
+    public void sharepointSubContractorGetTableList() {
+        try {
+            int currentPage = 1;
+            int totalPages = getTotalSubContractormasterDataPages();
+            int totalSubcontractor = 0;
+
+            System.out.println("=== SUBCONTRACTORS LIST (ALL PAGES) ===");
+            System.out.println("Total pages to process: " + totalPages);
+            System.out.println();
+
+            do {
+                System.out.println("--- PAGE " + currentPage + " ---");
+
+                // Wait for table to load
+                ldriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
+                List<WebElement> rows = ldriver.findElements(subContractor_List);
+
+                if (rows.isEmpty()) {
+                    System.out.println("No SubContractors found on page " + currentPage);
+                } else {
+                    // Print table header for each page
+                    System.out.println("┌──────────────────────┬──────────────────────┬──────────────────────┬──────────────────────────────┐");
+                    System.out.println("│ Vendor Code          │ SubContractor Name   │ Abb Project Number   │ Contact person               │");
+                    System.out.println("├──────────────────────┼──────────────────────┼──────────────────────┼──────────────────────────────┤");
+
+                    // Print rows for current page
+                    for (WebElement row : rows) {
+                        List<WebElement> cells = row.findElements(subcontractor_Data);
+
+
+
+                        if (cells.size() >= 4) {
+                            String VendorCode = formatCell(cells.get(0).getText(), 20);
+                            String SubContractorName  = formatCell(cells.get(1).getText(), 20);
+                            String AbbProjectNumber  = formatCell(cells.get(2).getText(), 20);
+                            String Contactperson  = formatCell(cells.get(3).getText(), 28);
+
+                            System.out.println("│ " + VendorCode + " │ " + SubContractorName + " │ " + AbbProjectNumber + " │ " + Contactperson + " │");
+                        }
+                    }
+
+                    // Print footer for current page
+                    System.out.println("└──────────────────────┴──────────────────────┴──────────────────────┴──────────────────────────────┘");
+                    System.out.println("Page " + currentPage + ": " + rows.size() + " Subcontractors");
+
+                    totalSubcontractor += rows.size();
+                }
+
+                System.out.println();
+
+                // Move to next page if available
+                if (currentPage < totalPages) {
+                    SubcontractornavigateToNextPage();
+                    currentPage++;
+                } else {
+                    break; // Exit loop when we reach the last page
+                }
+
+            } while (currentPage <= totalPages);
+
+            // Print final summary
+            System.out.println("==========================================");
+            System.out.println("TOTAL SubContractors ACROSS ALL PAGES: " + totalSubcontractor);
+            System.out.println("==========================================");
+
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+
 
 
 

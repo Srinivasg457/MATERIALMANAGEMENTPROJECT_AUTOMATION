@@ -69,7 +69,8 @@ public class MaterialManagementMateialModulePage extends BaseClass {
     By successOkconfirmbuttonn=By.xpath(configprop.getProperty("successOkconfirmbuttonn"));
     //Error message xpath
     By ErrorMessage=By.xpath(configprop.getProperty("ErrorMessage"));
-
+    By materials_List=By.cssSelector(configprop.getProperty("MaterialList"));
+    By MaterialTable_Data=By.tagName(configprop.getProperty("CustomerTableData"));
     //Actions Method
     // Here we click on the share point sub menu
     public void sharepointMaterialSideMenu( ) {
@@ -228,6 +229,85 @@ public class MaterialManagementMateialModulePage extends BaseClass {
         }
     }
 
+
+
+
+
+    //To print The List of materials
+    public void sharepointmaterialsGetTableList() {
+        try {
+            int currentPage = 1;
+            int totalPages = getTotalMaterialmasterDataPages(); // This method needs to be implemented
+            int totalMaterials = 0;
+
+            System.out.println("=== MATERIALS LIST (ALL PAGES) ===");
+            System.out.println("Total pages to process: " + totalPages);
+            System.out.println();
+
+            do {
+                System.out.println("--- PAGE " + currentPage + " ---");
+
+                // Wait for table to load using explicit wait
+                ldriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
+                List<WebElement> rows = ldriver.findElements(materials_List);
+
+                if (rows.isEmpty()) {
+                    System.out.println("NO Materials found on page " + currentPage);
+                } else {
+                    // Print table header for each page
+                    System.out.println("┌──────────────────────┬──────────────────────┬──────────────────────┬──────────────────────────────┐");
+                    System.out.println("│ Material Number      │ Abb Project Number   │ HSN Number           │ Material Description         │");
+                    System.out.println("├──────────────────────┼──────────────────────┼──────────────────────┼──────────────────────────────┤");
+
+
+                    // Print rows for current page
+                    for (WebElement row : rows) {
+                        List<WebElement> cells = row.findElements(MaterialTable_Data);
+
+
+
+                        if (cells.size() >= 4) {
+                            String MaterialNumber = formatCellmaterials(cells.get(0).getText(), 20);
+                            String AbbProjectNumber = formatCellmaterials(cells.get(1).getText(), 20);
+                            String HSNNumber = formatCellmaterials(cells.get(2).getText(), 20);
+                            String MaterialDescription = formatCellmaterials(cells.get(3).getText(), 28);
+
+                            System.out.println("│ " + MaterialNumber + " │ " + AbbProjectNumber + " │ " + HSNNumber + " │ " + MaterialDescription + " │");
+
+                        }
+                    }
+                    // Print footer for current page
+                    System.out.println("└──────────────────────┴──────────────────────┴──────────────────────┴──────────────────────────────┘");
+                    System.out.println("Page " + currentPage + ": " + rows.size() + " Materials");
+
+                    totalMaterials += rows.size();
+                }
+
+                System.out.println();
+
+                // Move to next page if available
+                if (currentPage < totalPages) {
+                    materialsnavigateToNextPage(); // This method needs to be implemented
+                    currentPage++;
+                    // Add a small delay for page load
+                    Thread.sleep(2000);
+                } else {
+                    break; // Exit loop when we reach the last page
+                }
+
+            } while (currentPage <= totalPages);
+
+            // Print final summary
+            System.out.println("==========================================");
+            System.out.println("TOTAL MATERIALS ACROSS ALL PAGES: " + totalMaterials);
+            System.out.println("==========================================");
+
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
 
 
 
