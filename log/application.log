@@ -3853,3 +3853,12 @@ Session ID: 120feda5aa200aeb56d9fdbe11ae234c
 2025-09-02 15:56:00,673 [main] INFO WorkRoomWebApplication - *** clicked on the master side menu ***
 2025-09-02 15:56:10,225 [main] INFO WorkRoomWebApplication - *** clicked on the customer sub menu ***
 2025-09-02 15:56:11,913 [main] INFO WorkRoomWebApplication - *** Check The View Of The Customer Data ***
+2025-09-02 16:10:28,359 [main] INFO MaterialManagementSharePointApplication - Browser launched in headless mode with enhanced options
+2025-09-02 16:10:29,509 [main] INFO MaterialManagementSharePointApplication - ************* Get The Application URL  *****************
+2025-09-02 16:10:30,792 [main] INFO MaterialManagementSharePointApplication - *** Enter The Share Point Email Id ***
+2025-09-02 16:10:31,951 [main] INFO MaterialManagementSharePointApplication - *** click the next button ***
+2025-09-02 16:10:32,317 [main] INFO MaterialManagementSharePointApplication - *** Enter The Password ***
+2025-09-02 16:10:33,575 [main] INFO MaterialManagementSharePointApplication - *** clicked on the sign in Button ***
+2025-09-02 16:10:35,237 [main] INFO MaterialManagementSharePointApplication - *** clicked on the master side menu ***
+2025-09-02 16:10:39,342 [main] INFO MaterialManagementSharePointApplication - *** clicked on the customer sub menu ***
+2025-09-02 16:10:40,865 [main] INFO MaterialManagementSharePointApplication - *** Check The View Of The Customer Data ***
