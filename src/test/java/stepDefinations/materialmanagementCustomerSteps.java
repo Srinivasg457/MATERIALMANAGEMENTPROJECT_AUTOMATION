@@ -149,6 +149,13 @@ public class materialmanagementCustomerSteps extends BaseClass {
     }
 
 
+    //For The View Opton of The Customer Data
+    @Then("Perform The Check Of View of The Custome Data")
+    public void perform_the_check_of_view_of_the_custome_data() {
+        logger.info("*** Check The View Of The Customer Data ***");
+        AddCustomer.sharepointCustomerListActionView();
+    }
+
 
 
 

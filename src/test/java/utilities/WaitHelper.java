@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class WaitHelper {
 
@@ -45,5 +46,8 @@ public class WaitHelper {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-
+    public List<WebElement> waitForElements(By locator, int timeoutInSeconds) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+    }
 }

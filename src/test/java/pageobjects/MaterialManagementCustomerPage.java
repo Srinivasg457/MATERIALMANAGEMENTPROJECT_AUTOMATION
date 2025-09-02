@@ -122,6 +122,11 @@ public class MaterialManagementCustomerPage extends BaseClass {
     By Customer_TableHeader=By.xpath(configprop.getProperty("Customer_TableHeader"));
     By Customer_List=By.cssSelector(configprop.getProperty("CustomerList"));
     By Customer_Data=By.tagName(configprop.getProperty("CustomerTableData"));
+    By clickAction_Btn=By.xpath(configprop.getProperty("ClickActionBtn"));
+
+    By ViewCustomerAction_Button=By.xpath(configprop.getProperty("ViewCustomerAction"));
+    By CusCls_Btn=By.xpath(configprop.getProperty("CusClsButn"));
+
 
     public void sharepointEmail(String email) {
 
@@ -739,26 +744,39 @@ public void sharepointmasterDataSidemenu() {
 //    }
 
 
+    public void sharepointCustomerListActionView() {
+        try {
+            // Check if the buttons exist in DOM first
+            List<WebElement> buttonsInDom = ldriver.findElements(clickAction_Btn);
+            System.out.println("Buttons found in DOM (without wait): " + buttonsInDom.size());
 
+            if (buttonsInDom.isEmpty()) {
+                System.out.println("No action buttons found in DOM");
+                return;
+            }
 
+            // Use JavaScript to click since elements exist but aren't visible
+            WebElement firstButton = buttonsInDom.get(0);
+            JavascriptExecutor js = (JavascriptExecutor) ldriver;
+            js.executeScript("arguments[0].click();", firstButton);
+            System.out.println("Action button clicked successfully using JavaScript");
+            WebElement ViewAction=waithelper.WaitForElement1(ViewCustomerAction_Button,20);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            if(ViewAction.isDisplayed() && ViewAction.isEnabled()){
+                ViewAction.click();
+            }else{
+              System.out.println("View Button is Not Displayed");
+            }
+            WebElement cancelBtn=waithelper.WaitForElement1(CusCls_Btn,20);
+            if(cancelBtn.isDisplayed() && cancelBtn.isEnabled()){
+                cancelBtn.click();
+            }else{
+                System.out.println("Cancel  Button is Not Displayed");
+            }
+        } catch (Exception e) {
+            System.out.println("Error clicking action button: " + e.getMessage());
+        }
+    }
 
 
 
