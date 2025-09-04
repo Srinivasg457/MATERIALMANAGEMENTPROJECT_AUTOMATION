@@ -177,6 +177,9 @@ post {
                 mail to: 'srinivas.g@limitscale.io',
                      subject: "✅ Test automation completed successfully",
                      body: "Test automation completed successfully in Jenkins."
+//                      subject: "✅ SUCCESS: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
+//                                  body: emailBody,
+                                 attachmentsPattern: '**/target/surefire-reports/*.xml'
             }
 
             failure {
