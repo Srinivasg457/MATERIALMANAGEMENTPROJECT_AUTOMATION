@@ -125,27 +125,50 @@ public class MaterialManagementCableManager extends BaseClass {
             System.out.println("Element not found within timeout: " + e.getMessage());
             // Consider taking screenshot here
         }
-//        try {
-//            WebElement CableManagerSideMenu = waithelper.WaitForElement1(cablemanager_SideMenu, 10);
-//            scrollToElement(CableManagerSideMenu);
-//            CableManagerSideMenu.click();
-//        } catch (Exception e) {
-//            System.out.println("Unexpected error: " + e.getMessage());
-//        }
 
     }
 
 
     // Here we click on the share point Cable  Manager--> Cable List Sub Menu
     public void sharepointCableListSubMenu( ) {
-
         try {
-            WebElement CableListSubMenu = waithelper.WaitForElement1(cablemanager_CableList_SubMenu, 10);
-            scrollToElement(CableListSubMenu);
-            CableListSubMenu.click();
-        } catch (Exception e) {
-            System.out.println("Unexpected error: " + e.getMessage());
+            WebElement CableList_SubMenu = waithelper.WaitForElement1(cablemanager_CableList_SubMenu, 10);
+
+            // Attempt regular click first
+            try {
+                CableList_SubMenu.click();
+                System.out.println("Successfully clicked using regular click");
+                return; // Exit early if successful
+            } catch (ElementNotInteractableException e) {
+                System.out.println("Regular click intercepted, attempting JavaScript click...");
+            } catch (StaleElementReferenceException e) {
+                System.out.println("Element became stale, re-locating and retrying...");
+                CableList_SubMenu =waithelper.WaitForElement1(cablemanager_CableList_SubMenu, 5);
+            }
+
+            // JavaScript click as fallback
+            try {
+                JavascriptExecutor js = (JavascriptExecutor) driver;
+                js.executeScript("arguments[0].click();", CableList_SubMenu);
+                System.out.println("Successfully clicked using JavaScript");
+            } catch (StaleElementReferenceException e) {
+                System.out.println("Element stale during JS click, re-locating...");
+                CableList_SubMenu = waithelper.WaitForElement1(cablemanager_CableList_SubMenu, 5);
+                JavascriptExecutor js = (JavascriptExecutor) driver;
+                js.executeScript("arguments[0].click();", CableList_SubMenu);
+            }
+
+        } catch (TimeoutException e) {
+            System.out.println("Element not found within timeout: " + e.getMessage());
+            // Consider taking screenshot here
         }
+//        try {
+//            WebElement CableListSubMenu = waithelper.WaitForElement1(cablemanager_CableList_SubMenu, 10);
+//            scrollToElement(CableListSubMenu);
+//            CableListSubMenu.click();
+//        } catch (Exception e) {
+//            System.out.println("Unexpected error: " + e.getMessage());
+//        }
 
     }
 
