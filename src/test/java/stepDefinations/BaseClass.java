@@ -3,10 +3,7 @@ package stepDefinations;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pageobjects.*;
@@ -15,11 +12,11 @@ import utilities.EmailReading;
 import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
+import java.util.Random;
 
 public class BaseClass {
     //    public WebDriver driver;
     public static WebDriver driver; // Make it static to share across classes
-    public WorkroomLoginPage lp;
     public MaterialManagementSupplierMasterDataPage sp;
     public ChataakSignUpPage signUppage;
     public static Logger logger;
@@ -30,7 +27,7 @@ public class BaseClass {
 
 
 
-    //    for work room project here below
+    //    for sharepoint project here below
     public MaterialManagementCustomerPage AddCustomer;
 //    public BaseClass EmailUtils;
     public static EmailReading emailu;
@@ -39,6 +36,7 @@ public class BaseClass {
     public MaterialManagementSupplierMasterDataPage supplier;
 
     public MaterialManagementSubContractorMasterDataPage subcontractor;
+    public MaterialManagementCableManager cableManager;
 
     public static String randomString() {
         String generatedString1 = RandomStringUtils.randomAlphanumeric(8);
@@ -60,16 +58,7 @@ public class BaseClass {
 //        );
 //    }
 
-
-
-
-
-
     public static String getEmailInvitationLink() {  // Corrected spelling
-
-
-
-
         return emailu.getInvitationLink(
                 configprop.getProperty("email.host"),
                 configprop.getProperty("email.username"),
@@ -116,6 +105,11 @@ public class BaseClass {
     // Helper method to get total number of pages for Customers
     protected int getTotalPages() {
         try {
+            // Wait for pagination to be present
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.presenceOfElementLocated(
+                    By.cssSelector("#Table_Customers_paginate")
+            ));
             List<WebElement> pageButtons = driver.findElements(
                     By.cssSelector("#Table_Customers_paginate .paginate_button:not(.previous):not(.next)")
             );
@@ -147,6 +141,11 @@ public class BaseClass {
     // Helper method to get total number of pages for Material
     protected int getTotalMaterialmasterDataPages() {
         try {
+            // Wait for pagination to be present
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.presenceOfElementLocated(
+                    By.cssSelector("#Table_Materials_paginate")
+            ));
             List<WebElement> pageButtons = driver.findElements(
                     By.cssSelector("#Table_Materials_paginate .paginate_button:not(.previous):not(.next)")
             );
@@ -192,6 +191,11 @@ public class BaseClass {
     // Helper method to get total number of pages for Material
     protected int getTotalSubContractormasterDataPages() {
         try {
+            // Wait for pagination to be present
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.presenceOfElementLocated(
+                    By.cssSelector("#Table_SubContractors_paginate")
+            ));
             List<WebElement> pageButtons = driver.findElements(
                     By.cssSelector("#Table_SubContractors_paginate .paginate_button:not(.previous):not(.next)")
             );
@@ -221,6 +225,13 @@ public class BaseClass {
     // Helper method to get total number of pages for Material
     protected int getTotalSuppliermasterDataPages() {
         try {
+            // Wait for pagination to be present
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.presenceOfElementLocated(
+                    By.cssSelector("#Table_Suppliers_paginate")
+            ));
+
+
             List<WebElement> pageButtons = driver.findElements(
                     By.cssSelector("#Table_Suppliers_paginate .paginate_button:not(.previous):not(.next)")
             );
@@ -236,6 +247,71 @@ public class BaseClass {
     protected void SuppliernavigateToNextPage() {
         try {
             WebElement nextButton = driver.findElement(By.id("Table_Suppliers_next"));
+            if (!nextButton.getAttribute("class").contains("disabled")) {
+                nextButton.click();
+                // Wait for page to load
+                Thread.sleep(2000);
+            }
+        } catch (Exception e) {
+            System.out.println("Could not navigate to next page: " + e.getMessage());
+        }
+    }
+
+    public void scrollToElement(WebElement element) {
+        try {
+            ((JavascriptExecutor) driver).executeScript(
+                    "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'});",
+                    element
+            );
+            Thread.sleep(300);
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to scroll to element: " + e.getMessage());
+        }
+    }
+
+    protected String generateRandomDate() {
+        Random random = new Random();
+
+        // Generate random day (1-28 to avoid month length issues)
+        int day = random.nextInt(28) + 1;
+
+        // Generate random month (1-12)
+        int month = random.nextInt(12) + 1;
+
+        // Generate random year (e.g., 2020-2025)
+        int year = 2020 + random.nextInt(6);
+
+        // Format as dd/MM/yyyy
+        return String.format("%02d/%02d/%04d", day, month, year);
+    }
+
+    //for The cable Inward
+    // Helper method to get total number of pages for Material
+    protected int getTotalcableInwardDataPages() {
+        try {
+
+
+            // Wait for pagination to be present
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.presenceOfElementLocated(
+                    By.cssSelector("#Table_Cable_paginate")
+            ));
+
+
+            List<WebElement> pageButtons = driver.findElements(
+                    By.cssSelector("#Table_Cable_paginate .paginate_button:not(.previous):not(.next)")
+            );
+            return pageButtons.size();
+        } catch (Exception e) {
+            System.out.println("Could not determine total pages, assuming 1 page");
+            return 1;
+        }
+    }
+
+    // Helper method to navigate to next page in Cable Inward  Page
+    protected void CableInwardnavigateToNextPage() {
+        try {
+            WebElement nextButton = driver.findElement(By.id("Table_Cable_next"));
             if (!nextButton.getAttribute("class").contains("disabled")) {
                 nextButton.click();
                 // Wait for page to load
