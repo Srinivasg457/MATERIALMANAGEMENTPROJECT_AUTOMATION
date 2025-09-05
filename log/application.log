@@ -4232,3 +4232,13 @@ Session ID: 120feda5aa200aeb56d9fdbe11ae234c
 2025-09-04 16:01:44,523 [main] INFO WorkRoomWebApplication - ************* Click The Cable Manager Side Menu  *****************
 2025-09-04 16:01:47,134 [main] INFO WorkRoomWebApplication - ************* Click The Cable List Sub Menu  *****************
 2025-09-04 16:01:48,662 [main] INFO WorkRoomWebApplication - *************  Get The List Of Cable inward Data *****************
+2025-09-05 10:33:22,657 [main] INFO WorkRoomWebApplication - ************* Launching CHROME Browser *****************
+2025-09-05 10:33:24,078 [main] INFO WorkRoomWebApplication - ************* Browser Launched and Maximized *****************
+2025-09-05 10:33:24,344 [main] INFO WorkRoomWebApplication - ************* Get The Application URL  *****************
+2025-09-05 10:33:25,351 [main] INFO WorkRoomWebApplication - *** Enter The Share Point Email Id ***
+2025-09-05 10:33:26,148 [main] INFO WorkRoomWebApplication - *** click the next button ***
+2025-09-05 10:33:26,288 [main] INFO WorkRoomWebApplication - *** Enter The Password ***
+2025-09-05 10:33:27,993 [main] INFO WorkRoomWebApplication - *** clicked on the sign in Button ***
+2025-09-05 10:33:29,864 [main] INFO WorkRoomWebApplication - ************* Click The Cable Manager Side Menu  *****************
+2025-09-05 10:33:33,005 [main] INFO WorkRoomWebApplication - ************* Click The Cable List Sub Menu  *****************
+2025-09-05 10:33:34,573 [main] INFO WorkRoomWebApplication - *************  Perform The Bulk Import Operations *****************

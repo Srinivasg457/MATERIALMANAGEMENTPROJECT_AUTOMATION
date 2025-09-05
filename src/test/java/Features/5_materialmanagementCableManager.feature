@@ -36,3 +36,4 @@ Feature: Material Management Cable Manager Module
     Then click the cable manager side menu
     And click the cable List side menu
     Then Get The List Of Data available
+

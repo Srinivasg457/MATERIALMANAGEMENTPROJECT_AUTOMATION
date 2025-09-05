@@ -76,4 +76,12 @@ public class materialManagementCableManagerSteps extends BaseClass {
        logger.info("*************  Get The List Of Cable inward Data *****************");
        cableManager.sharepointMaterialInwardGetTableList();
    }
+  //Bulk Import Operations
+    @Then("Perform The Actions Required for The Bulk Import")
+    public void perform_the_actions_required_for_the_bulk_import() {
+        logger.info("*************  Perform The Bulk Import Operations *****************");
+        cableManager.sharepointCableInwardBulkImport();
+    }
+
+
 }

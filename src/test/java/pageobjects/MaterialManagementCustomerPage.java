@@ -133,7 +133,7 @@ public class MaterialManagementCustomerPage extends BaseClass {
 
 
         try {
-            WebElement SharePointEmail = waithelper.WaitForElement1(Email, 10);
+            WebElement SharePointEmail = waithelper.WaitForElement1(Email, 30);
             SharePointEmail.click();
             SharePointEmail.clear();
             SharePointEmail.sendKeys(email);
@@ -151,7 +151,7 @@ public class MaterialManagementCustomerPage extends BaseClass {
 
 
         try {
-            WebElement SharePointEmailNextButton = waithelper.WaitForElement1(nextButton, 10);
+            WebElement SharePointEmailNextButton = waithelper.WaitForElement1(nextButton, 30);
             SharePointEmailNextButton.click();
         } catch (Exception e) {
             System.out.println("Unexpected error: " + e.getMessage());
@@ -166,7 +166,7 @@ public class MaterialManagementCustomerPage extends BaseClass {
 
 
         try {
-            WebElement SharePointPassword = waithelper.WaitForElement1(password, 10);
+            WebElement SharePointPassword = waithelper.WaitForElement1(password, 30);
             SharePointPassword.click();
             SharePointPassword.clear();
             SharePointPassword.sendKeys(pwd);
@@ -181,9 +181,9 @@ public class MaterialManagementCustomerPage extends BaseClass {
     public void sharepointSigninButton( ) {
 
         try {
-            WebElement AccountSigninButton = waithelper.WaitForElement1(signinButton, 10);
+            WebElement AccountSigninButton = waithelper.WaitForElement1(signinButton, 30);
             AccountSigninButton.click();
-            WebElement confirmMessage=waithelper.WaitForElement1(ConfirmButton,10);
+            WebElement confirmMessage=waithelper.WaitForElement1(ConfirmButton,30);
             confirmMessage.click();
         } catch (Exception e) {
             System.out.println("Unexpected error: " + e.getMessage());

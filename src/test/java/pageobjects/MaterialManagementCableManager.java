@@ -90,7 +90,11 @@ public class MaterialManagementCableManager extends BaseClass {
 
     By Supplier_List=By.cssSelector(configprop.getProperty("SupplierList"));
     By Supplier_Data=By.tagName(configprop.getProperty("CustomerTableData"));
+    By importButton=By.xpath(configprop.getProperty("importButton"));
 
+    By ChooseFile_Button=By.xpath(configprop.getProperty("CableInwardChooseFileButton"));
+    By cableinwardexcelfile=By.xpath(configprop.getProperty("cableinwardexcelfile"));
+    By processImportButton=By.xpath(configprop.getProperty("processImportButton"));
     //Actions Method
     // Here we click on the share point cable Manager side menu
     public void sharepointCablemanagerSideMenu( ) {
@@ -499,6 +503,27 @@ public class MaterialManagementCableManager extends BaseClass {
     }
 
 
+
+//    //Bulk import Option
+//    public void sharepointCableInwardBulkImport() {
+//    try{
+//
+//        // Wait for error messages to appear (using visibility check)
+//        WebElement import_Btn = waithelper.WaitForElement1(importButton, 10);
+//        import_Btn.click();
+//
+//        //file path fro the config.properties file
+//        WebElement cableinwardexcel_file = waithelper.WaitForElement1(cableinwardexcelfile, 10);
+//
+//       // String filepath = System.getProperty("user.dir") + "src/test/java/images/CableInward_Template_2025-09-05.xlsx";
+//        WebElement ChooseFile_Btn = waithelper.WaitForElement1(ChooseFile_Button, 10);
+//        ChooseFile_Btn.sendKeys((CharSequence) cableinwardexcel_file);
+//        WebElement processImport_Btn = waithelper.WaitForElement1(processImportButton, 10);
+//        processImport_Btn.click();;
+//    } catch (Exception e) {
+//        System.out.println("Error: " + e.getMessage());
+//    }
+//    }
 
 
 
