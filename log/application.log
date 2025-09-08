@@ -4242,3 +4242,61 @@ Session ID: 120feda5aa200aeb56d9fdbe11ae234c
 2025-09-05 10:33:29,864 [main] INFO WorkRoomWebApplication - ************* Click The Cable Manager Side Menu  *****************
 2025-09-05 10:33:33,005 [main] INFO WorkRoomWebApplication - ************* Click The Cable List Sub Menu  *****************
 2025-09-05 10:33:34,573 [main] INFO WorkRoomWebApplication - *************  Perform The Bulk Import Operations *****************
+2025-09-08 17:39:58,038 [main] INFO MaterialManagementSharePointApplication - Browser launched in headless mode with enhanced options
+2025-09-08 17:39:58,080 [main] INFO MaterialManagementSharePointApplication - ************* Get The Application URL  *****************
+2025-09-08 17:40:02,222 [main] INFO MaterialManagementSharePointApplication - *** Enter The Share Point Email Id ***
+2025-09-08 17:40:03,539 [main] INFO MaterialManagementSharePointApplication - *** click the next button ***
+2025-09-08 17:40:03,700 [main] INFO MaterialManagementSharePointApplication - *** Enter The Password ***
+2025-09-08 17:40:05,154 [main] INFO MaterialManagementSharePointApplication - *** clicked on the sign in Button ***
+2025-09-08 17:40:07,363 [main] INFO MaterialManagementSharePointApplication - ************* Click The Cable Manager Side Menu  *****************
+2025-09-08 17:40:18,258 [main] INFO MaterialManagementSharePointApplication - ************* Click The Cable List Sub Menu  *****************
+2025-09-08 17:40:19,518 [main] INFO MaterialManagementSharePointApplication - *************  Click on The Select Columns Button *****************
+2025-09-08 17:40:20,023 [main] INFO MaterialManagementSharePointApplication - *************  Selecting The Columns is Not Selected *****************
+2025-09-08 17:42:16,801 [main] INFO WorkRoomWebApplication - ************* Remote WebDriver Launched *****************
+2025-09-08 17:42:17,022 [main] INFO WorkRoomWebApplication - ************* Get The Application URL  *****************
+2025-09-08 17:42:19,062 [main] INFO WorkRoomWebApplication - *** Enter The Share Point Email Id ***
+2025-09-08 17:42:20,889 [main] INFO WorkRoomWebApplication - *** click the next button ***
+2025-09-08 17:42:21,059 [main] INFO WorkRoomWebApplication - *** Enter The Password ***
+2025-09-08 17:42:22,424 [main] INFO WorkRoomWebApplication - *** clicked on the sign in Button ***
+2025-09-08 17:42:39,978 [main] INFO WorkRoomWebApplication - ************* Click The Cable Manager Side Menu  *****************
+2025-09-08 17:42:40,548 [main] INFO WorkRoomWebApplication - ************* Click The Cable List Sub Menu  *****************
+2025-09-08 17:42:42,763 [main] INFO WorkRoomWebApplication - *************  Click on The Select Columns Button *****************
+2025-09-08 17:42:43,403 [main] INFO WorkRoomWebApplication - *************  Selecting The Columns is Not Selected *****************
+2025-09-08 17:42:45,369 [main] INFO WorkRoomWebApplication - ************* Quitting Browser *****************
+2025-09-08 17:42:45,496 [main] INFO WorkRoomWebApplication - ************* Browser Closed Successfully *****************
+2025-09-08 17:53:19,073 [main] INFO WorkRoomWebApplication - ************* Remote WebDriver Launched *****************
+2025-09-08 17:53:19,216 [main] INFO WorkRoomWebApplication - ************* Get The Application URL  *****************
+2025-09-08 17:53:26,934 [main] INFO WorkRoomWebApplication - *** Enter The Share Point Email Id ***
+2025-09-08 17:53:28,606 [main] INFO WorkRoomWebApplication - *** click the next button ***
+2025-09-08 17:53:28,747 [main] INFO WorkRoomWebApplication - *** Enter The Password ***
+2025-09-08 17:53:30,166 [main] INFO WorkRoomWebApplication - *** clicked on the sign in Button ***
+2025-09-08 17:53:32,085 [main] INFO WorkRoomWebApplication - ************* Click The Cable Manager Side Menu  *****************
+2025-09-08 17:53:44,921 [main] INFO WorkRoomWebApplication - ************* Click The Cable List Sub Menu  *****************
+2025-09-08 17:53:47,563 [main] INFO WorkRoomWebApplication - *************  Click on The Select Columns Button *****************
+2025-09-08 17:53:48,174 [main] INFO WorkRoomWebApplication - *************  Selecting The Columns is Not Selected *****************
+2025-09-08 17:53:50,158 [main] INFO WorkRoomWebApplication - ************* Quitting Browser *****************
+2025-09-08 17:53:50,283 [main] INFO WorkRoomWebApplication - ************* Browser Closed Successfully *****************
+2025-09-08 18:23:59,390 [main] INFO WorkRoomWebApplication - ************* Remote WebDriver Launched *****************
+2025-09-08 18:23:59,550 [main] INFO WorkRoomWebApplication - ************* Get The Application URL  *****************
+2025-09-08 18:24:01,083 [main] INFO WorkRoomWebApplication - *** Enter The Share Point Email Id ***
+2025-09-08 18:24:03,084 [main] INFO WorkRoomWebApplication - *** click the next button ***
+2025-09-08 18:24:03,284 [main] INFO WorkRoomWebApplication - *** Enter The Password ***
+2025-09-08 18:24:04,694 [main] INFO WorkRoomWebApplication - *** clicked on the sign in Button ***
+2025-09-08 18:24:06,441 [main] INFO WorkRoomWebApplication - ************* Click The Cable Manager Side Menu  *****************
+2025-09-08 18:24:11,131 [main] INFO WorkRoomWebApplication - ************* Click The Cable List Sub Menu  *****************
+2025-09-08 18:24:13,915 [main] INFO WorkRoomWebApplication - *************  Click on The Select Columns Button *****************
+2025-09-08 18:24:14,565 [main] INFO WorkRoomWebApplication - *************  Selecting The Columns is Not Selected *****************
+2025-09-08 18:24:17,008 [main] INFO WorkRoomWebApplication - ************* Quitting Browser *****************
+2025-09-08 18:24:17,146 [main] INFO WorkRoomWebApplication - ************* Browser Closed Successfully *****************
+2025-09-08 18:24:40,780 [main] INFO WorkRoomWebApplication - ************* Remote WebDriver Launched *****************
+2025-09-08 18:24:40,966 [main] INFO WorkRoomWebApplication - ************* Get The Application URL  *****************
+2025-09-08 18:24:42,065 [main] INFO WorkRoomWebApplication - *** Enter The Share Point Email Id ***
+2025-09-08 18:24:43,193 [main] INFO WorkRoomWebApplication - *** click the next button ***
+2025-09-08 18:24:43,416 [main] INFO WorkRoomWebApplication - *** Enter The Password ***
+2025-09-08 18:24:44,879 [main] INFO WorkRoomWebApplication - *** clicked on the sign in Button ***
+2025-09-08 18:24:46,588 [main] INFO WorkRoomWebApplication - ************* Click The Cable Manager Side Menu  *****************
+2025-09-08 18:24:54,948 [main] INFO WorkRoomWebApplication - ************* Click The Cable List Sub Menu  *****************
+2025-09-08 18:24:57,099 [main] INFO WorkRoomWebApplication - *************  Click on The Select Columns Button *****************
+2025-09-08 18:24:57,704 [main] INFO WorkRoomWebApplication - *************  Selecting The Columns is Not Selected *****************
+2025-09-08 18:25:00,189 [main] INFO WorkRoomWebApplication - ************* Quitting Browser *****************
+2025-09-08 18:25:00,306 [main] INFO WorkRoomWebApplication - ************* Browser Closed Successfully *****************

@@ -76,12 +76,45 @@ public class materialManagementCableManagerSteps extends BaseClass {
        logger.info("*************  Get The List Of Cable inward Data *****************");
        cableManager.sharepointMaterialInwardGetTableList();
    }
-  //Bulk Import Operations
-    @Then("Perform The Actions Required for The Bulk Import")
-    public void perform_the_actions_required_for_the_bulk_import() {
-        logger.info("*************  Perform The Bulk Import Operations *****************");
-        cableManager.sharepointCableInwardBulkImport();
+//  //Bulk Import Operations
+//    @Then("Perform The Actions Required for The Bulk Import")
+//    public void perform_the_actions_required_for_the_bulk_import() {
+//        logger.info("*************  Perform The Bulk Import Operations *****************");
+//        cableManager.sharepointCableInwardBulkImport();
+//    }
+
+//checking the Select and Deselect of The Radio Button
+    @Then("the user clicks the Select Columns Module")
+    public void the_user_clicks_the_select_columns_module() {
+        logger.info("*************  Click on The Select Columns Button *****************");
+        cableManager.sharepointCableSelectColumns();
     }
+    @Then("the user verifies that the radio buttons can be selected and deselected")
+    public void the_user_verifies_that_the_radio_buttons_can_be_selected_and_deselected() {
+        logger.info("*************  Selecting The Columns is Not Selected *****************");
+        cableManager.DateofReceviedrbtnCheckBox();
+        cableManager.columcableSizeCheckBox();
+        cableManager.columDetailsCheckBox();
+        cableManager.columDrumNumberCheckBox();
+        cableManager.columLengthCheckBox();
+        cableManager.columStorageLocationCheckBox();
+        cableManager.columVehicleNumberCheckBox();
+        cableManager.columLRNumberCheckBox();
+        cableManager.columINVNumberCheckBox();
+        cableManager.columPONumberCheckBox();
+        cableManager.columInvoiceDateCheckBox();
+        cableManager.columMaterialCodeCheckBox();
+        cableManager.applyColumnSelectionbtn();
+
+
+
+
+
+
+    }
+
+
+
 
 
 }
