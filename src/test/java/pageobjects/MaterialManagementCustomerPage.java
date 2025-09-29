@@ -183,8 +183,16 @@ public class MaterialManagementCustomerPage extends BaseClass {
         try {
             WebElement AccountSigninButton = waithelper.WaitForElement1(signinButton, 30);
             AccountSigninButton.click();
+
             WebElement confirmMessage=waithelper.WaitForElement1(ConfirmButton,30);
-            confirmMessage.click();
+            if(confirmMessage.isDisplayed() && confirmMessage.isDisplayed()){
+                confirmMessage.click();
+                System.out.println("Confirm message is present");
+
+            }
+            else{
+                System.out.println("Confirm message not present");
+            }
         } catch (Exception e) {
             System.out.println("Unexpected error: " + e.getMessage());
         }
@@ -763,13 +771,22 @@ public void sharepointmasterDataSidemenu() {
             WebElement ViewAction=waithelper.WaitForElement1(ViewCustomerAction_Button,20);
 
             if(ViewAction.isDisplayed() && ViewAction.isEnabled()){
-                ViewAction.click();
+                JavascriptExecutor ViewActionjs = (JavascriptExecutor) ldriver;
+                ViewActionjs.executeScript("arguments[0].click();",ViewAction);
+                System.out.println(" successfully clicked View Action Button Using JS Executor");
+
+//                ViewAction.click();
             }else{
               System.out.println("View Button is Not Displayed");
             }
             WebElement cancelBtn=waithelper.WaitForElement1(CusCls_Btn,20);
             if(cancelBtn.isDisplayed() && cancelBtn.isEnabled()){
-                cancelBtn.click();
+                System.out.println("Cancel  Button is Displayed");
+                JavascriptExecutor jscls = (JavascriptExecutor) ldriver;
+                jscls.executeScript("arguments[0].click();", cancelBtn);
+                System.out.println(" successfully clicked Closed Button Using JS Executor");
+
+//                cancelBtn.click();
             }else{
                 System.out.println("Cancel  Button is Not Displayed");
             }

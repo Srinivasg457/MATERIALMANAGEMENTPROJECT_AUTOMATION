@@ -3,7 +3,9 @@ Feature: Material Management Customer Module
   # Background for common steps
   Background:
     Given the user launches the Chrome browser
+#   for limitscale sharepoint
     And the user navigates to the login page with the URL "https://limitscaleindia.sharepoint.com/sites/Learning-test2/SitePages/MaterialInward.aspx"
+#    And the user navigates to the login page with the URL "https://abb.sharepoint.com/sites/SiteMaterialManagement/SitePages/AddMaterialInward.aspx"
 
   @sanity
   Scenario: Login to the share point application
@@ -18,7 +20,7 @@ Feature: Material Management Customer Module
     And the user clicks the Submit button
     Then the user enters their password "Limitscale@05"
     And the user clicks the login button
-    Then click the master side menu
+#    Then click the master side menu
     And click the custmer side menu
     Then Click on the Add button and select the customer dropdown
     Then Fill all the required customer details
@@ -29,7 +31,7 @@ Feature: Material Management Customer Module
        And the user clicks the Submit button
        Then the user enters their password "Limitscale@05"
        And the user clicks the login button
-       Then click the master side menu
+#       Then click the master side menu
        And click the custmer side menu
        Then Click on the Add button and select the customer dropdown
        Then click the Save Button And Find The Error Message
@@ -40,7 +42,7 @@ Feature: Material Management Customer Module
     And the user clicks the Submit button
     Then the user enters their password "Limitscale@05"
     And the user clicks the login button
-    Then click the master side menu
+#    Then click the master side menu
     And click the custmer side menu
     Then Click on the Add button and select the Storage Location dropdown
     Then Select The Customer DropDown And Select Option
@@ -53,7 +55,7 @@ Feature: Material Management Customer Module
     And the user clicks the Submit button
     Then the user enters their password "Limitscale@05"
     And the user clicks the login button
-    Then click the master side menu
+#    Then click the master side menu
     And click the custmer side menu
     Then Get The List of Data of Customers
 
@@ -63,7 +65,7 @@ Feature: Material Management Customer Module
     And the user clicks the Submit button
     Then the user enters their password "Limitscale@05"
     And the user clicks the login button
-    Then click the master side menu
+#    Then click the master side menu
     And click the custmer side menu
     Then Perform The Check Of View of The Custome Data
 
