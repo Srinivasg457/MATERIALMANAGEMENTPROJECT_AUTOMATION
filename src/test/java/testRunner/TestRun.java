@@ -12,6 +12,7 @@ import org.junit.runner.RunWith;
 //        features="src/test/java/Features/3_materialManagementSubContractor.feature",
 //       features="src/test/java/Features/2_materialManagementSupplierMasterData.feature",
 //        features ="src/test/java/Features/5_materialmanagementCableManager.feature",
+//        features="src/test/java/Features/3_materialManagementSubContractor.feature",
 
 
         //"src/test/java/Features/1_materialManagementCustomer.feature",

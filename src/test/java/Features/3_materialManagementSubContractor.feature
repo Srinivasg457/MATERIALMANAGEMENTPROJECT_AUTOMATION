@@ -11,7 +11,7 @@ Feature: Material Management Subcontractor Module
     And the user clicks the Submit button
     Then the user enters their password "Limitscale@05"
     And the user clicks the login button
-    Then click the master side menu
+#    Then click the master side menu
     And click the subContractor side menu
     Then Click on the SubContractor Add button and select the subContractor dropdown
     Then Fill all the SubContractor required  details and submit the details
@@ -22,7 +22,7 @@ Feature: Material Management Subcontractor Module
     And the user clicks the Submit button
     Then the user enters their password "Limitscale@05"
     And the user clicks the login button
-    Then click the master side menu
+#    Then click the master side menu
     And click the subContractor side menu
     Then Click on the SubContractor Add button and select the subContractor dropdown
     Then click Sucontractor submit Button then check the Error Message details
@@ -34,7 +34,7 @@ Feature: Material Management Subcontractor Module
     And the user clicks the Submit button
     Then the user enters their password "Limitscale@05"
     And the user clicks the login button
-    Then click the master side menu
+#    Then click the master side menu
     And click the subContractor side menu
     Then Get The List of Data of subContractor List Data in the Table
 

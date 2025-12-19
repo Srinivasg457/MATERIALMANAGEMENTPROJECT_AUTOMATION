@@ -6,8 +6,12 @@ Feature: Material Management Customer Module
 #   for limitscale sharepoint
     And the user navigates to the login page with the URL "https://limitscaleindia.sharepoint.com/sites/Learning-test2/SitePages/MaterialInward.aspx"
 #    And the user navigates to the login page with the URL "https://abb.sharepoint.com/sites/SiteMaterialManagement/SitePages/AddMaterialInward.aspx"
+#    When the user enters their email "sama-papi-operations@in.abb.com"
+#    And the user clicks the Submit button
+#    Then the user enters their password "uaPX8HG@WP!2pirW/g3xI/;-LWHU8.>"
+#    And the user clicks the login button
 
-  @sanity
+#  @sanity
   Scenario: Login to the share point application
     When the user enters their email "Srinivas.g@limitscale.io"
     And the user clicks the Submit button

@@ -185,7 +185,7 @@ public class MaterialManagementCustomerPage extends BaseClass {
             AccountSigninButton.click();
 
             WebElement confirmMessage=waithelper.WaitForElement1(ConfirmButton,30);
-            if(confirmMessage.isDisplayed() && confirmMessage.isDisplayed()){
+            if(confirmMessage.isDisplayed() && confirmMessage.isEnabled()){
                 confirmMessage.click();
                 System.out.println("Confirm message is present");
 

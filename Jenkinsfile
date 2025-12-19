@@ -140,7 +140,7 @@ pipeline {
                                 break
                             else
                                 echo "Waiting..."
-                                sleep 5
+                                sleep 10
                             fi
                         done
                     '''

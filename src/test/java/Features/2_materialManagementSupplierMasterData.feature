@@ -11,7 +11,7 @@ Feature: Material Management Supplier Module
     And the user clicks the Submit button
     Then the user enters their password "Limitscale@05"
     And the user clicks the login button
-    Then click the master side menu
+#    Then click the master side menu
     And click the Suppliers side menu
     Then Click on the Add button and select the Suppliers dropdown
     Then Fill all the Suppliers required  details and submit the details
@@ -22,7 +22,7 @@ Feature: Material Management Supplier Module
     And the user clicks the Submit button
     Then the user enters their password "Limitscale@05"
     And the user clicks the login button
-    Then click the master side menu
+#    Then click the master side menu
     And click the Suppliers side menu
     Then Click on the Add button and select the Suppliers dropdown
     Then click Supplier submit Button then check the Error Message details
@@ -33,7 +33,7 @@ Feature: Material Management Supplier Module
     And the user clicks the Submit button
     Then the user enters their password "Limitscale@05"
     And the user clicks the login button
-    Then click the master side menu
+#    Then click the master side menu
     And click the Suppliers side menu
     Then Get The List of Data of Suppliers in the Table
 
