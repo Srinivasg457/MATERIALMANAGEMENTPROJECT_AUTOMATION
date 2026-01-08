@@ -38,6 +38,10 @@ public class BaseClass {
     public MaterialManagementSubContractorMasterDataPage subcontractor;
     public MaterialManagementCableManager cableManager;
 
+    // for The Subcontractors unit price
+    public MaterialManagementSubcontractorsUnitPricePage SubsUnitPrice;
+
+
     public static String randomString() {
         String generatedString1 = RandomStringUtils.randomAlphanumeric(8);
         return (generatedString1);

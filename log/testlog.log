@@ -5214,3 +5214,269 @@ Session ID: 6a8b3c8c8f96867987e149a43233fb81
 2025-12-19 10:48:48,515 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
 2025-12-19 10:48:50,724 - WorkRoomWebApplication -INFO - *** clicked on the customer sub menu ***
 2025-12-19 10:49:00,564 - WorkRoomWebApplication -INFO - *** Check The View Of The Customer Data ***
+2025-12-19 15:57:18,156 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-12-19 15:57:23,603 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-12-19 15:57:24,155 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-12-19 15:57:27,149 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-12-19 15:57:29,812 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-12-19 15:57:30,422 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-12-19 15:57:32,862 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-12-19 15:57:36,453 - WorkRoomWebApplication -INFO - *** clicked on the customer sub menu ***
+2025-12-19 15:57:51,177 - WorkRoomWebApplication -INFO - *** clicked on the '+' icon ***
+2025-12-19 15:57:52,747 - WorkRoomWebApplication -INFO - *** Selected the Customer ***
+2025-12-19 15:57:55,985 - WorkRoomWebApplication -INFO - *** Clicking the Submit Button ***
+2025-12-19 15:57:56,601 - WorkRoomWebApplication -INFO - *** Checking For The Error Message ***
+2025-12-19 15:59:15,535 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2025-12-19 15:59:20,738 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2025-12-19 15:59:21,534 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2025-12-19 15:59:24,556 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2025-12-19 15:59:27,195 - WorkRoomWebApplication -INFO - *** click the next button ***
+2025-12-19 15:59:27,744 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2025-12-19 15:59:30,255 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2025-12-19 15:59:33,587 - WorkRoomWebApplication -INFO - *** clicked on the customer sub menu ***
+2025-12-19 15:59:50,428 - WorkRoomWebApplication -INFO - *** clicked on the '+' icon ***
+2025-12-19 15:59:51,130 - WorkRoomWebApplication -INFO - *** Selected the Customer ***
+2025-12-19 15:59:55,908 - WorkRoomWebApplication -INFO - *** Clicking the Submit Button ***
+2025-12-19 15:59:56,575 - WorkRoomWebApplication -INFO - *** Checking For The Error Message ***
+2026-01-08 10:41:13,124 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 10:41:15,109 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 10:41:15,362 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 10:41:16,536 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 10:41:17,909 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 10:41:18,233 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 10:41:20,062 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 10:41:21,899 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-08 10:41:22,143 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-08 10:42:37,095 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 10:42:38,944 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 10:42:39,192 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 10:42:40,589 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 10:42:41,991 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 10:42:42,311 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 10:42:43,944 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 10:42:45,655 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-08 10:42:45,982 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-08 10:45:41,676 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 10:45:43,487 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 10:45:43,973 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 10:45:45,336 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 10:45:46,782 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 10:45:47,156 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 10:45:48,451 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 11:34:37,972 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 11:34:39,706 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 11:34:39,952 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 11:34:41,155 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 11:34:42,428 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 11:34:42,841 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 11:34:44,798 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 11:34:46,662 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-08 11:35:00,008 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-08 11:35:02,353 - WorkRoomWebApplication -INFO - *** click the Add button of subcontractor unit price**
+2026-01-08 11:35:02,723 - WorkRoomWebApplication -INFO - *** Entering the itemcode**
+2026-01-08 11:45:24,977 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 11:45:25,964 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 11:45:26,237 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 11:45:27,722 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 11:45:28,849 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 11:45:28,969 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 11:45:30,417 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 11:45:31,861 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-08 11:45:40,423 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-08 11:45:42,621 - WorkRoomWebApplication -INFO - *** click the Add button of subcontractor unit price**
+2026-01-08 11:45:42,828 - WorkRoomWebApplication -INFO - *** Entering the itemcode**
+2026-01-08 11:57:49,245 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 11:58:18,540 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 11:58:19,567 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 11:58:19,800 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 11:58:20,895 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 11:58:21,826 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 11:58:21,958 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 11:58:23,492 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 11:58:25,088 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-08 11:58:27,497 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-08 11:58:29,451 - WorkRoomWebApplication -INFO - *** click the Add button of subcontractor unit price**
+2026-01-08 11:58:29,557 - WorkRoomWebApplication -INFO - *** Entering the itemcode**
+2026-01-08 12:01:18,252 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 12:01:19,263 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 12:01:19,476 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 12:01:20,529 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 12:01:21,377 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 12:01:21,500 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 12:01:22,836 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 12:01:24,513 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-08 12:01:27,380 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-08 12:01:29,441 - WorkRoomWebApplication -INFO - *** click the Add button of subcontractor unit price**
+2026-01-08 12:01:29,588 - WorkRoomWebApplication -INFO - *** Entering the itemcode**
+2026-01-08 12:11:48,255 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 12:11:49,263 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 12:11:49,465 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 12:11:51,129 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 12:11:52,034 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 12:11:52,172 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 12:11:53,521 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 12:11:54,892 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-08 12:12:03,094 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-08 12:12:04,976 - WorkRoomWebApplication -INFO - *** click the Add button of subcontractor unit price**
+2026-01-08 12:12:05,087 - WorkRoomWebApplication -INFO - *** Entering the itemcode**
+2026-01-08 12:15:47,252 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 12:15:48,251 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 12:15:48,487 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 12:15:49,590 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 12:15:50,514 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 12:15:50,643 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 12:15:52,629 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 12:15:53,918 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-08 12:15:57,293 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-08 12:15:58,928 - WorkRoomWebApplication -INFO - *** click the Add button of subcontractor unit price**
+2026-01-08 12:15:59,035 - WorkRoomWebApplication -INFO - *** Entering the itemcode**
+2026-01-08 12:22:30,964 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 12:22:32,076 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 12:22:32,261 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 12:22:33,474 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 12:22:34,327 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 12:22:34,502 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 12:22:35,834 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 12:22:37,214 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-08 12:22:40,082 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-08 12:22:42,080 - WorkRoomWebApplication -INFO - *** click the Add button of subcontractor unit price**
+2026-01-08 12:22:42,231 - WorkRoomWebApplication -INFO - *** Entering the itemcode**
+2026-01-08 12:28:32,273 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 12:28:33,192 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 12:28:33,377 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 12:28:34,422 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 12:28:35,291 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 12:28:35,412 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 12:28:36,757 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 12:28:38,079 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-08 12:28:50,303 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-08 12:28:52,512 - WorkRoomWebApplication -INFO - *** click the Add button of subcontractor unit price**
+2026-01-08 12:28:52,698 - WorkRoomWebApplication -INFO - *** Entering the itemcode**
+2026-01-08 12:32:18,625 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 12:32:19,675 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 12:32:19,869 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 12:32:21,013 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 12:32:21,945 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 12:32:22,052 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 12:32:23,268 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 12:32:24,435 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-08 12:32:26,864 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-08 12:32:28,635 - WorkRoomWebApplication -INFO - *** click the Add button of subcontractor unit price**
+2026-01-08 12:32:28,788 - WorkRoomWebApplication -INFO - *** Entering the itemcode**
+2026-01-08 12:32:59,104 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 12:33:00,226 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 12:33:00,456 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 12:33:01,652 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 12:33:02,519 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 12:33:02,653 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 12:33:04,332 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 12:33:05,874 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-08 12:33:08,563 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-08 12:33:10,353 - WorkRoomWebApplication -INFO - *** click the Add button of subcontractor unit price**
+2026-01-08 12:33:10,503 - WorkRoomWebApplication -INFO - *** Entering the itemcode**
+2026-01-08 12:33:44,473 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 12:33:45,469 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 12:33:45,690 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 12:33:46,894 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 12:33:47,767 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 12:33:47,906 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 12:33:49,296 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 12:33:51,003 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-08 12:33:53,590 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-08 12:34:04,317 - WorkRoomWebApplication -INFO - *** click the Add button of subcontractor unit price**
+2026-01-08 12:34:04,519 - WorkRoomWebApplication -INFO - *** Entering the itemcode**
+2026-01-08 12:39:38,193 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 12:39:39,197 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 12:39:39,404 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 12:39:40,272 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 12:39:41,194 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 12:39:41,319 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 12:39:42,655 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 12:39:44,218 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-08 12:39:46,584 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-08 12:39:48,751 - WorkRoomWebApplication -INFO - *** click the Add button of subcontractor unit price**
+2026-01-08 12:39:48,898 - WorkRoomWebApplication -INFO - *** Entering the itemcode**
+2026-01-08 12:47:22,258 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 12:47:23,360 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 12:47:23,491 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 12:47:26,297 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 12:47:27,336 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 12:47:27,473 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 12:47:29,884 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 12:47:31,141 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-08 12:47:34,780 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-08 12:47:36,910 - WorkRoomWebApplication -INFO - *** click the Add button of subcontractor unit price**
+2026-01-08 12:47:37,057 - WorkRoomWebApplication -INFO - *** Entering the itemcode**
+2026-01-08 12:47:37,806 - WorkRoomWebApplication -INFO - *** Entering the materialName**
+2026-01-08 12:47:38,121 - WorkRoomWebApplication -INFO - *** Entering the UOM**
+2026-01-08 12:47:38,316 - WorkRoomWebApplication -INFO - *** Click The DropDown**
+2026-01-08 12:47:38,531 - WorkRoomWebApplication -INFO - *** List of Subcontractorse**
+2026-01-08 12:47:39,284 - WorkRoomWebApplication -INFO - *** Random sub contractor selecting**
+2026-01-08 12:47:40,482 - WorkRoomWebApplication -INFO - *** Entering the UnitPrice**
+2026-01-08 12:47:40,751 - WorkRoomWebApplication -INFO - *** Selecting The Date **
+2026-01-08 12:47:40,994 - WorkRoomWebApplication -INFO - *** Clicked The saveButton**
+2026-01-08 12:47:41,117 - WorkRoomWebApplication -INFO - *** Clicked Okay Button**
+2026-01-08 13:00:00,558 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 13:00:01,512 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 13:00:01,750 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 13:00:03,045 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 13:00:03,812 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 13:00:03,927 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 13:00:05,742 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 13:00:06,890 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-08 13:00:10,001 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-08 13:00:12,006 - WorkRoomWebApplication -INFO - *** click the Add button of subcontractor unit price**
+2026-01-08 13:00:12,109 - WorkRoomWebApplication -INFO - *** Entering the itemcode**
+2026-01-08 13:00:12,914 - WorkRoomWebApplication -INFO - *** Entering the materialName**
+2026-01-08 13:00:13,240 - WorkRoomWebApplication -INFO - *** Entering the UOM**
+2026-01-08 13:00:13,390 - WorkRoomWebApplication -INFO - *** Click The DropDown**
+2026-01-08 13:00:13,491 - WorkRoomWebApplication -INFO - *** List of Subcontractorse**
+2026-01-08 13:00:13,873 - WorkRoomWebApplication -INFO - *** Random sub contractor selecting**
+2026-01-08 13:00:15,071 - WorkRoomWebApplication -INFO - *** Entering the UnitPrice**
+2026-01-08 13:00:15,251 - WorkRoomWebApplication -INFO - *** Selecting The Date **
+2026-01-08 13:00:15,418 - WorkRoomWebApplication -INFO - *** Clicked The saveButton**
+2026-01-08 13:00:15,508 - WorkRoomWebApplication -INFO - *** Clicked Okay Button**
+2026-01-08 13:00:16,222 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 13:00:17,047 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 13:00:17,407 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 13:00:18,658 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 13:00:19,725 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 13:00:19,858 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 13:00:21,044 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 13:00:22,802 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-08 13:00:28,295 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-08 13:00:30,118 - WorkRoomWebApplication -INFO - *** click the Add button of subcontractor unit price**
+2026-01-08 13:00:30,233 - WorkRoomWebApplication -INFO - *** Clicks The Okay Button **
+2026-01-08 13:00:40,284 - WorkRoomWebApplication -INFO - *** Find The Count of Error Message **
+2026-01-08 13:01:49,610 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 13:01:50,630 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 13:01:50,842 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 13:01:51,996 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 13:01:52,893 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 13:01:52,993 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 13:01:54,315 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 13:01:55,423 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-08 13:02:09,289 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-08 13:02:11,442 - WorkRoomWebApplication -INFO - *** click the Add button of subcontractor unit price**
+2026-01-08 13:02:11,853 - WorkRoomWebApplication -INFO - *** Entering the itemcode**
+2026-01-08 13:02:13,072 - WorkRoomWebApplication -INFO - *** Entering the materialName**
+2026-01-08 13:02:13,279 - WorkRoomWebApplication -INFO - *** Entering the UOM**
+2026-01-08 13:02:13,455 - WorkRoomWebApplication -INFO - *** Click The DropDown**
+2026-01-08 13:02:13,565 - WorkRoomWebApplication -INFO - *** List of Subcontractorse**
+2026-01-08 13:02:13,962 - WorkRoomWebApplication -INFO - *** Random sub contractor selecting**
+2026-01-08 13:02:15,115 - WorkRoomWebApplication -INFO - *** Entering the UnitPrice**
+2026-01-08 13:02:15,294 - WorkRoomWebApplication -INFO - *** Selecting The Date **
+2026-01-08 13:02:15,506 - WorkRoomWebApplication -INFO - *** Clicked The saveButton**
+2026-01-08 13:02:15,626 - WorkRoomWebApplication -INFO - *** Clicked Okay Button**
+2026-01-08 13:02:16,379 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-08 13:02:17,328 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-08 13:02:17,466 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-08 13:02:18,475 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-08 13:02:19,391 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-08 13:02:19,507 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-08 13:02:20,934 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-08 13:02:23,125 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-08 13:02:41,773 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-08 13:02:43,764 - WorkRoomWebApplication -INFO - *** click the Add button of subcontractor unit price**
+2026-01-08 13:02:43,919 - WorkRoomWebApplication -INFO - *** Clicks The Okay Button **
+2026-01-08 13:02:44,682 - WorkRoomWebApplication -INFO - *** Find The Count of Error Message **
