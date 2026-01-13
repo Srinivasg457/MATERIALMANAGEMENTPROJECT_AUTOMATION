@@ -64,4 +64,45 @@ public class MaterialManagementSubcontractorUnitPriceSteps extends  BaseClass {
         logger.info("*** Find The Count of Error Message **");
         SubsUnitPrice.subsErrorMessage();
     }
+
+
+
+
+    @Then("print The list of Subcontractors and there unit price")
+    public void print_the_list_of_subcontractors_and_there_unit_price() {
+        logger.info("*** Table List Data  **");
+        SubsUnitPrice.sharepointSubcontractorPounitPriceGetTableList( );
+        SubsUnitPrice.clickRandomTableItem();
+       // SubsUnitPrice.sharepointSubcontractorPounitPriceTableInsideTablePrint();
+    }
+
+    @Then("click the Import button")
+    public void click_the_import_button() {
+        logger.info("*** Bulk Upload Button Clicked **");
+        SubsUnitPrice.bulkimportButton();
+    }
+
+    @Then("Choose The Empty sheet File for The Bulk upload")
+    public void Choose_The_Empty_sheet_File_for_The_Bulk_upload() {
+        logger.info("*** Sending File Through The Choose File Area With Empty Data of Excel Sheet **");
+
+        SubsUnitPrice.EmptyFileChooseFileSelectArea();
+    }
+
+    @Then("Click The Process import Button")
+    public void click_the_process_import_button() {
+        logger.info("*** Clicked process import button **");
+        SubsUnitPrice.processImportbutton();
+        logger.info("*** Checking What is The Validation Message **");
+        SubsUnitPrice.validationmessage();
+        logger.info("*** After Checking The Validation Message Clicked Okay button **");
+        SubsUnitPrice.OkayBtn();
+    }
+
+
+    @Then("Choose The File With Data for The Bulk upload")
+    public void Choose_The_File_With_Data_for_The_Bulk_upload() {
+        logger.info("*** Sending File Through The Choose File Area With The presence of Data in The Excel Sheet **");
+        SubsUnitPrice.WithDataFileChooseFileSelectArea();
+    }
 }
