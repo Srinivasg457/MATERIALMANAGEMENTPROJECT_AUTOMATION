@@ -6659,3 +6659,268 @@ Session ID: 6a8b3c8c8f96867987e149a43233fb81
 2026-01-13 15:25:48,889 - WorkRoomWebApplication -INFO - *** After Checking The Validation Message Clicked Okay button **
 2026-01-13 15:25:49,184 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
 2026-01-13 15:25:49,420 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-13 15:54:51,899 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-13 15:54:52,186 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 15:54:53,834 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 15:54:55,804 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 15:54:56,048 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 15:54:57,964 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 15:55:00,990 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 15:55:06,582 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 15:55:10,134 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 15:55:11,413 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With Empty Data of Excel Sheet **
+2026-01-13 15:55:14,505 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-13 15:55:14,705 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-13 15:55:15,780 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-13 15:55:15,863 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 15:55:17,760 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 15:55:19,398 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 15:55:19,627 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 15:55:21,583 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 15:55:24,237 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 15:55:29,133 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 15:55:33,229 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 15:55:34,333 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With The presence of Data in The Excel Sheet **
+2026-01-13 15:55:36,293 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-13 15:55:36,435 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-13 15:57:03,462 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-13 15:57:03,564 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 15:57:06,043 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 16:00:19,604 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-13 16:00:19,792 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 16:00:24,868 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 16:00:26,089 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 16:00:26,357 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 16:00:28,242 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 16:00:31,076 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 16:00:37,408 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 16:00:41,509 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 16:00:42,903 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With Empty Data of Excel Sheet **
+2026-01-13 16:00:44,493 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-13 16:00:44,605 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-13 16:00:45,540 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-13 16:00:45,606 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 16:00:50,487 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 16:00:52,161 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 16:00:52,670 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 16:00:54,654 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 16:00:57,551 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 16:01:02,459 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 16:01:06,418 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 16:01:07,905 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With The presence of Data in The Excel Sheet **
+2026-01-13 16:01:09,681 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-13 16:01:09,836 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-13 16:01:41,355 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-13 16:01:41,546 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 16:01:47,139 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 16:01:48,875 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 16:01:49,220 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 16:01:51,120 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 16:01:53,947 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 16:02:00,279 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 16:02:04,032 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 16:02:05,871 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With Empty Data of Excel Sheet **
+2026-01-13 16:02:07,632 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-13 16:02:07,756 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-13 16:02:09,206 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-13 16:02:09,321 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 16:02:12,431 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 16:02:14,127 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 16:02:14,452 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 16:02:15,612 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 16:02:18,808 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 16:02:25,612 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 16:02:30,453 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 16:02:31,401 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With The presence of Data in The Excel Sheet **
+2026-01-13 16:02:33,384 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-13 16:02:33,617 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-13 16:03:49,602 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-13 16:03:52,757 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-13 16:03:53,102 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 16:03:54,852 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 16:03:56,315 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 16:03:56,623 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 16:03:58,380 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 16:04:00,353 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 16:04:09,903 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 16:04:12,556 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 16:04:13,421 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With Empty Data of Excel Sheet **
+2026-01-13 16:04:15,169 - WorkRoomWebApplication -INFO - *** Clicked process import button **
+2026-01-13 16:04:15,599 - WorkRoomWebApplication -INFO - *** Checking What is The Validation Message **
+2026-01-13 16:04:16,621 - WorkRoomWebApplication -INFO - *** After Checking The Validation Message Clicked Okay button **
+2026-01-13 16:04:16,994 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-13 16:04:18,304 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-13 16:04:18,670 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 16:04:20,149 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 16:04:22,194 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 16:04:22,528 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 16:04:23,895 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 16:04:25,769 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 16:04:35,542 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 16:04:38,699 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 16:04:39,577 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With The presence of Data in The Excel Sheet **
+2026-01-13 16:04:41,345 - WorkRoomWebApplication -INFO - *** Clicked process import button **
+2026-01-13 16:04:41,748 - WorkRoomWebApplication -INFO - *** Checking What is The Validation Message **
+2026-01-13 16:04:42,751 - WorkRoomWebApplication -INFO - *** After Checking The Validation Message Clicked Okay button **
+2026-01-13 16:09:17,104 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-13 16:09:19,267 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-13 16:09:19,518 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 16:09:21,194 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 16:09:22,765 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 16:09:23,037 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 16:09:24,882 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 16:09:26,741 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 16:09:36,191 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 16:09:39,198 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 16:09:40,001 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With Empty Data of Excel Sheet **
+2026-01-13 16:09:41,317 - WorkRoomWebApplication -INFO - *** Clicked process import button **
+2026-01-13 16:09:41,699 - WorkRoomWebApplication -INFO - *** Checking What is The Validation Message **
+2026-01-13 16:09:42,184 - WorkRoomWebApplication -INFO - *** After Checking The Validation Message Clicked Okay button **
+2026-01-13 16:09:42,557 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-13 16:09:43,966 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-13 16:09:44,133 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 16:09:46,356 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 16:09:47,598 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 16:09:47,869 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 16:09:49,659 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 16:09:52,436 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 16:09:57,577 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 16:10:00,796 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 16:10:01,608 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With The presence of Data in The Excel Sheet **
+2026-01-13 16:10:03,245 - WorkRoomWebApplication -INFO - *** Clicked process import button **
+2026-01-13 16:10:03,659 - WorkRoomWebApplication -INFO - *** Checking What is The Validation Message **
+2026-01-13 16:10:04,708 - WorkRoomWebApplication -INFO - *** After Checking The Validation Message Clicked Okay button **
+2026-01-13 16:10:37,006 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-13 16:10:39,220 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-13 16:10:39,463 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 16:10:45,346 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 16:10:47,173 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 16:10:47,561 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 16:10:49,371 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 16:10:51,530 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 16:10:55,634 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 16:10:58,478 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 16:10:59,301 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With Empty Data of Excel Sheet **
+2026-01-13 16:11:00,811 - WorkRoomWebApplication -INFO - *** Clicked process import button **
+2026-01-13 16:11:01,203 - WorkRoomWebApplication -INFO - *** Checking What is The Validation Message **
+2026-01-13 16:11:02,205 - WorkRoomWebApplication -INFO - *** After Checking The Validation Message Clicked Okay button **
+2026-01-13 16:11:02,741 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-01-13 16:11:04,044 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-01-13 16:11:04,116 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 16:11:05,612 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 16:11:06,730 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 16:11:06,995 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 16:11:08,605 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 16:11:11,173 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 16:11:19,887 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 16:11:23,039 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 16:11:23,860 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With The presence of Data in The Excel Sheet **
+2026-01-13 16:11:25,205 - WorkRoomWebApplication -INFO - *** Clicked process import button **
+2026-01-13 16:11:25,570 - WorkRoomWebApplication -INFO - *** Checking What is The Validation Message **
+2026-01-13 16:11:26,547 - WorkRoomWebApplication -INFO - *** After Checking The Validation Message Clicked Okay button **
+2026-01-13 16:12:58,990 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-13 16:12:59,182 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 16:13:00,614 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 16:13:01,946 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 16:13:02,195 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 16:13:03,311 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 16:13:05,693 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 16:13:09,869 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 16:13:13,189 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 16:13:14,372 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With Empty Data of Excel Sheet **
+2026-01-13 16:13:16,306 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-13 16:13:16,501 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-13 16:13:17,300 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-13 16:13:17,375 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 16:13:18,867 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 16:13:20,543 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 16:13:20,833 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 16:13:22,587 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 16:13:25,261 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 16:13:28,715 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 16:13:32,537 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 16:13:34,082 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With The presence of Data in The Excel Sheet **
+2026-01-13 16:13:36,122 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-13 16:13:36,304 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-13 16:14:18,862 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-13 16:14:19,101 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 16:14:20,362 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 16:14:22,279 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 16:14:22,518 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 16:14:24,473 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 16:14:27,092 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 16:14:31,281 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 16:14:35,393 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 16:14:36,767 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With Empty Data of Excel Sheet **
+2026-01-13 16:14:37,835 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-13 16:14:38,005 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-13 16:14:38,812 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-13 16:14:38,877 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 16:14:39,992 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 16:14:41,283 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 16:14:41,548 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 16:14:43,251 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 16:14:45,509 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 16:14:49,352 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 16:14:53,030 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 16:14:54,282 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With The presence of Data in The Excel Sheet **
+2026-01-13 16:14:55,695 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-13 16:14:55,841 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-13 16:16:32,795 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-13 16:16:33,065 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 16:16:34,530 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 16:16:36,471 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 16:16:36,770 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 16:16:38,662 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 16:16:41,396 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 16:16:46,153 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 16:16:50,441 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 16:16:51,694 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With Empty Data of Excel Sheet **
+2026-01-13 16:16:53,189 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-13 16:16:53,329 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-13 16:16:54,425 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-13 16:16:54,507 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-13 16:16:56,415 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-13 16:16:57,762 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-13 16:16:58,154 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-13 16:17:00,117 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-13 16:17:02,635 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-13 16:17:07,312 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-13 16:17:10,508 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-13 16:17:11,996 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With The presence of Data in The Excel Sheet **
+2026-01-13 16:17:13,247 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-13 16:17:13,415 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-14 10:53:04,387 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-14 10:53:04,509 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-14 10:59:05,807 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-14 10:59:05,918 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-14 11:06:54,141 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-14 11:06:54,257 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-14 11:06:56,558 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-14 11:06:58,289 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-14 11:06:58,648 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-14 11:07:00,239 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-14 11:07:02,877 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-14 11:07:09,088 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-14 11:07:16,238 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-14 11:07:17,100 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With Empty Data of Excel Sheet **
+2026-01-14 11:07:18,848 - WorkRoomWebApplication -INFO - *** Clicked process import button **
+2026-01-14 11:07:19,331 - WorkRoomWebApplication -INFO - *** Checking What is The Validation Message **
+2026-01-14 11:07:20,888 - WorkRoomWebApplication -INFO - *** After Checking The Validation Message Clicked Okay button **
+2026-01-14 11:07:21,267 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-14 11:07:21,421 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-14 11:07:22,082 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-14 11:07:22,153 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-14 11:07:24,912 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-14 11:07:26,505 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-14 11:07:26,652 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-14 11:07:28,209 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-14 11:07:30,649 - WorkRoomWebApplication -INFO - *** click the Reconcillation and reports main Menu***
+2026-01-14 11:07:36,464 - WorkRoomWebApplication -INFO - *** click the Subs Unit price Sub Menu**
+2026-01-14 11:07:40,637 - WorkRoomWebApplication -INFO - *** Bulk Upload Button Clicked **
+2026-01-14 11:07:41,379 - WorkRoomWebApplication -INFO - *** Sending File Through The Choose File Area With The presence of Data in The Excel Sheet **
+2026-01-14 11:07:42,690 - WorkRoomWebApplication -INFO - *** Clicked process import button **
+2026-01-14 11:07:42,876 - WorkRoomWebApplication -INFO - *** Checking What is The Validation Message **
+2026-01-14 11:07:43,695 - WorkRoomWebApplication -INFO - *** After Checking The Validation Message Clicked Okay button **
+2026-01-14 11:07:43,872 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-14 11:07:44,011 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************

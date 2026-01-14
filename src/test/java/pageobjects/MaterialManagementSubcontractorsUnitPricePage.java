@@ -788,6 +788,8 @@ public void bulkimportButton() {
         Assert.fail("Failed to click bulk import button: " + e.getMessage());
     }
 }
+
+
     public void EmptyFileChooseFileSelectArea() {
         try {
             WebElement ChooseFileArea = waithelper.WaitForElement1(SUPChooseFileArea, 10);
@@ -795,15 +797,11 @@ public void bulkimportButton() {
             // Get relative path from config
             String relativeFilePath = configprop.getProperty("BulkUploAdFile");
 
-            // Try different paths - ADD /tests FOR JENKINS
+            // Try different paths
             String[] possiblePaths = {
-                    // Jenkins/Docker path (THIS IS THE MOST IMPORTANT ONE)
-                    "/tests" + relativeFilePath,
-                    // Other Jenkins paths
-                    "/home/jenkins/workspace" + relativeFilePath,
                     // Docker container path
                     "/home/seluser/automation" + relativeFilePath,
-                    // Local development path
+                    // Local path
                     System.getProperty("user.dir") + relativeFilePath,
                     // Alternative Docker path
                     "/tmp" + relativeFilePath
@@ -815,44 +813,34 @@ public void bulkimportButton() {
                 try {
                     System.out.println("Trying path: " + filePath);
                     ChooseFileArea.clear();
-                    Thread.sleep(100);
-
-                    // Send file path
                     ChooseFileArea.sendKeys(filePath);
-                    Thread.sleep(1000); // Give more time
 
+                    Thread.sleep(500);
                     String uploadedFile = ChooseFileArea.getAttribute("value");
-                    System.out.println("Uploaded file value: " + uploadedFile);
-
                     if (uploadedFile != null && !uploadedFile.isEmpty()) {
                         uploadedFilePath = filePath;
-                        System.out.println("SUCCESS: Uploaded using path: " + filePath);
+                        System.out.println("Successfully uploaded using path: " + filePath);
                         break;
                     }
                 } catch (Exception e) {
                     System.out.println("Failed with path " + filePath + ": " + e.getMessage());
-                    // Don't break, try next path
                     continue;
                 }
             }
 
             if (uploadedFilePath == null) {
-                // Add debug info
-                System.out.println("=== DEBUG INFO ===");
-                System.out.println("Current directory: " + System.getProperty("user.dir"));
-                System.out.println("Relative file path from config: " + relativeFilePath);
-                System.out.println("Is Jenkins environment: " + (System.getenv("JENKINS_HOME") != null));
-                System.out.println("=== END DEBUG ===");
-
                 Assert.fail("Failed to upload file with any path. Tried: " + Arrays.toString(possiblePaths));
             }
 
         } catch (Exception e) {
-            System.out.println("ERROR in EmptyFileChooseFileSelectArea: " + e.getMessage());
+            System.out.println("ERROR in ChooseFileSelectArea: " + e.getMessage());
             e.printStackTrace();
             Assert.fail("Failed to upload file: " + e.getMessage());
         }
     }
+
+
+
 //public void EmptyFileChooseFileSelectArea() {
 //    try {
 //
