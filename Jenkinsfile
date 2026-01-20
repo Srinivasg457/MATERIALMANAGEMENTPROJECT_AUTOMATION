@@ -198,8 +198,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 git branch: 'srinivas',
-                    url: 'https://github.com/Srinivasg457/MATERIALMANAGEMENTPROJECT_AUTOMATION.git',
-                    poll: false
+                    url: 'https://github.com/Srinivasg457/MATERIALMANAGEMENTPROJECT_AUTOMATION.git'
             }
         }
 
@@ -224,11 +223,15 @@ pipeline {
 
                     // Wait for Selenium to be ready
                     sh '''
-                        timeout 60 bash -c 'until curl -s http://localhost:4444/status | grep -q "ready"; do
-                            echo "Waiting for Selenium to start..."
+                        echo "Waiting for Selenium to start..."
+                        for i in {1..12}; do
+                            if curl -s http://localhost:4444/status | grep -q "ready"; then
+                                echo "Selenium is ready!"
+                                break
+                            fi
+                            echo "Attempt $i: Selenium not ready yet..."
                             sleep 5
-                        done'
-                        echo "Selenium is ready!"
+                        done
                     '''
                 }
             }
@@ -244,7 +247,7 @@ pipeline {
                             --network=host \
                             -e "TEST_FILE_BASE_PATH=/home/seluser/automation" \
                             maven:3.9.6-eclipse-temurin-17 \
-                            mvn clean test -Dtest=TestRunner
+                            mvn clean test
                     '''
                 }
             }
@@ -259,31 +262,22 @@ pipeline {
                     docker stop selenium-chrome 2>/dev/null || true
                     docker rm selenium-chrome 2>/dev/null || true
                 '''
-                // Archive test results
-                junit '**/target/surefire-reports/*.xml'
-                archiveArtifacts artifacts: '**/target/*.png, **/target/*.log', allowEmptyArchive: true
+                archiveArtifacts artifacts: '**/target/surefire-reports/*.xml', allowEmptyArchive: true
             }
         }
 
         success {
-            echo "✅ Pipeline completed successfully!"
+            echo "✅ Test automation completed successfully."
             mail to: 'srinivas.g@limitscale.io',
-                 subject: "✅ Test Automation Success - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                 body: "The test automation pipeline completed successfully.\n\nBuild: ${env.BUILD_URL}"
+                 subject: "✅ Test automation completed successfully",
+                 body: "Test automation completed successfully in Jenkins."
         }
 
         failure {
-            echo "❌ Pipeline failed!"
+            echo "❌ Pipeline failed. Check server logs for details."
             mail to: 'srinivas.g@limitscale.io',
-                 subject: "❌ Test Automation Failed - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                 body: "The test automation pipeline failed.\n\nCheck build: ${env.BUILD_URL}"
-        }
-
-        unstable {
-            echo "⚠️ Pipeline unstable!"
-            mail to: 'srinivas.g@limitscale.io',
-                 subject: "⚠️ Test Automation Unstable - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                 body: "The test automation pipeline is unstable.\n\nCheck build: ${env.BUILD_URL}"
+                 subject: "❌ Test automation Failed",
+                 body: "Test automation Failed in Jenkins."
         }
     }
 }
