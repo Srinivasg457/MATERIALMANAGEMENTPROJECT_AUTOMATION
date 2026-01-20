@@ -202,34 +202,47 @@ pipeline {
             }
         }
 
-        stage('Setup Selenium Docker') {
+        stage('Cleanup Existing Containers') {
             steps {
                 script {
-                    // Cleanup existing containers
                     sh '''
+                        # Stop and remove any existing selenium containers
                         docker stop selenium-chrome 2>/dev/null || true
                         docker rm selenium-chrome 2>/dev/null || true
-                    '''
 
-                    // Start Selenium with volume mount
+                        # Check for containers using port 4444
+                        docker ps --filter "publish=4444" --format "{{.ID}}" | while read id; do
+                            docker stop $id 2>/dev/null || true
+                            docker rm $id 2>/dev/null || true
+                        done
+                    '''
+                }
+            }
+        }
+
+        stage('Start Selenium Docker') {
+            steps {
+                script {
                     sh '''
+                        # Pull latest selenium image
+                        docker pull selenium/standalone-chrome:latest
+
+                        # Start selenium container with volume mount
                         docker run -d \
                             -p 4444:4444 \
                             --shm-size="2g" \
                             --name selenium-chrome \
                             -v ${WORKSPACE}:/home/seluser/automation \
                             selenium/standalone-chrome:latest
-                    '''
 
-                    // Wait for Selenium to be ready
-                    sh '''
+                        # Wait for selenium to be ready
                         echo "Waiting for Selenium to start..."
                         for i in {1..12}; do
-                            if curl -s http://localhost:4444/status | grep -q "ready"; then
+                            if curl -s http://localhost:4444/status > /dev/null; then
                                 echo "Selenium is ready!"
                                 break
                             fi
-                            echo "Attempt $i: Selenium not ready yet..."
+                            echo "Attempt $i: Waiting for Selenium..."
                             sleep 5
                         done
                     '''
@@ -237,10 +250,11 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
+        stage('Run Maven Tests') {
             steps {
                 script {
                     sh '''
+                        # Run tests in Maven container
                         docker run --rm \
                             -v ${WORKSPACE}:/tests \
                             -w /tests \
@@ -258,26 +272,28 @@ pipeline {
         always {
             script {
                 sh '''
-                    echo "Cleaning up Docker containers..."
+                    # Cleanup selenium container
                     docker stop selenium-chrome 2>/dev/null || true
                     docker rm selenium-chrome 2>/dev/null || true
                 '''
-                archiveArtifacts artifacts: '**/target/surefire-reports/*.xml', allowEmptyArchive: true
+                // Archive test results
+                junit '**/target/surefire-reports/*.xml'
+                archiveArtifacts artifacts: '**/target/*.png, **/target/*.log', allowEmptyArchive: true
             }
         }
 
         success {
-            echo "✅ Test automation completed successfully."
+            echo "✅ Pipeline completed successfully!"
             mail to: 'srinivas.g@limitscale.io',
-                 subject: "✅ Test automation completed successfully",
-                 body: "Test automation completed successfully in Jenkins."
+                 subject: "✅ Test Automation Success - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                 body: "The test automation pipeline completed successfully.\n\nBuild: ${env.BUILD_URL}"
         }
 
         failure {
-            echo "❌ Pipeline failed. Check server logs for details."
+            echo "❌ Pipeline failed!"
             mail to: 'srinivas.g@limitscale.io',
-                 subject: "❌ Test automation Failed",
-                 body: "Test automation Failed in Jenkins."
+                 subject: "❌ Test Automation Failed - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                 body: "The test automation pipeline failed.\n\nCheck build: ${env.BUILD_URL}"
         }
     }
 }
