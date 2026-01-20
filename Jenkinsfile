@@ -195,72 +195,57 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Repo') {
+        stage('Clone Repository') {
             steps {
-                git branch: 'srinivas', url: 'https://github.com/Srinivasg457/MATERIALMANAGEMENTPROJECT_AUTOMATION.git'
+                git branch: 'srinivas',
+                    url: 'https://github.com/Srinivasg457/MATERIALMANAGEMENTPROJECT_AUTOMATION.git',
+                    poll: false
             }
         }
 
-        stage('Run in Docker') {
+        stage('Setup Selenium Docker') {
             steps {
                 script {
-                    sh 'docker pull selenium/standalone-chrome:latest'
-
+                    // Cleanup existing containers
                     sh '''
-                        echo "Checking for existing container using port 4444..."
-                        PORT_IN_USE=$(docker ps --filter "publish=4444" --format "{{.ID}}")
-                        if [ ! -z "$PORT_IN_USE" ]; then
-                            echo "Stopping and removing container $PORT_IN_USE..."
-                            docker stop $PORT_IN_USE || true
-                            docker rm $PORT_IN_USE || true
-                            sleep 2
-                        fi
+                        docker stop selenium-chrome 2>/dev/null || true
+                        docker rm selenium-chrome 2>/dev/null || true
                     '''
 
+                    // Start Selenium with volume mount
                     sh '''
-                        if docker ps -a --format '{{.Names}}' | grep -q '^selenium-chrome$'; then
-                            echo "Cleaning up old selenium-chrome container..."
-                            docker stop selenium-chrome || true
-                            docker rm selenium-chrome || true
-                        fi
-                    '''
-
-                    // UPDATED: Add volume mount here
-                    sh '''
-                        echo "Starting selenium-chrome container with volume mount..."
                         docker run -d \
                             -p 4444:4444 \
                             --shm-size="2g" \
                             --name selenium-chrome \
-                            -v $PWD:/home/seluser/automation \
+                            -v ${WORKSPACE}:/home/seluser/automation \
                             selenium/standalone-chrome:latest
                     '''
 
+                    // Wait for Selenium to be ready
                     sh '''
-                        echo "Waiting for Selenium to become ready..."
-                        for i in {1..10}; do
-                            if curl -s http://localhost:4444/status | grep -q "ready"; then
-                                echo "Selenium is ready."
-                                break
-                            else
-                                echo "Waiting..."
-                                sleep 10
-                            fi
-                        done
+                        timeout 60 bash -c 'until curl -s http://localhost:4444/status | grep -q "ready"; do
+                            echo "Waiting for Selenium to start..."
+                            sleep 5
+                        done'
+                        echo "Selenium is ready!"
                     '''
+                }
+            }
+        }
 
-                    // UPDATED: Add environment variable for file paths
+        stage('Run Tests') {
+            steps {
+                script {
                     sh '''
-                        echo "Running tests inside Maven container..."
                         docker run --rm \
-                            -v $PWD:/tests \
+                            -v ${WORKSPACE}:/tests \
                             -w /tests \
                             --network=host \
                             -e "TEST_FILE_BASE_PATH=/home/seluser/automation" \
-                            maven:3.9.6-eclipse-temurin-17 mvn clean test
+                            maven:3.9.6-eclipse-temurin-17 \
+                            mvn clean test -Dtest=TestRunner
                     '''
-
-                    sh 'docker stop selenium-chrome || true'
                 }
             }
         }
@@ -270,25 +255,35 @@ pipeline {
         always {
             script {
                 sh '''
-                    echo "Final cleanup..."
-                    docker rm -f selenium-chrome || true
+                    echo "Cleaning up Docker containers..."
+                    docker stop selenium-chrome 2>/dev/null || true
+                    docker rm selenium-chrome 2>/dev/null || true
                 '''
+                // Archive test results
+                junit '**/target/surefire-reports/*.xml'
+                archiveArtifacts artifacts: '**/target/*.png, **/target/*.log', allowEmptyArchive: true
             }
-            archiveArtifacts artifacts: '**/target/surefire-reports/*.xml', allowEmptyArchive: true
         }
 
         success {
-            echo "✅ Test automation completed successfully."
+            echo "✅ Pipeline completed successfully!"
             mail to: 'srinivas.g@limitscale.io',
-                 subject: "✅ Test automation completed successfully",
-                 body: "Test automation completed successfully in Jenkins."
+                 subject: "✅ Test Automation Success - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                 body: "The test automation pipeline completed successfully.\n\nBuild: ${env.BUILD_URL}"
         }
 
         failure {
-            echo "❌ Pipeline failed. Check server logs for details."
+            echo "❌ Pipeline failed!"
             mail to: 'srinivas.g@limitscale.io',
-                 subject: "❌ Test automation Failed",
-                 body: "Test automation Failed in Jenkins."
+                 subject: "❌ Test Automation Failed - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                 body: "The test automation pipeline failed.\n\nCheck build: ${env.BUILD_URL}"
+        }
+
+        unstable {
+            echo "⚠️ Pipeline unstable!"
+            mail to: 'srinivas.g@limitscale.io',
+                 subject: "⚠️ Test Automation Unstable - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                 body: "The test automation pipeline is unstable.\n\nCheck build: ${env.BUILD_URL}"
         }
     }
 }
