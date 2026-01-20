@@ -290,22 +290,35 @@ pipeline {
 //                  body: "Test automation Failed in Jenkins."
 //         }
 //     }
- post {
-    success {
-        emailext (
-            to: 'srinivas.g@limitscale.io',
-            subject: "✅ BUILD SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-            body: "Tests PASSED: 2 tests executed successfully\n\nBuild URL: ${env.BUILD_URL}"
-        )
-    }
-    failure {
-        emailext (
-            to: 'srinivas.g@limitscale.io',
-            subject: "❌ BUILD FAILED: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-            body: "Tests FAILED\n\nCheck build: ${env.BUILD_URL}"
-        )
-    }
- }
+     post {
+             always {
+                 script {
+                     sh '''
+                         echo "Final cleanup..."
+                         docker rm -f selenium-chrome || true
+                     '''
+                 }
+                 archiveArtifacts artifacts: '**/target/surefire-reports/*.xml', allowEmptyArchive: true
+             }
+
+             success {
+                 echo "✅ Test automation completed successfully."
+
+                 // Send email
+                 mail to: 'shreelimitscale@gmail.com',
+                      subject: "✅ Test automation completed successfully",
+                      body: "Test automation completed successfully in Jenkins."
+             }
+
+             failure {
+                 echo "❌ Pipeline failed. Check server logs for details."
+
+                 // Send email
+                 mail to: 'shreelimitscale@gmail.com',
+                      subject: "❌ Test automation Failed",
+                      body: "Test automation Failed in Jenkins."
+             }
+         }
 }
 
 
