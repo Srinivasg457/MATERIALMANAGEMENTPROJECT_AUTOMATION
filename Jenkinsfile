@@ -189,7 +189,7 @@
 //                      body: "Test automation Failed in Jenkins."
 //             }
 //         }
-
+//}
 //**************************** Try 2 *************************
 pipeline {
     agent any
@@ -265,32 +265,36 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            script {
-                sh '''
-                    echo "Final cleanup..."
-                    docker rm -f selenium-chrome || true
-                '''
+post {
+            always {
+                script {
+                    sh '''
+                        echo "Final cleanup..."
+                        docker rm -f selenium-chrome || true
+                    '''
+                }
+                archiveArtifacts artifacts: '**/target/surefire-reports/*.xml', allowEmptyArchive: true
             }
-            archiveArtifacts artifacts: '**/target/surefire-reports/*.xml', allowEmptyArchive: true
-        }
 
-        success {
-            echo "✅ Test automation completed successfully."
-            mail to: 'srinivas.g@limitscale.io',
-                 subject: "✅ Test automation completed successfully",
-                 body: "Test automation completed successfully in Jenkins."
-        }
+            success {
+                echo "✅ Test automation completed successfully."
 
-        failure {
-            echo "❌ Pipeline failed. Check server logs for details."
-            mail to: 'srinivas.g@limitscale.io',
-                 subject: "❌ Test automation Failed",
-                 body: "Test automation Failed in Jenkins."
-        }
-    }
+                // Send email
+                mail to: 'srinivas.g@limitscale.io',
+                     subject: "✅ Test automation completed successfully",
+                     body: "Test automation completed successfully in Jenkins."
 
+            }
+
+            failure {
+                echo "❌ Pipeline failed. Check server logs for details."
+
+                // Send email
+                mail to: 'srinivas.g@limitscale.io',
+                     subject: "❌ Test automation Failed",
+                     body: "Test automation Failed in Jenkins."
+            }
+        }
 }
 
 
