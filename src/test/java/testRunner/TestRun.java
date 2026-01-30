@@ -13,13 +13,13 @@ import org.junit.runner.RunWith;
 //       features="src/test/java/Features/2_materialManagementSupplierMasterData.feature",
 //        features ="src/test/java/Features/5_materialmanagementCableManager.feature",
 //        features="src/test/java/Features/3_materialManagementSubContractor.feature",
-        features="src/test/java/Features/6_SubcontractorPoUnitprice.feature",
-
+//        features="src/test/java/Features/6_SubcontractorPoUnitprice.feature",
+           features="src/test/java/Features/7_MaterialSiteManger.feature",
 
         //"src/test/java/Features/1_materialManagementCustomer.feature",
         //src/test/java/Features/workroomlogin.feature
         glue = {"stepDefinations", "hooks"},
-//        dryRun = true,
+//       dryRun = true,
         dryRun = false,
         // tags ="@sanity or @regression", // Ensure correct tag syntax,
         // tags= "@sanity",  // this will execute only sanity

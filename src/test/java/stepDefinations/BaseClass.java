@@ -26,13 +26,14 @@ public class BaseClass {
 
 
 
-
     //    for sharepoint project here below
     public MaterialManagementCustomerPage AddCustomer;
 //    public BaseClass EmailUtils;
     public static EmailReading emailu;
 
     public MaterialManagementMateialModulePage material;
+    public materialmanagementSiteMangerMaterialInwardAndOutwardPage SiteManager;
+
     public MaterialManagementSupplierMasterDataPage supplier;
 
     public MaterialManagementSubContractorMasterDataPage subcontractor;
