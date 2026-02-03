@@ -521,7 +521,7 @@ pipeline {
             echo "📦 Artifacts: ${env.BUILD_URL}artifact/"
 
             // ✅ EMAIL NOW ENABLED - Will work!
-            mail to: 'srinivas.g@limitscale.io','srinivasg457@gmail.com',
+            mail to: 'srinivas.g@limitscale.io,srinivasg457@gmail.com',
                  subject: "✅ SUCCESS: Test Automation Completed - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                  body: """Test automation completed successfully in Jenkins.
 
@@ -542,7 +542,7 @@ pipeline {
             echo "🔍 Debug URL: ${env.BUILD_URL}"
 
             // ✅ EMAIL NOW ENABLED - Will work!
-            mail to: 'srinivas.g@limitscale.io','srinivasg457@gmail.com',
+            mail to: 'srinivas.g@limitscale.io,srinivasg457@gmail.com',
                  subject: "❌ FAILURE: Test Automation Failed - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                  body: """Test automation failed in Jenkins.
 
