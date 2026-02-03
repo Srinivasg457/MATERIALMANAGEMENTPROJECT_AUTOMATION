@@ -489,7 +489,7 @@ public class MaterialManagementWebApphooks extends BaseClass {
     // ********************* Start **********************************************
 
 //
-//        @Before
+        @Before
         public void setup() throws IOException {
             // 1. Load configuration properties
             configprop = new Properties();
@@ -579,8 +579,8 @@ public class MaterialManagementWebApphooks extends BaseClass {
 
 
 
-//
-//@Before
+////
+////@Before
 //public void setup() throws IOException, MalformedURLException {
 //    // Load config.properties
 //    configprop = new Properties();
@@ -635,16 +635,16 @@ public class MaterialManagementWebApphooks extends BaseClass {
 //    logger.info("************* Remote WebDriver Launched in Headless Mode *****************");
 //    driver.manage().window().maximize();
 //}
-
-
-
-
-    //chnages for running multiple scenarios
-    //This Script Run For Clicking The Side Menu Masters
-
-
-
-
+//
+//
+//
+//
+////    chnages for running multiple scenarios
+////    This Script Run For Clicking The Side Menu Masters
+//
+//
+//
+//
 //@Before(order = 0)
 //public void loadProperties() throws IOException {
 //    // Load config.properties
