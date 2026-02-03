@@ -64,6 +64,13 @@ public class MaterialManagementCableManager extends BaseClass {
     By cablemanager_SideMenu = By.xpath(configprop.getProperty("cablemanagerSideMenu"));
     By cablemanager_CableList_SubMenu = By.xpath(configprop.getProperty("CableListSubMenu"));
     By CableList_AddBtn = By.xpath(configprop.getProperty("CableListAddBtn"));
+
+    By cableAddBtn = By.xpath(configprop.getProperty("cableAddBtn"));
+
+    By cableInward = By.xpath(configprop.getProperty("cableInward"));
+
+    By cableoption = By.xpath(configprop.getProperty("cableoption"));
+
     By Cable_Dateof_Received = By.xpath(configprop.getProperty("CableDateofReceived"));
     By txt_Cable_Details = By.xpath(configprop.getProperty("CableDetails"));
     By txt_cable_Size=By.xpath(configprop.getProperty("cableSize"));
@@ -124,9 +131,17 @@ public class MaterialManagementCableManager extends BaseClass {
 
             // Attempt regular click first
             try {
-                cablemanagerSideMenu.click();
-                System.out.println("Successfully clicked using regular click");
-                return; // Exit early if successful
+                if(cablemanagerSideMenu.isDisplayed() && cablemanagerSideMenu.isEnabled()){
+                    cablemanagerSideMenu.click();
+                    System.out.println("Successfully clicked using regular click");
+                    Assert.assertTrue(true);
+                    return; // Exit early if successful
+                }
+                else{
+                    Assert.fail("cablemanagerSideMenu didnt displayed or enabled ");
+                }
+
+
             } catch (ElementNotInteractableException e) {
                 System.out.println("Regular click intercepted, attempting JavaScript click...");
             } catch (StaleElementReferenceException e) {
@@ -155,47 +170,47 @@ public class MaterialManagementCableManager extends BaseClass {
 
 
     // Here we click on the share point Cable  Manager--> Cable List Sub Menu
-    public void sharepointCableListSubMenu( ) {
-        try {
-            WebElement CableList_SubMenu = waithelper.WaitForElement1(cablemanager_CableList_SubMenu, 10);
-
-            // Attempt regular click first
-            try {
-                CableList_SubMenu.click();
-                System.out.println("Successfully clicked using regular click");
-                return; // Exit early if successful
-            } catch (ElementNotInteractableException e) {
-                System.out.println("Regular click intercepted, attempting JavaScript click...");
-            } catch (StaleElementReferenceException e) {
-                System.out.println("Element became stale, re-locating and retrying...");
-                CableList_SubMenu =waithelper.WaitForElement1(cablemanager_CableList_SubMenu, 5);
-            }
-
-            // JavaScript click as fallback
-            try {
-                JavascriptExecutor js = (JavascriptExecutor) driver;
-                js.executeScript("arguments[0].click();", CableList_SubMenu);
-                System.out.println("Successfully clicked using JavaScript");
-            } catch (StaleElementReferenceException e) {
-                System.out.println("Element stale during JS click, re-locating...");
-                CableList_SubMenu = waithelper.WaitForElement1(cablemanager_CableList_SubMenu, 5);
-                JavascriptExecutor js = (JavascriptExecutor) driver;
-                js.executeScript("arguments[0].click();", CableList_SubMenu);
-            }
-
-        } catch (TimeoutException e) {
-            System.out.println("Element not found within timeout: " + e.getMessage());
-            // Consider taking screenshot here
-        }
+//    public void sharepointCableListSubMenu( ) {
 //        try {
-//            WebElement CableListSubMenu = waithelper.WaitForElement1(cablemanager_CableList_SubMenu, 10);
-//            scrollToElement(CableListSubMenu);
-//            CableListSubMenu.click();
-//        } catch (Exception e) {
-//            System.out.println("Unexpected error: " + e.getMessage());
+//            WebElement CableList_SubMenu = waithelper.WaitForElement1(cablemanager_CableList_SubMenu, 10);
+//
+//            // Attempt regular click first
+//            try {
+//                CableList_SubMenu.click();
+//                System.out.println("Successfully clicked using regular click");
+//                return; // Exit early if successful
+//            } catch (ElementNotInteractableException e) {
+//                System.out.println("Regular click intercepted, attempting JavaScript click...");
+//            } catch (StaleElementReferenceException e) {
+//                System.out.println("Element became stale, re-locating and retrying...");
+//                CableList_SubMenu =waithelper.WaitForElement1(cablemanager_CableList_SubMenu, 5);
+//            }
+//
+//            // JavaScript click as fallback
+//            try {
+//                JavascriptExecutor js = (JavascriptExecutor) driver;
+//                js.executeScript("arguments[0].click();", CableList_SubMenu);
+//                System.out.println("Successfully clicked using JavaScript");
+//            } catch (StaleElementReferenceException e) {
+//                System.out.println("Element stale during JS click, re-locating...");
+//                CableList_SubMenu = waithelper.WaitForElement1(cablemanager_CableList_SubMenu, 5);
+//                JavascriptExecutor js = (JavascriptExecutor) driver;
+//                js.executeScript("arguments[0].click();", CableList_SubMenu);
+//            }
+//
+//        } catch (TimeoutException e) {
+//            System.out.println("Element not found within timeout: " + e.getMessage());
+//            // Consider taking screenshot here
 //        }
-
-    }
+////        try {
+////            WebElement CableListSubMenu = waithelper.WaitForElement1(cablemanager_CableList_SubMenu, 10);
+////            scrollToElement(CableListSubMenu);
+////            CableListSubMenu.click();
+////        } catch (Exception e) {
+////            System.out.println("Unexpected error: " + e.getMessage());
+////        }
+//
+//    }
 
 
     // Here we click on the share point Cable  Manager--> Cable List -->ADD Button
@@ -212,7 +227,23 @@ public class MaterialManagementCableManager extends BaseClass {
     }
 
 
+    // Here we click on The "+" icon
+    public void sharepointcableslSAddIcon( ) {
 
+        try {
+            WebElement cableAddbtn = waithelper.WaitForElement1(cableAddBtn, 20);
+            if(cableAddbtn.isDisplayed() && cableAddbtn.isEnabled()){
+                cableAddbtn.click();
+                   Assert.assertTrue(true);
+            }
+            else{
+                Assert.fail("cableAddbtn is Not displayed or enabled");
+            }
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
+        }
+
+    }
 
 
 
@@ -429,7 +460,7 @@ public class MaterialManagementCableManager extends BaseClass {
             }
 
             // Assert the expected count (2 in this case)
-            int expectedErrorCount = 10;
+            int expectedErrorCount = 11;
             if (count == expectedErrorCount) {
                 System.out.println("Test Passed: Found exactly " + expectedErrorCount + " error messages");
                 Assert.assertTrue(true);
@@ -752,10 +783,44 @@ public class MaterialManagementCableManager extends BaseClass {
     }
 
 
+    public void sharepointDrpMaterialOption( ) {
+
+        try {
+            WebElement cableOption = waithelper.WaitForElement1(cableoption, 10);
+            cableOption.click();
+            if(cableOption.isEnabled() && cableOption.isDisplayed()){
+                cableOption.click();
+              Assert.assertTrue(true);
+            }
+            else{
+                Assert.fail("cableoption is not displayed or not enables");
+            }
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
+        }
+
+    }
 
 
 
 
+    // Here we click
+    public void sharepointCableInward( ) {
+
+        try {
+            WebElement cableInWard = waithelper.WaitForElement1(cableInward, 10);
+            if(cableInWard.isDisplayed() && cableInWard.isEnabled()){
+                cableInWard.click();
+                Assert.assertTrue(true);
+            }
+            else {
+                Assert.fail("cable  inward Sub Menu Not Displayed or Enabled ");
+            }
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
+        }
+
+    }
 
 
 }

@@ -63,13 +63,16 @@ Feature: Material Management Customer Module
     And click the custmer side menu
     Then Get The List of Data of Customers
 
-      @regression
-  Scenario: Moving to Customer Module And Check The VIEW Action Of The Customer
-    When the user enters their email "Srinivas.g@limitscale.io"
-    And the user clicks the Submit button
-    Then the user enters their password "Limitscale@05"
-    And the user clicks the login button
-#    Then click the master side menu
-    And click the custmer side menu
-    Then Perform The Check Of View of The Custome Data
+
+  # *********** View Button is Removed in the  Ui ************
+
+#      @regression
+#  Scenario: Moving to Customer Module And Check The VIEW Action Of The Customer
+#    When the user enters their email "Srinivas.g@limitscale.io"
+#    And the user clicks the Submit button
+#    Then the user enters their password "Limitscale@05"
+#    And the user clicks the login button
+##    Then click the master side menu
+#    And click the custmer side menu
+#    Then Perform The Check Of View of The Custome Data
 

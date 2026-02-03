@@ -2,6 +2,7 @@ package stepDefinations;
 
 
 import io.cucumber.java.en.*;
+import org.openqa.selenium.WebElement;
 import pageobjects.*;
 import java.io.IOException;
 
@@ -14,7 +15,7 @@ public class materialManagementCableManagerSteps extends BaseClass {
         supplier=new MaterialManagementSupplierMasterDataPage(driver);
         //For New Build in the Material management page
         cableManager = new MaterialManagementCableManager(driver);
-
+        material = new MaterialManagementMateialModulePage(driver);
         AddCustomer = new MaterialManagementCustomerPage(driver);
     }
     @Given("the user navigates to the login page with the URL {string}")
@@ -28,16 +29,41 @@ public class materialManagementCableManagerSteps extends BaseClass {
         logger.info("************* Click The Cable Manager Side Menu  *****************");
         cableManager.sharepointCablemanagerSideMenu();
     }
-    @Then("click the cable List side menu")
-    public void click_the_cable_list_side_menu() {
-        logger.info("************* Click The Cable List Sub Menu  *****************");
-        cableManager.sharepointCableListSubMenu( );
+//    @Then("click the cable List side menu")
+//    public void click_the_cable_list_side_menu() {
+//        logger.info("************* Click The Cable List Sub Menu  *****************");
+//        cableManager.sharepointCableListSubMenu( );
+//    }
+
+    @Then("Click on the Add button and select the cables dropdown")
+    public void click_on_the_add_button_and_select_the_cables_dropdown() {
+        logger.info("*** Click on the Add '+' button ***");
+        cableManager.sharepointcableslSAddIcon( );
+        logger.info("*** select the Materials dropdown ***");
+        cableManager.sharepointDrpMaterialOption();
+
     }
+
+
     @Then("Click on the Add Button")
     public void click_on_the_add_button() {
         logger.info("************* Click The Cable List ADD Button  *****************");
         cableManager.sharepointCableListAddBtn( );
     }
+
+
+    @Then("Click The Cable Inward Sub Menu")
+    public void Click_The_Cable_Inward_Sub_Menu() {
+        logger.info("*** click the Materials Report Sub menu ***");
+
+        cableManager.sharepointCableInward();
+    }
+
+
+
+
+
+
     @Then("Fill all the Cable Inward required material details and submit the details")
     public void fill_all_the_cable_inward_required_material_details_and_submit_the_details() {
         logger.info("************* Fill All The Required Fields in the Material inward form *****************");

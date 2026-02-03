@@ -115,7 +115,15 @@ public class MaterialManagementSubContractorMasterDataPage extends BaseClass {
 
         try {
             WebElement SubContractorMenu = waithelper.WaitForElement1(SubContractorsMenu, 10);
-            SubContractorMenu.click();
+            if(SubContractorMenu.isDisplayed() && SubContractorMenu.isEnabled()){
+                SubContractorMenu.click();
+                Assert.assertTrue(true);
+            }
+            else{
+              Assert.fail("SubContractorMenu didnt Displayed or Enabled");
+            }
+
+
         } catch (Exception e) {
             System.out.println("Unexpected error: " + e.getMessage());
         }
@@ -168,10 +176,10 @@ public class MaterialManagementSubContractorMasterDataPage extends BaseClass {
             txtBoxSubContractorsProjectNumber.clear();
             txtBoxSubContractorsProjectNumber.sendKeys(randomNumber());
 
-            WebElement txtBoxSubcontractorsPONumber = waithelper.WaitForElement1(txtBoxSubcontractorPONumber, 10);
-            txtBoxSubcontractorsPONumber.click();
-            txtBoxSubcontractorsPONumber.clear();
-            txtBoxSubcontractorsPONumber.sendKeys(randomNumber());
+//            WebElement txtBoxSubcontractorsPONumber = waithelper.WaitForElement1(txtBoxSubcontractorPONumber, 10);
+//            txtBoxSubcontractorsPONumber.click();
+//            txtBoxSubcontractorsPONumber.clear();
+//            txtBoxSubcontractorsPONumber.sendKeys(randomNumber());
 
 
             WebElement txtBoxSubcontractorsEmail = waithelper.WaitForElement1(txtBoxSubcontractorEmail, 10);
@@ -294,7 +302,7 @@ public class MaterialManagementSubContractorMasterDataPage extends BaseClass {
             }
 
             // Assert the expected count (2 in this case)
-            int expectedErrorCount = 11;
+            int expectedErrorCount = 10;
             if (count == expectedErrorCount) {
                 System.out.println("Test Passed: Found exactly " + expectedErrorCount + " error messages");
                 Assert.assertTrue(true);

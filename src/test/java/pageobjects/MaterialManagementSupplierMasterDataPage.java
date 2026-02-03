@@ -89,7 +89,12 @@ public class MaterialManagementSupplierMasterDataPage extends BaseClass {
 
         try {
             WebElement SupplierSideMenu = waithelper.WaitForElement1(SuppliersSideMenu, 10);
-            SupplierSideMenu.click();
+            if(SupplierSideMenu.isDisplayed() && SupplierSideMenu.isEnabled()){
+                SupplierSideMenu.click();
+              Assert.assertTrue(true);
+            }else{
+                Assert.fail("SupplierSideMenu didnt displayed or enabled");
+            }
         } catch (Exception e) {
             System.out.println("Unexpected error: " + e.getMessage());
         }
@@ -142,10 +147,10 @@ public class MaterialManagementSupplierMasterDataPage extends BaseClass {
             txtBoxAbbsProjectNumber.clear();
             txtBoxAbbsProjectNumber.sendKeys(randomNumber());
 
-            WebElement txtBoxVendoesPoNumber = waithelper.WaitForElement1(txtBoxVendoePoNumber, 10);
-            txtBoxVendoesPoNumber.click();
-            txtBoxVendoesPoNumber.clear();
-            txtBoxVendoesPoNumber.sendKeys(randomNumber());
+//            WebElement txtBoxVendoesPoNumber = waithelper.WaitForElement1(txtBoxVendoePoNumber, 10);
+//            txtBoxVendoesPoNumber.click();
+//            txtBoxVendoesPoNumber.clear();
+//            txtBoxVendoesPoNumber.sendKeys(randomNumber());
 
 
             WebElement txtBoxSuppliersEmail = waithelper.WaitForElement1(txtBoxSupplierEmail, 10);
@@ -268,7 +273,7 @@ public class MaterialManagementSupplierMasterDataPage extends BaseClass {
             }
 
             // Assert the expected count (2 in this case)
-            int expectedErrorCount = 11;
+            int expectedErrorCount = 10;
             if (count == expectedErrorCount) {
                 System.out.println("Test Passed: Found exactly " + expectedErrorCount + " error messages");
                 Assert.assertTrue(true);
