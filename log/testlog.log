@@ -7472,3 +7472,1013 @@ Session ID: 6a8b3c8c8f96867987e149a43233fb81
 2026-01-30 16:18:32,483 - WorkRoomWebApplication -INFO - Total files: 2
 2026-01-30 16:18:32,483 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
 2026-01-30 16:18:32,674 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-30 16:31:50,583 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-01-30 16:31:50,591 - WorkRoomWebApplication -INFO - ************* Launching Remote CHROME Browser *****************
+2026-01-30 16:31:53,356 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-30 16:31:53,710 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-30 16:31:55,351 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-30 16:31:56,952 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-30 16:31:57,332 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-30 16:31:58,949 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-30 16:32:00,893 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-01-30 16:32:11,205 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-01-30 16:32:14,180 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-01-30 16:32:20,673 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-01-30 16:32:20,841 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-01-30 16:32:22,501 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-01-30 16:32:22,945 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-01-30 16:32:23,466 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-01-30 16:32:24,317 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-01-30 16:32:24,318 - WorkRoomWebApplication -INFO - ************* Launching Remote CHROME Browser *****************
+2026-01-30 16:34:37,445 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-01-30 16:34:37,451 - WorkRoomWebApplication -INFO - ************* Launching Remote CHROME Browser *****************
+2026-01-30 16:34:39,025 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-30 16:34:39,200 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-30 16:34:40,792 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-30 16:34:41,961 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-30 16:34:42,272 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-30 16:34:44,145 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-30 16:34:46,528 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-01-30 16:34:50,947 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-01-30 16:34:53,269 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-01-30 16:35:00,415 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-01-30 16:35:00,634 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-01-30 16:35:02,140 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-01-30 16:35:02,437 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-01-30 16:35:02,751 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-01-30 16:35:03,653 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-01-30 16:35:03,655 - WorkRoomWebApplication -INFO - ************* Launching Remote CHROME Browser *****************
+2026-01-30 16:43:08,579 - WorkRoomWebApplication -INFO - ************* Logger Initialized *****************
+2026-01-30 16:43:08,769 - WorkRoomWebApplication -INFO - Starting scenario: Select available PO number from dropdown
+2026-01-30 16:43:08,773 - WorkRoomWebApplication -INFO - ************* Config Loaded *****************
+2026-01-30 16:43:11,893 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched for chrome *****************
+2026-01-30 16:43:12,162 - WorkRoomWebApplication -INFO - Ending scenario: Select available PO number from dropdown - Status: FAILED
+2026-01-30 16:43:12,330 - WorkRoomWebApplication -INFO - Screenshot captured for failed scenario: Select available PO number from dropdown
+2026-01-30 16:43:12,431 - WorkRoomWebApplication -INFO - Driver quit successfully for thread
+2026-01-30 16:43:12,433 - WorkRoomWebApplication -INFO - ************* Browser Session Closed *****************
+2026-01-30 16:43:12,507 - WorkRoomWebApplication -INFO - Starting scenario: click Generate The Report Without Selecting The Customer po
+2026-01-30 16:43:13,571 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched for chrome *****************
+2026-01-30 16:43:13,698 - WorkRoomWebApplication -INFO - Ending scenario: click Generate The Report Without Selecting The Customer po - Status: FAILED
+2026-01-30 16:43:13,836 - WorkRoomWebApplication -INFO - Screenshot captured for failed scenario: click Generate The Report Without Selecting The Customer po
+2026-01-30 16:43:13,920 - WorkRoomWebApplication -INFO - Driver quit successfully for thread
+2026-01-30 16:43:13,920 - WorkRoomWebApplication -INFO - ************* Browser Session Closed *****************
+2026-01-30 16:43:29,807 - WorkRoomWebApplication -INFO - ************* Logger Initialized *****************
+2026-01-30 16:43:29,910 - WorkRoomWebApplication -INFO - Starting scenario: Select available PO number from dropdown
+2026-01-30 16:43:29,912 - WorkRoomWebApplication -INFO - ************* Config Loaded *****************
+2026-01-30 16:43:31,383 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched for chrome *****************
+2026-01-30 16:43:31,567 - WorkRoomWebApplication -INFO - Ending scenario: Select available PO number from dropdown - Status: FAILED
+2026-01-30 16:43:31,724 - WorkRoomWebApplication -INFO - Screenshot captured for failed scenario: Select available PO number from dropdown
+2026-01-30 16:43:31,834 - WorkRoomWebApplication -INFO - Driver quit successfully for thread
+2026-01-30 16:43:31,835 - WorkRoomWebApplication -INFO - ************* Browser Session Closed *****************
+2026-01-30 16:43:32,006 - WorkRoomWebApplication -INFO - Starting scenario: click Generate The Report Without Selecting The Customer po
+2026-01-30 16:43:32,890 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched for chrome *****************
+2026-01-30 16:43:33,034 - WorkRoomWebApplication -INFO - Ending scenario: click Generate The Report Without Selecting The Customer po - Status: FAILED
+2026-01-30 16:43:33,324 - WorkRoomWebApplication -INFO - Screenshot captured for failed scenario: click Generate The Report Without Selecting The Customer po
+2026-01-30 16:43:33,460 - WorkRoomWebApplication -INFO - Driver quit successfully for thread
+2026-01-30 16:43:33,461 - WorkRoomWebApplication -INFO - ************* Browser Session Closed *****************
+2026-01-30 16:48:50,836 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-01-30 16:48:51,177 - WorkRoomWebApplication -ERROR - Scenario Failed: Select available PO number from dropdown
+2026-01-30 16:48:51,178 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-01-30 16:48:52,579 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-01-30 16:48:52,814 - WorkRoomWebApplication -ERROR - Scenario Failed: click Generate The Report Without Selecting The Customer po
+2026-01-30 16:48:52,815 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-01-30 16:49:31,477 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-01-30 16:49:31,896 - WorkRoomWebApplication -ERROR - Scenario Failed: Select available PO number from dropdown
+2026-01-30 16:49:31,897 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-01-30 16:49:32,752 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-01-30 16:49:33,061 - WorkRoomWebApplication -ERROR - Scenario Failed: click Generate The Report Without Selecting The Customer po
+2026-01-30 16:49:33,063 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-01-30 16:52:49,349 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Started Successfully *****************
+2026-01-30 16:52:51,036 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Started Successfully *****************
+2026-01-30 16:53:49,745 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-30 16:53:50,101 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-30 16:53:50,185 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-30 16:53:51,076 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-30 16:53:51,423 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-30 16:53:51,536 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-30 16:54:22,037 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-30 16:54:22,347 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-30 16:54:22,428 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-30 16:54:23,345 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-30 16:54:23,686 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-30 16:54:23,793 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-30 16:55:20,111 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-30 16:55:20,278 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-30 16:55:21,915 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-30 16:55:23,398 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-30 16:55:23,672 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-30 16:55:25,079 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-30 16:55:27,488 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-01-30 16:55:35,173 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-01-30 16:55:37,990 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-01-30 16:55:44,133 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-01-30 16:55:44,353 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-01-30 16:55:46,125 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-01-30 16:55:46,553 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-01-30 16:55:46,902 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-01-30 16:55:47,235 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-30 16:55:47,478 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-30 16:55:48,647 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched *****************
+2026-01-30 16:55:48,690 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-30 16:55:50,221 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-30 16:55:51,768 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-30 16:55:51,933 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-30 16:55:53,595 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-30 16:55:55,544 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-01-30 16:55:59,485 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-01-30 16:56:01,915 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-01-30 16:56:07,694 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-01-30 16:56:08,204 - WorkRoomWebApplication -INFO - *** Pop Up Message  ***
+2026-01-30 16:56:09,087 - WorkRoomWebApplication -INFO - *** Reusability--->Click the Okay Button  ***
+2026-01-30 16:56:09,458 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-01-30 16:56:09,616 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-01-30 16:57:00,963 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-01-30 16:57:01,223 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-30 16:57:02,915 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-30 16:57:04,124 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-30 16:57:04,360 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-30 16:57:06,085 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-30 16:57:07,873 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-01-30 16:57:11,450 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-01-30 16:57:13,358 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-01-30 16:57:19,171 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-01-30 16:57:19,303 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-01-30 16:57:21,013 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-01-30 16:57:21,431 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-01-30 16:57:21,889 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-01-30 16:57:22,245 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-01-30 16:57:23,335 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-01-30 16:57:23,396 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-01-30 16:57:24,906 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-01-30 16:57:26,186 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-01-30 16:57:26,411 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-01-30 16:57:28,259 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-01-30 16:57:29,937 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-01-30 16:57:33,583 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-01-30 16:57:35,718 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-01-30 16:57:41,707 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-01-30 16:57:42,173 - WorkRoomWebApplication -INFO - *** Pop Up Message  ***
+2026-01-30 16:57:43,011 - WorkRoomWebApplication -INFO - *** Reusability--->Click the Okay Button  ***
+2026-01-30 16:57:43,404 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-02 21:29:33,295 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-02-02 21:29:33,473 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 21:34:44,964 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-02-02 21:34:45,018 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 21:36:58,094 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 21:36:58,103 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 21:37:01,279 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 21:37:01,719 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 21:37:04,592 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 21:37:07,077 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 21:37:07,416 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 21:37:09,153 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 21:37:11,829 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 21:37:29,465 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 21:37:33,417 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 21:37:39,087 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 21:37:39,246 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 21:37:40,884 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-02-02 21:37:41,120 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 21:37:41,520 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-02 21:37:42,267 - WorkRoomWebApplication -INFO - Scenario passed: Select available PO number from dropdown
+2026-02-02 21:37:42,269 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 21:37:42,270 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Material inward report
+2026-02-02 21:37:42,277 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material.xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:46:33
+2026-02-02 21:37:42,280 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material (1).xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:48:11
+2026-02-02 21:37:42,281 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-02 21:37:42,282 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 21:37:42,663 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 21:37:42,713 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 21:37:42,714 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 21:37:43,624 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 21:37:43,729 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 21:37:45,929 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 21:37:48,216 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 21:37:48,440 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 21:37:50,153 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 21:37:52,931 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 21:38:04,455 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 21:38:08,188 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 21:38:13,803 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-02-02 21:38:14,255 - WorkRoomWebApplication -INFO - *** Pop Up Message  ***
+2026-02-02 21:38:14,492 - WorkRoomWebApplication -INFO - *** Reusability--->Click the Okay Button  ***
+2026-02-02 21:38:14,872 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Without Selecting The Customer po
+2026-02-02 21:38:14,874 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 21:38:14,875 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Material inward report
+2026-02-02 21:38:14,878 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material.xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:46:33
+2026-02-02 21:38:14,880 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material (1).xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:48:11
+2026-02-02 21:38:14,882 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-02 21:38:14,883 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 21:38:15,242 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 21:38:15,282 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 21:38:15,282 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 21:38:16,221 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 21:38:16,313 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 21:38:18,661 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 21:38:19,843 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 21:38:20,080 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 21:38:21,713 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 21:38:23,387 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 21:38:29,284 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 21:38:31,962 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 21:38:37,476 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 21:38:37,529 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 21:38:38,861 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-02-02 21:38:39,268 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-02 21:38:39,671 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-02 21:38:49,784 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 21:38:50,364 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-02 21:38:51,078 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 21:38:51,078 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 21:38:51,079 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Material inward report
+2026-02-02 21:38:51,079 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material.xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:46:33
+2026-02-02 21:38:51,080 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material (1).xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:48:11
+2026-02-02 21:38:51,081 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-02 21:38:51,081 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 21:38:51,498 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 21:41:17,893 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 21:41:17,897 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 21:41:19,709 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 21:41:19,732 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 21:41:22,230 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 21:41:23,139 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 21:41:23,327 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 21:41:24,809 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 21:41:32,524 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 21:41:32,820 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 21:41:36,033 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 21:41:41,615 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 21:41:41,742 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 21:41:43,390 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-02-02 21:41:43,792 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-02 21:41:44,207 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-02 21:41:54,340 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 21:41:54,878 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-02 21:41:55,147 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 21:41:55,149 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 21:41:55,151 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Material inward report
+2026-02-02 21:41:55,157 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material.xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:46:33
+2026-02-02 21:41:55,160 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material (1).xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:48:11
+2026-02-02 21:41:55,161 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-02 21:41:55,162 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 21:41:55,549 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 21:45:43,227 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 21:45:43,234 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 21:45:45,245 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 21:45:45,317 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 21:45:47,441 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 21:45:48,791 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 21:45:49,018 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 21:45:50,674 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 21:45:53,036 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 21:46:03,991 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 21:46:07,706 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 21:46:13,383 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 21:46:13,465 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 21:46:13,466 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 21:46:13,466 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Material inward report
+2026-02-02 21:46:13,473 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material.xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:46:33
+2026-02-02 21:46:13,475 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material (1).xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:48:11
+2026-02-02 21:46:13,475 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-02 21:46:13,476 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 21:46:13,641 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 21:48:25,816 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 21:48:25,822 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 21:48:27,742 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 21:48:27,793 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 21:48:30,175 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 21:48:31,489 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 21:48:31,662 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 21:48:33,360 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 21:48:35,307 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 21:48:44,745 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 21:48:49,539 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 21:48:54,913 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 21:48:54,986 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 21:48:54,989 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 21:48:54,989 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Material inward report
+2026-02-02 21:48:54,996 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material.xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:46:33
+2026-02-02 21:48:54,999 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material (1).xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:48:11
+2026-02-02 21:48:55,000 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-02 21:48:55,000 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 21:48:55,193 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 21:49:33,293 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 21:49:33,297 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 21:49:35,370 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 21:49:35,441 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 21:49:37,610 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 21:49:39,067 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 21:49:39,421 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 21:49:40,976 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 21:49:43,215 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 21:49:51,617 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 21:49:53,837 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 21:49:59,218 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 21:49:59,372 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 21:49:59,374 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 21:49:59,376 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Material inward report
+2026-02-02 21:49:59,392 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material.xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:46:33
+2026-02-02 21:49:59,397 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material (1).xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:48:11
+2026-02-02 21:49:59,399 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-02 21:49:59,400 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 21:49:59,792 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 21:50:43,734 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 21:50:43,739 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 21:50:45,721 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 21:50:45,874 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 21:50:48,276 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 21:50:49,501 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 21:50:49,701 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 21:50:51,243 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 21:50:53,636 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 21:50:59,569 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 21:51:05,741 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 21:51:11,601 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 21:51:11,727 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 21:51:13,379 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-02-02 21:51:13,813 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 21:51:14,434 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-02 21:51:14,650 - WorkRoomWebApplication -INFO - Scenario passed: Select available PO number from dropdown
+2026-02-02 21:51:14,651 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 21:51:14,652 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Material inward report
+2026-02-02 21:51:14,655 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material.xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:46:33
+2026-02-02 21:51:14,657 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material (1).xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:48:11
+2026-02-02 21:51:14,658 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-02 21:51:14,658 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 21:51:14,891 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 21:51:14,955 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 21:51:14,956 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 21:51:16,710 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 21:51:16,887 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 21:51:19,104 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 21:51:20,662 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 21:51:21,002 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 21:51:22,719 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 21:51:25,289 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 21:51:32,542 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 21:51:38,454 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 21:51:44,265 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-02-02 21:51:44,771 - WorkRoomWebApplication -INFO - *** Pop Up Message  ***
+2026-02-02 21:51:45,002 - WorkRoomWebApplication -INFO - *** Reusability--->Click the Okay Button  ***
+2026-02-02 21:51:45,426 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Without Selecting The Customer po
+2026-02-02 21:51:45,428 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 21:51:45,429 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Material inward report
+2026-02-02 21:51:45,431 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material.xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:46:33
+2026-02-02 21:51:45,432 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material (1).xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:48:11
+2026-02-02 21:51:45,433 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-02 21:51:45,434 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 21:51:45,660 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 21:51:45,693 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 21:51:45,694 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 21:51:47,319 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 21:51:47,359 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 21:51:49,583 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 21:51:50,783 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 21:51:50,950 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 21:51:52,520 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 21:51:54,619 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 21:52:01,614 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 21:52:07,687 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 21:52:13,329 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 21:52:13,445 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 21:52:15,081 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-02 21:52:15,472 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-02 21:52:25,550 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 21:52:35,804 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-02 21:52:46,378 - WorkRoomWebApplication -ERROR - Scenario failed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 21:52:46,380 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 21:52:46,382 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Material inward report
+2026-02-02 21:52:46,385 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material.xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:46:33
+2026-02-02 21:52:46,388 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material (1).xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:48:11
+2026-02-02 21:52:46,389 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-02 21:52:46,389 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 21:52:46,651 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 22:23:16,852 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 22:23:16,859 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 22:23:18,721 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 22:23:18,804 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 22:23:21,023 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 22:23:22,419 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 22:23:22,777 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 22:23:24,494 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 22:23:26,587 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 22:23:34,066 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 22:23:37,631 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 22:23:43,007 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 22:23:43,134 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 22:23:44,808 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-02 22:23:45,190 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-02 22:23:55,289 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 22:24:05,567 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-02 22:24:15,861 - WorkRoomWebApplication -ERROR - Scenario failed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 22:24:15,862 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 22:24:15,862 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Material inward report
+2026-02-02 22:24:15,865 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material.xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:46:33
+2026-02-02 22:24:15,867 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material (1).xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:48:11
+2026-02-02 22:24:15,867 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-02 22:24:15,868 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 22:24:16,025 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 22:40:40,654 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 22:40:40,658 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 22:40:42,538 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 22:40:42,607 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 22:40:49,755 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 22:40:51,139 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 22:40:51,512 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 22:40:53,327 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 22:40:55,644 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 22:41:01,420 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 22:41:04,580 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 22:41:09,970 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 22:41:10,084 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 22:41:11,567 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-02 22:41:11,955 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-02 22:41:22,029 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 22:41:32,241 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-02 22:41:42,699 - WorkRoomWebApplication -ERROR - Scenario failed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 22:41:42,700 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 22:41:42,701 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Material inward report
+2026-02-02 22:41:42,707 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material.xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:46:33
+2026-02-02 22:41:42,709 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material (1).xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:48:11
+2026-02-02 22:41:42,710 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-02 22:41:42,712 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 22:41:42,956 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 22:44:52,578 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 22:44:52,582 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 22:44:54,385 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 22:44:54,503 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 22:44:56,813 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 22:44:58,296 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 22:44:58,644 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 22:45:00,398 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 22:45:02,202 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 22:45:11,587 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 22:45:15,591 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 22:45:20,957 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 22:45:21,078 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 22:45:22,734 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-02 22:45:23,137 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-02 22:45:33,211 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 22:45:43,413 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-02 22:45:53,858 - WorkRoomWebApplication -ERROR - Scenario failed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 22:45:53,862 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 22:45:53,863 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Material inward report
+2026-02-02 22:45:53,871 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material.xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:46:33
+2026-02-02 22:45:53,874 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material (1).xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:48:11
+2026-02-02 22:45:53,876 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-02 22:45:53,877 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 22:45:54,156 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 22:48:09,153 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 22:48:09,159 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 22:48:10,788 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 22:48:11,019 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 22:48:13,329 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 22:48:14,622 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 22:48:14,825 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 22:48:16,260 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 22:48:17,916 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 22:48:24,379 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 22:48:27,563 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 22:48:33,051 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 22:48:33,172 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 22:48:34,828 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-02 22:48:35,144 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-02 22:48:36,508 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 22:48:46,673 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-02 22:48:57,204 - WorkRoomWebApplication -ERROR - Scenario failed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 22:48:57,207 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 22:48:57,209 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Material inward report
+2026-02-02 22:48:57,215 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material.xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:46:33
+2026-02-02 22:48:57,218 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material (1).xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:48:11
+2026-02-02 22:48:57,220 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-02 22:48:57,221 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 22:48:57,472 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 22:54:40,095 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 22:54:40,100 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 22:54:41,978 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 22:54:42,138 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 22:54:44,298 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 22:54:45,642 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 22:54:45,999 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 22:54:47,555 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 22:54:49,616 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 22:54:56,817 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 22:54:59,436 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 22:55:05,202 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 22:55:05,325 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 22:55:06,996 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-02 22:55:07,412 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-02 22:55:08,983 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 22:55:19,343 - WorkRoomWebApplication -INFO - *** Check The Success message ***
+2026-02-02 22:55:32,447 - WorkRoomWebApplication -ERROR - Scenario failed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 22:55:32,449 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 22:55:32,449 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Material inward report
+2026-02-02 22:55:32,452 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material.xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:46:33
+2026-02-02 22:55:32,453 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material (1).xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:48:11
+2026-02-02 22:55:32,454 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-02 22:55:32,454 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 22:55:32,602 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 22:58:45,107 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 22:58:45,115 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 22:58:47,419 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 22:58:47,606 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 22:58:50,099 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 22:58:51,564 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 22:58:51,880 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 22:58:53,527 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 22:58:55,897 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 22:59:01,370 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 22:59:04,056 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 22:59:09,671 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 22:59:09,799 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 22:59:11,452 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-02 22:59:11,870 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-02 22:59:13,458 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 22:59:13,905 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 22:59:14,255 - WorkRoomWebApplication -INFO - *** Check The Success message ***
+2026-02-02 22:59:14,544 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 22:59:14,547 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 22:59:14,549 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Material inward report
+2026-02-02 22:59:14,556 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material.xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:46:33
+2026-02-02 22:59:14,560 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material (1).xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:48:11
+2026-02-02 22:59:14,563 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-02 22:59:14,565 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 22:59:14,870 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 23:00:38,995 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 23:00:39,002 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 23:00:41,118 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 23:00:41,380 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 23:00:43,738 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 23:00:44,868 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 23:00:45,147 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 23:00:46,634 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 23:00:57,575 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 23:00:57,731 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 23:01:01,341 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 23:01:07,050 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 23:01:07,201 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 23:01:08,647 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-02 23:01:09,077 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-02 23:01:10,700 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 23:01:11,203 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 23:01:11,611 - WorkRoomWebApplication -INFO - *** Check The Success message ***
+2026-02-02 23:01:11,796 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 23:01:11,797 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 23:01:11,798 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Material inward report
+2026-02-02 23:01:11,801 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material.xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:46:33
+2026-02-02 23:01:11,802 - WorkRoomWebApplication -INFO - File: Customer PO 15000000445 Inward Material (1).xlsx | Size: 16.98 KB | Modified: 2026-01-30 13:48:11
+2026-02-02 23:01:11,803 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-02 23:01:11,804 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 23:01:12,044 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 23:05:23,733 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 23:05:23,738 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 23:05:25,895 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 23:05:26,202 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 23:05:28,450 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 23:05:29,841 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 23:05:30,244 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 23:05:31,918 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 23:05:34,323 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 23:05:39,625 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 23:05:44,681 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 23:05:51,046 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 23:05:51,105 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 23:05:52,507 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-02 23:05:52,826 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-02 23:05:54,218 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 23:05:54,653 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 23:05:55,282 - WorkRoomWebApplication -INFO - *** Check The Success message ***
+2026-02-02 23:05:55,544 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 23:05:55,545 - WorkRoomWebApplication -INFO - No files found in download directory
+2026-02-02 23:05:55,546 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 23:05:55,780 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 23:10:24,796 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 23:10:24,804 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 23:10:26,704 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 23:10:26,878 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 23:10:29,038 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 23:10:30,331 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 23:10:30,519 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 23:10:32,112 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 23:10:34,125 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 23:10:40,118 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 23:10:47,476 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 23:10:52,897 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 23:10:53,022 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 23:10:54,417 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-02 23:10:54,840 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-02 23:10:56,469 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 23:10:56,818 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 23:10:57,086 - WorkRoomWebApplication -INFO - *** Check The Success message ***
+2026-02-02 23:10:57,742 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 23:10:57,743 - WorkRoomWebApplication -INFO - No files found in download directory
+2026-02-02 23:10:57,743 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 23:10:57,938 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 23:24:15,687 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 23:24:15,696 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 23:24:17,846 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 23:24:18,022 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 23:24:20,295 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 23:24:21,434 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 23:24:21,682 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 23:24:24,167 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 23:24:26,577 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 23:24:33,774 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 23:24:36,888 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 23:24:42,442 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 23:24:42,607 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 23:24:44,234 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-02 23:24:44,514 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-02 23:24:46,288 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 23:24:46,624 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 23:24:47,298 - WorkRoomWebApplication -INFO - *** Check The Success message ***
+2026-02-02 23:24:47,508 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 23:24:47,510 - WorkRoomWebApplication -INFO - No files found in download directory
+2026-02-02 23:24:47,510 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 23:24:47,849 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 23:25:44,090 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 23:25:44,096 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 23:25:46,377 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 23:25:46,479 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 23:25:48,506 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 23:25:49,943 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 23:25:50,112 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 23:25:51,466 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 23:25:53,046 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 23:26:02,837 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 23:26:12,312 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 23:26:18,187 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 23:26:18,342 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 23:26:19,989 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-02-02 23:26:20,235 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 23:26:20,804 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-02 23:26:21,128 - WorkRoomWebApplication -INFO - Scenario passed: Select available PO number from dropdown
+2026-02-02 23:26:21,129 - WorkRoomWebApplication -INFO - No files found in download directory
+2026-02-02 23:26:21,130 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 23:26:21,346 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 23:31:42,824 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 23:31:42,828 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 23:31:44,747 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 23:31:44,937 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 23:31:48,532 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 23:31:50,293 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 23:31:50,565 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 23:31:52,240 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 23:31:54,700 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 23:32:01,011 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 23:32:04,062 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 23:32:09,595 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 23:32:09,742 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 23:32:11,519 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-02-02 23:32:11,869 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 23:32:12,569 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-02 23:32:12,777 - WorkRoomWebApplication -INFO - Scenario passed: Select available PO number from dropdown
+2026-02-02 23:32:12,778 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 23:32:12,779 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 23:32:12,782 - WorkRoomWebApplication -INFO - File: Unconfirmed 914505.crdownload | Size: 17.83 KB | Modified: 2026-02-02 23:32:12
+2026-02-02 23:32:12,783 - WorkRoomWebApplication -INFO - Total files: 1
+2026-02-02 23:32:12,783 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 23:32:13,012 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 23:32:13,093 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 23:32:13,095 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 23:32:14,772 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 23:32:15,193 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 23:32:18,697 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 23:32:21,205 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 23:32:21,744 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 23:32:23,234 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 23:32:24,779 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 23:32:31,022 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 23:32:34,760 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 23:32:40,451 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 23:32:40,564 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 23:32:42,079 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-02 23:32:42,273 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-02 23:32:43,652 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 23:32:44,115 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 23:32:44,733 - WorkRoomWebApplication -INFO - *** Check The Success message ***
+2026-02-02 23:32:44,954 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 23:32:44,955 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 23:32:44,957 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 23:32:44,958 - WorkRoomWebApplication -INFO - File: Unconfirmed 564791.crdownload | Size: 17.30 KB | Modified: 2026-02-02 23:32:44
+2026-02-02 23:32:44,959 - WorkRoomWebApplication -INFO - Total files: 1
+2026-02-02 23:32:44,960 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 23:32:45,183 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 23:35:17,044 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 23:35:17,052 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 23:35:19,022 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 23:35:19,156 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 23:35:22,138 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 23:35:23,509 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 23:35:23,951 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 23:35:25,690 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 23:35:27,499 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 23:35:34,864 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 23:35:39,047 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 23:35:44,610 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 23:35:44,767 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 23:35:46,488 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-02-02 23:35:46,876 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 23:35:47,407 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-02 23:35:47,651 - WorkRoomWebApplication -INFO - Scenario passed: Select available PO number from dropdown
+2026-02-02 23:35:47,653 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 23:35:47,654 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 23:35:47,659 - WorkRoomWebApplication -INFO - File: Unconfirmed 282772.crdownload | Size: 17.83 KB | Modified: 2026-02-02 23:35:47
+2026-02-02 23:35:47,661 - WorkRoomWebApplication -INFO - Total files: 1
+2026-02-02 23:35:47,662 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 23:35:47,897 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-02 23:35:47,956 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 23:35:47,956 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-02 23:35:49,426 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-02 23:35:49,716 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-02 23:35:53,101 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-02 23:35:54,651 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-02 23:35:54,816 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-02 23:35:57,036 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-02 23:35:59,568 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-02 23:36:06,448 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-02 23:36:36,061 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-02 23:36:42,477 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-02 23:36:42,610 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-02 23:36:44,506 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-02 23:36:44,857 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-02 23:36:46,443 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 23:36:46,617 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-02 23:36:46,869 - WorkRoomWebApplication -INFO - *** Check The Success message ***
+2026-02-02 23:36:47,666 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-02 23:36:47,668 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-02 23:36:47,670 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-02 23:36:47,674 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material.xlsx | Size: 17.30 KB | Modified: 2026-02-02 23:36:46
+2026-02-02 23:36:47,675 - WorkRoomWebApplication -INFO - Total files: 1
+2026-02-02 23:36:47,677 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-02 23:36:47,906 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-03 09:47:22,996 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 09:47:23,001 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-03 09:47:24,266 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-03 09:47:24,379 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 09:47:26,326 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 09:47:27,374 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 09:47:27,494 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 09:47:28,733 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 09:47:30,072 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-03 09:47:34,263 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-03 09:47:36,870 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-03 09:47:42,167 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-03 09:47:42,227 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-03 09:47:43,440 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-02-03 09:47:43,555 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 09:47:43,702 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-03 09:47:44,319 - WorkRoomWebApplication -INFO - Scenario passed: Select available PO number from dropdown
+2026-02-03 09:47:44,320 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-03 09:47:44,321 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 09:47:44,324 - WorkRoomWebApplication -INFO - File: Unconfirmed 650496.crdownload | Size: 17.83 KB | Modified: 2026-02-03 09:47:43
+2026-02-03 09:47:44,325 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material.xlsx | Size: 17.30 KB | Modified: 2026-02-02 23:36:46
+2026-02-03 09:47:44,325 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-03 09:47:44,326 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-03 09:47:44,465 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-03 09:47:44,510 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 09:47:44,511 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-03 09:47:45,340 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-03 09:47:45,532 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 09:47:47,893 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 09:47:48,931 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 09:47:49,034 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 09:47:50,296 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 09:47:51,609 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-03 09:47:56,805 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-03 09:47:59,189 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-03 09:48:04,438 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-03 09:48:04,521 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-03 09:48:05,695 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-03 09:48:05,795 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-03 09:48:06,992 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 09:48:07,172 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 09:48:07,317 - WorkRoomWebApplication -INFO - *** Check The Success message ***
+2026-02-03 09:48:07,900 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-03 09:48:07,901 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-03 09:48:07,901 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 09:48:07,902 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (1).xlsx | Size: 17.30 KB | Modified: 2026-02-03 09:48:07
+2026-02-03 09:48:07,902 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material.xlsx | Size: 17.30 KB | Modified: 2026-02-02 23:36:46
+2026-02-03 09:48:07,902 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-03 09:48:07,903 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-03 09:48:08,078 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-03 10:02:49,198 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 10:02:49,203 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-03 10:02:50,901 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-03 10:02:51,030 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 10:02:53,211 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 10:02:54,364 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 10:02:54,640 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 10:02:56,154 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 10:02:57,926 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-03 10:03:02,733 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-03 10:03:04,822 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-03 10:03:10,222 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-03 10:03:10,344 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-03 10:03:11,937 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-02-03 10:03:12,128 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 10:03:12,378 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-03 10:03:13,192 - WorkRoomWebApplication -INFO - Scenario passed: Select available PO number from dropdown
+2026-02-03 10:03:13,194 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-03 10:03:13,195 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 10:03:13,200 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (1).xlsx | Size: 17.30 KB | Modified: 2026-02-03 09:48:07
+2026-02-03 10:03:13,203 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (2).xlsx | Size: 17.83 KB | Modified: 2026-02-03 10:03:12
+2026-02-03 10:03:13,205 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material.xlsx | Size: 17.30 KB | Modified: 2026-02-02 23:36:46
+2026-02-03 10:03:13,207 - WorkRoomWebApplication -INFO - Total files: 3
+2026-02-03 10:03:13,208 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-03 10:03:13,530 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-03 10:03:13,571 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 10:03:13,572 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-03 10:03:15,175 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-03 10:03:15,482 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 10:03:17,628 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 10:03:19,115 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 10:03:19,402 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 10:03:20,839 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 10:03:23,423 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-03 10:03:30,082 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-03 10:03:32,289 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-03 10:03:37,909 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-03 10:03:37,947 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-03 10:03:39,128 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-03 10:03:39,229 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-03 10:03:40,411 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 10:03:40,506 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 10:03:40,629 - WorkRoomWebApplication -INFO - *** Check The Success message ***
+2026-02-03 10:03:41,232 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-03 10:03:41,233 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-03 10:03:41,233 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 10:03:41,234 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (1).xlsx | Size: 17.30 KB | Modified: 2026-02-03 09:48:07
+2026-02-03 10:03:41,234 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (2).xlsx | Size: 17.83 KB | Modified: 2026-02-03 10:03:12
+2026-02-03 10:03:41,235 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (3).xlsx | Size: 17.30 KB | Modified: 2026-02-03 10:03:40
+2026-02-03 10:03:41,235 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material.xlsx | Size: 17.30 KB | Modified: 2026-02-02 23:36:46
+2026-02-03 10:03:41,235 - WorkRoomWebApplication -INFO - Total files: 4
+2026-02-03 10:03:41,236 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-03 10:03:41,368 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-03 10:04:39,643 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 10:04:39,649 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-03 10:04:40,676 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-03 10:04:40,802 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 10:04:42,699 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 10:04:43,796 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 10:04:43,903 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 10:04:45,778 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 10:04:47,082 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-03 10:04:51,827 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-03 10:04:53,145 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-03 10:04:58,396 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-03 10:04:58,467 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-03 10:04:59,642 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-02-03 10:04:59,737 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 10:04:59,870 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-03 10:05:00,472 - WorkRoomWebApplication -INFO - Scenario passed: Select available PO number from dropdown
+2026-02-03 10:05:00,473 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-03 10:05:00,473 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 10:05:00,475 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (4).xlsx | Size: 17.83 KB | Modified: 2026-02-03 10:04:59
+2026-02-03 10:05:00,476 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (1).xlsx | Size: 17.30 KB | Modified: 2026-02-03 09:48:07
+2026-02-03 10:05:00,476 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (2).xlsx | Size: 17.83 KB | Modified: 2026-02-03 10:03:12
+2026-02-03 10:05:00,477 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (3).xlsx | Size: 17.30 KB | Modified: 2026-02-03 10:03:40
+2026-02-03 10:05:00,477 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material.xlsx | Size: 17.30 KB | Modified: 2026-02-02 23:36:46
+2026-02-03 10:05:00,477 - WorkRoomWebApplication -INFO - Total files: 5
+2026-02-03 10:05:00,478 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-03 10:05:00,614 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-03 10:05:00,647 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 10:05:00,647 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-03 10:05:01,445 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-03 10:05:01,661 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 10:05:03,986 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 10:05:04,998 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 10:05:05,101 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 10:05:06,530 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 10:05:08,034 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-03 10:05:11,976 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-03 10:05:14,643 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-03 10:05:20,041 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-03 10:05:20,097 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-03 10:05:21,305 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-03 10:05:21,410 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-03 10:05:22,617 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 10:05:22,711 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 10:05:22,859 - WorkRoomWebApplication -INFO - *** Check The Success message ***
+2026-02-03 10:05:23,460 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-03 10:05:24,461 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-03 10:05:24,462 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 10:05:24,464 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (5).xlsx | Size: 17.30 KB | Modified: 2026-02-03 10:05:22
+2026-02-03 10:05:24,465 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (4).xlsx | Size: 17.83 KB | Modified: 2026-02-03 10:04:59
+2026-02-03 10:05:24,466 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (1).xlsx | Size: 17.30 KB | Modified: 2026-02-03 09:48:07
+2026-02-03 10:05:24,468 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (2).xlsx | Size: 17.83 KB | Modified: 2026-02-03 10:03:12
+2026-02-03 10:05:24,470 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (3).xlsx | Size: 17.30 KB | Modified: 2026-02-03 10:03:40
+2026-02-03 10:05:24,472 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material.xlsx | Size: 17.30 KB | Modified: 2026-02-02 23:36:46
+2026-02-03 10:05:24,473 - WorkRoomWebApplication -INFO - Total files: 6
+2026-02-03 10:05:24,473 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-03 10:05:24,695 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-03 10:06:03,615 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 10:06:03,619 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-03 10:06:05,369 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-03 10:06:05,514 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 10:06:08,023 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 10:06:09,337 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 10:06:09,675 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 10:06:11,331 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 10:06:13,412 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-03 10:06:19,171 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-03 10:06:21,826 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-03 10:06:27,218 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-03 10:06:27,341 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-03 10:06:28,818 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-02-03 10:06:29,092 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 10:06:29,325 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-03 10:06:30,070 - WorkRoomWebApplication -INFO - Scenario passed: Select available PO number from dropdown
+2026-02-03 10:06:30,072 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-03 10:06:30,073 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 10:06:30,081 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (6).xlsx | Size: 17.83 KB | Modified: 2026-02-03 10:06:29
+2026-02-03 10:06:30,083 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (5).xlsx | Size: 17.30 KB | Modified: 2026-02-03 10:05:22
+2026-02-03 10:06:30,084 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (4).xlsx | Size: 17.83 KB | Modified: 2026-02-03 10:04:59
+2026-02-03 10:06:30,086 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (1).xlsx | Size: 17.30 KB | Modified: 2026-02-03 09:48:07
+2026-02-03 10:06:30,088 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (2).xlsx | Size: 17.83 KB | Modified: 2026-02-03 10:03:12
+2026-02-03 10:06:30,089 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (3).xlsx | Size: 17.30 KB | Modified: 2026-02-03 10:03:40
+2026-02-03 10:06:30,091 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material.xlsx | Size: 17.30 KB | Modified: 2026-02-02 23:36:46
+2026-02-03 10:06:30,092 - WorkRoomWebApplication -INFO - Total files: 7
+2026-02-03 10:06:30,093 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-03 10:06:30,468 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-03 10:06:30,527 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 10:06:30,527 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-03 10:06:32,055 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-03 10:06:32,118 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 10:06:34,527 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 10:06:35,875 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 10:06:36,068 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 10:06:37,699 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 10:06:39,789 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-03 10:06:45,420 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-03 10:06:48,338 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-03 10:06:53,734 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-03 10:06:53,849 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-03 10:06:55,450 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-03 10:06:55,827 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-03 10:06:57,361 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 10:06:57,744 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 10:06:58,261 - WorkRoomWebApplication -INFO - *** Check The Success message ***
+2026-02-03 10:06:58,544 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-03 10:06:59,546 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-03 10:06:59,547 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 10:06:59,549 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (6).xlsx | Size: 17.83 KB | Modified: 2026-02-03 10:06:29
+2026-02-03 10:06:59,550 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (5).xlsx | Size: 17.30 KB | Modified: 2026-02-03 10:05:22
+2026-02-03 10:06:59,552 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (4).xlsx | Size: 17.83 KB | Modified: 2026-02-03 10:04:59
+2026-02-03 10:06:59,555 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (1).xlsx | Size: 17.30 KB | Modified: 2026-02-03 09:48:07
+2026-02-03 10:06:59,557 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (2).xlsx | Size: 17.83 KB | Modified: 2026-02-03 10:03:12
+2026-02-03 10:06:59,558 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (3).xlsx | Size: 17.30 KB | Modified: 2026-02-03 10:03:40
+2026-02-03 10:06:59,560 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material.xlsx | Size: 17.30 KB | Modified: 2026-02-02 23:36:46
+2026-02-03 10:06:59,561 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (7).xlsx | Size: 17.30 KB | Modified: 2026-02-03 10:06:58
+2026-02-03 10:06:59,562 - WorkRoomWebApplication -INFO - Total files: 8
+2026-02-03 10:06:59,562 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-03 10:06:59,986 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-03 10:08:26,870 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 10:08:26,876 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-03 10:08:28,654 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-03 10:08:28,898 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 10:08:31,135 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 10:08:32,670 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 10:08:33,038 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 10:08:34,697 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 10:08:42,929 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-03 10:08:43,143 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-03 10:08:46,095 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-03 10:08:51,689 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-03 10:08:51,819 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-03 10:08:53,323 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-02-03 10:08:53,745 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 10:08:54,284 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-03 10:08:54,566 - WorkRoomWebApplication -INFO - Scenario passed: Select available PO number from dropdown
+2026-02-03 10:08:55,569 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-03 10:08:55,570 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 10:08:55,576 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material.xlsx | Size: 17.83 KB | Modified: 2026-02-03 10:08:54
+2026-02-03 10:08:55,577 - WorkRoomWebApplication -INFO - Total files: 1
+2026-02-03 10:08:55,578 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-03 10:08:55,964 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-03 10:08:56,050 - WorkRoomWebApplication -INFO - Download directory already exists: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 10:08:56,051 - WorkRoomWebApplication -INFO - ************* Launching CHROME Browser *****************
+2026-02-03 10:08:57,670 - WorkRoomWebApplication -INFO - ************* Browser Launched and Maximized *****************
+2026-02-03 10:08:57,695 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 10:08:59,799 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 10:09:01,297 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 10:09:01,607 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 10:09:03,822 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 10:09:05,966 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-03 10:09:11,555 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-03 10:09:14,798 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-03 10:09:20,415 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-03 10:09:20,493 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-03 10:09:22,132 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-03 10:09:22,551 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-03 10:09:24,076 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 10:09:24,467 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 10:09:25,027 - WorkRoomWebApplication -INFO - *** Check The Success message ***
+2026-02-03 10:09:25,371 - WorkRoomWebApplication -INFO - Scenario passed: click Generate The Report Wit Selecting The Customer Po And Vendor Po
+2026-02-03 10:09:25,372 - WorkRoomWebApplication -INFO - === Downloaded Files Summary ===
+2026-02-03 10:09:25,372 - WorkRoomWebApplication -INFO - Download directory: /home/limitscale/MaterialManagement/MATERIAL_MANAGEMENT_LIVE_WEB_AUTOMATION/Downloaded Documents
+2026-02-03 10:09:25,373 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material (1).xlsx | Size: 17.30 KB | Modified: 2026-02-03 10:09:24
+2026-02-03 10:09:25,374 - WorkRoomWebApplication -INFO - File: Customer PO 1500000044 Inward Material.xlsx | Size: 17.83 KB | Modified: 2026-02-03 10:08:54
+2026-02-03 10:09:25,375 - WorkRoomWebApplication -INFO - Total files: 2
+2026-02-03 10:09:25,375 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
+2026-02-03 10:09:25,559 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************

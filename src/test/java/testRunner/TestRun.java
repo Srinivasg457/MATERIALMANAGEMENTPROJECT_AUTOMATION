@@ -20,7 +20,7 @@ import org.junit.runner.RunWith;
         //src/test/java/Features/workroomlogin.feature
         glue = {"stepDefinations", "hooks"},
 //       dryRun = true,
-        dryRun = false,
+       dryRun = false,
         // tags ="@sanity or @regression", // Ensure correct tag syntax,
         // tags= "@sanity",  // this will execute only sanity
         //tags= "@regression"  // this will execute only sanity

@@ -16,8 +16,10 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import stepDefinations.BaseClass;
 
 import java.io.File;
@@ -25,6 +27,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -116,11 +119,8 @@ public class MaterialManagementWebApphooks extends BaseClass {
 ////        }
 //    }
 
-
-   // method 2 to download the  filesinto my project directory
-
-
-
+// ********************************* Start ******************************************************************
+//   // method 2 to download the  filesinto my project directory
 
         @Before
         public void setup() throws IOException {
@@ -318,7 +318,10 @@ public class MaterialManagementWebApphooks extends BaseClass {
 
         private void logDownloadedFilesInfo() {
             try {
-                String downloadPath = System.getProperty("user.dir") + File.separator + "Material inward report";
+                String downloadPath = System.getProperty("user.dir") + File.separator + "Downloaded Documents";
+
+                // ✅ WAIT for download to finish
+                waitForDownloadToComplete(downloadPath, 30);
                 File downloadDir = new File(downloadPath);
 
                 if (downloadDir.exists() && downloadDir.isDirectory()) {
@@ -361,7 +364,40 @@ public class MaterialManagementWebApphooks extends BaseClass {
         }
 
 
+    private void waitForDownloadToComplete(String downloadPath, int timeoutSeconds) {
+        File dir = new File(downloadPath);
+        long endTime = System.currentTimeMillis() + timeoutSeconds * 1000;
 
+        while (System.currentTimeMillis() < endTime) {
+            File[] files = dir.listFiles();
+            boolean downloading = false;
+
+            if (files != null) {
+                for (File file : files) {
+                    if (file.getName().endsWith(".crdownload")) {
+                        downloading = true;
+                        break;
+                    }
+                }
+            }
+
+            if (!downloading) {
+                return; // download finished
+            }
+
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException ignored) {}
+        }
+
+        throw new RuntimeException("Download did not complete within timeout");
+    }
+
+
+
+
+
+// ****************************** END *******************************************************************************
 
 
 
@@ -450,7 +486,94 @@ public class MaterialManagementWebApphooks extends BaseClass {
 //    }
 
 
+    // ********************* Start **********************************************
 
+//
+//        @Before
+//        public void setup() throws IOException {
+//            // 1. Load configuration properties
+//            configprop = new Properties();
+//            String configPath = System.getProperty("user.dir") + "/src/test/resources/config.properties";
+//            FileInputStream fis = new FileInputStream(configPath);
+//            configprop.load(fis);
+//
+//            // 2. Initialize Logger
+//            logger = Logger.getLogger("WorkRoomWebApplication");
+//            String log4jPath = System.getProperty("user.dir") + "/src/test/resources/log4j.properties";
+//            PropertyConfigurator.configure(log4jPath);
+//
+//            String br = configprop.getProperty("browser").toLowerCase();
+//            String hubURL = configprop.getProperty("hubURL");
+//
+//            // This is the standard download path inside the Selenium Docker container
+//            String containerDownloadPath = "/home/seluser/Downloads";
+//
+//            // 3. Setup Browser Options for Remote Execution
+//            switch (br) {
+//                case "chrome":
+//                    ChromeOptions chromeOptions = new ChromeOptions();
+//                    Map<String, Object> chromePrefs = new HashMap<>();
+//                    chromePrefs.put("download.default_directory", containerDownloadPath);
+//                    chromePrefs.put("download.prompt_for_download", false);
+//                    chromePrefs.put("plugins.always_open_pdf_externally", true);
+//                    chromeOptions.setExperimentalOption("prefs", chromePrefs);
+//                    chromeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+//
+//                    driver = new RemoteWebDriver(new URL(hubURL), chromeOptions);
+//                    break;
+//
+//                case "firefox":
+//                    FirefoxOptions firefoxOptions = new FirefoxOptions();
+//                    firefoxOptions.addPreference("browser.download.dir", containerDownloadPath);
+//                    firefoxOptions.addPreference("browser.download.folderList", 2);
+//                    firefoxOptions.addPreference("browser.helperApps.neverAsk.saveToDisk",
+//                            "application/pdf,application/octet-stream,text/csv,application/vnd.ms-excel");
+//                    firefoxOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+//
+//                    driver = new RemoteWebDriver(new URL(hubURL), firefoxOptions);
+//                    break;
+//
+//                case "edge":
+//                    EdgeOptions edgeOptions = new EdgeOptions();
+//                    Map<String, Object> edgePrefs = new HashMap<>();
+//                    edgePrefs.put("download.default_directory", containerDownloadPath);
+//                    edgePrefs.put("download.prompt_for_download", false);
+//                    edgeOptions.setExperimentalOption("prefs", edgePrefs);
+//                    edgeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+//
+//                    driver = new RemoteWebDriver(new URL(hubURL), edgeOptions);
+//                    break;
+//
+//                default:
+//                    throw new RuntimeException("Browser not supported: " + br);
+//            }
+//
+//            logger.info("************* Remote WebDriver Launched (Docker) *****************");
+//            driver.manage().window().maximize();
+//        }
+//
+//        @After
+//        public void tearDown(Scenario scenario) {
+//            try {
+//                if (scenario.isFailed() && driver != null) {
+//                    // Capture screenshot on failure
+//                    byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+//                    scenario.attach(screenshot, "image/png", "Failed_Step_Screenshot");
+//                    logger.error("Scenario Failed: " + scenario.getName());
+//                }
+//            } catch (Exception e) {
+//                logger.error("Error in tearDown: " + e.getMessage());
+//            } finally {
+//                if (driver != null) {
+//                    logger.info("************* Quitting Remote Browser *****************");
+//                    driver.quit();
+//                }
+//            }
+//        }
+
+
+
+    // ********************* END  **********************************************
 
 
 

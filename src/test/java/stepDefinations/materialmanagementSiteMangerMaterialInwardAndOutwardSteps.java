@@ -79,6 +79,35 @@ public class materialmanagementSiteMangerMaterialInwardAndOutwardSteps extends B
     }
 
 
+    @Then("Click the Vendor po dropdown")
+    public void click_the_vendor_po_dropdown() {
+        logger.info("*** Click The Vendor Po DropDown  ***");
+        SiteManager.sharepointVendorpoDropDown();
+
+    }
+    @Then("Select the Vendor Po Number")
+    public void select_the_vendor_po_number() {
+        logger.info("*** Select The Vendor Po number  ***");
+        SiteManager.sharepointVendorPoListDropDown();
+    }
+    @Then("customer PO number should be selected")
+    public void customer_po_number_should_be_selected() {
+        logger.info("*** Selected the Customer Po from The Dropdown ***");
+        SiteManager.sharepointlistofCustomerPo();
+    }
+
+
+    @Then("Finally Click the Export button")
+    public void Finally_Click_the_Export_button() {
+        logger.info("*** clicked The Export button ***");
+        SiteManager.sharepointgenerateInwardBtn();
+
+        logger.info("*** clicked The Export button ***");
+        SiteManager.sharepointexportLiveBtn();
+
+        logger.info("*** Check The Success message ***");
+        SiteManager.sharepointsuccessmsg();
+    }
 
 
 }

@@ -25,7 +25,6 @@ public class BaseClass {
 
 
 
-
     //    for sharepoint project here below
     public MaterialManagementCustomerPage AddCustomer;
 //    public BaseClass EmailUtils;

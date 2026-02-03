@@ -67,6 +67,8 @@ public class materialmanagementSiteMangerMaterialInwardAndOutwardPage {
     By generateInwardBtn = By.xpath(configprop.getProperty("generateInwardBtn"));
     By exportLiveBtn = By.xpath(configprop.getProperty("exportLiveBtn"));
     By successmsg = By.xpath(configprop.getProperty("successmsg"));
+    By VendorpoDropDown = By.xpath(configprop.getProperty("VendorpoDropDown"));
+    By VendorPoListDropDown = By.id(configprop.getProperty("VendorPoListDropDown"));
 
 
     //Actions Method
@@ -258,29 +260,6 @@ public class materialmanagementSiteMangerMaterialInwardAndOutwardPage {
     }
 
 
-//    public void sharepointsuccessmsg( ) {
-//        try {
-//            WebElement successMsg = waithelper.WaitForElement1(successmsg,10);
-//            String expectedMsg1="Successfully Report is Downloaded";
-//            String expectedMsg2= "Please select Customer PO";
-//            if(successMsg.isDisplayed() && successMsg.isEnabled()){
-//                Assert.assertTrue(true);
-//                if(successMsg.equals(expectedMsg1) ||successMsg.equals(expectedMsg2)){
-//                    String actualMsg=successMsg.getText();
-//                    Assert.assertTrue(true);
-//                     System.out.println(actualMsg+ "is matching the "+successMsg);
-//                }else{
-//                        Assert.fail(" Message is Wrong");
-//                }
-//            }
-//            else {
-//                Assert.fail("generateInwardbtn Not Displayed and Not Enabled  ");
-//            }
-//        } catch (Exception e) {
-//            System.out.println("Unexpected error: " + e.getMessage());
-//        }
-//    }
-
     public void sharepointsuccessmsg() {
         try {
             WebElement successMsg = waithelper.WaitForElement1(successmsg, 10);
@@ -313,6 +292,88 @@ public class materialmanagementSiteMangerMaterialInwardAndOutwardPage {
             Assert.fail("Failed to verify success message: " + e.getMessage());
         }
     }
+
+
+    // Vendor po DropDown
+    public void sharepointVendorpoDropDown( ) {
+        try {
+            WebElement VendorpoDropdown = waithelper.WaitForElement1(VendorpoDropDown,10);
+            if(VendorpoDropdown.isDisplayed() && VendorpoDropdown.isEnabled()){
+                VendorpoDropdown.click();
+                Assert.assertTrue(true);
+            }
+            else {
+                Assert.fail("VendorpoDropDown Not Displayed and Not Enabled  ");
+            }
+        } catch (Exception e) {
+            System.out.println("Unexpected error: " + e.getMessage());
+        }
+    }
+
+
+
+    public void sharepointVendorPoListDropDown() {
+        try {
+            System.out.println("=== Method 2: Proper Select2 Handling ===");
+
+            // STEP 3: Find the dropdown results container
+            WebElement VendorPoListDropdown = waithelper.WaitForElement1(VendorPoListDropDown,10);
+            System.out.println("Dropdown results container found");
+
+            // STEP 4: Get all options
+            List<WebElement> options = VendorPoListDropdown.findElements(dropdownList);
+
+            System.out.println("Total options in dropdown: " + options.size());
+
+            // STEP 5: Select first valid PO
+            for (WebElement option : options) {
+                String optionText = option.getText().trim();
+                System.out.println("Checking option: '" + optionText + "'");
+
+                if (!optionText.equals("Select Vendor PO") && !optionText.isEmpty()) {
+                    System.out.println("✓ Selecting: " + optionText);
+                    option.click();
+
+                    // Verify selection
+                    verifySelectedVendorPO(optionText);
+                    return;
+                }
+            }
+
+            System.out.println("No valid Vendor PO found");
+
+        } catch (Exception e) {
+            System.out.println("Error in select Vendor PO From DropdownCorrectly: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+
+    private void verifySelectedVendorPO(String expectedPO) {
+        try {
+            // Wait a moment for selection to reflect
+            Thread.sleep(1000);
+
+            // Find the displayed selected value
+            WebElement selectedDisplay =  waithelper.WaitForElement1(DisplayedSelectedvalue,10);
+            String displayedText = selectedDisplay.getText();
+
+            System.out.println("Expected PO: " + expectedPO);
+            System.out.println("Displayed text: " + displayedText);
+
+            if (displayedText.contains(expectedPO)) {
+                System.out.println("✓ Vendor PO selection verified successfully!");
+            } else {
+                System.out.println("⚠ Vendor PO selection might not have worked");
+            }
+
+        } catch (Exception e) {
+            System.out.println("Could not verify Vendor Po selection: " + e.getMessage());
+        }
+    }
+
+
+
 
 
 
