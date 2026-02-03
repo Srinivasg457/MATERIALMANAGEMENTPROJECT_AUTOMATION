@@ -497,173 +497,174 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            script {
-                sh '''
-                    echo "Final cleanup..."
-                    docker rm -f selenium-chrome || true
-                '''
-            }
-            // Archive test results
-            archiveArtifacts artifacts: '**/target/surefire-reports/*.xml', allowEmptyArchive: true
+//     post {
+//         always {
+//             script {
+//                 sh '''
+//                     echo "Final cleanup..."
+//                     docker rm -f selenium-chrome || true
+//                 '''
+//             }
+//             // Archive test results
+//             archiveArtifacts artifacts: '**/target/surefire-reports/*.xml', allowEmptyArchive: true
+//
+//             // Publish JUnit test results
+//             junit '**/target/surefire-reports/*.xml'
+//
+//             // Clean workspace to save disk space
+//             cleanWs()
+//         }
 
-            // Publish JUnit test results
+post {
+        always {
             junit '**/target/surefire-reports/*.xml'
 
-            // Clean workspace to save disk space
-            cleanWs()
+            script {
+                // Get test results
+                def testResult = currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction.class)
+
+                if (testResult) {
+                    env.TOTAL_TESTS = testResult.totalCount
+                    env.PASSED_TESTS = testResult.totalCount - testResult.failCount - testResult.skipCount
+                    env.FAILED_TESTS = testResult.failCount
+                    env.SKIPPED_TESTS = testResult.skipCount
+
+                    echo "📊 Test Summary:"
+                    echo "   Total Tests: ${env.TOTAL_TESTS}"
+                    echo "   ✅ Passed: ${env.PASSED_TESTS}"
+                    echo "   ❌ Failed: ${env.FAILED_TESTS}"
+                    echo "   ⏩ Skipped: ${env.SKIPPED_TESTS}"
+                }
+            }
         }
 
-// success {
-//     echo "✅ Test automation completed successfully."
-//     echo "📊 Test reports: ${env.BUILD_URL}testReport/"
-//     echo "📦 Artifacts: ${env.BUILD_URL}artifact/"
-//
-//     script {
-//         // Try to get test results from JUnit reports
-//         def testResult = null
-//         try {
-//             testResult = currentBuild.rawBuild?.getAction(hudson.tasks.junit.TestResultAction.class)
-//         } catch (Exception e) {
-//             echo "⚠️ Could not retrieve test results: ${e.message}"
-//         }
-//
-//         def totalCount = testResult?.totalCount ?: "N/A"
-//         def passCount = testResult?.passCount ?: "N/A"
-//         def failCount = testResult?.failCount ?: 0
-//         def skipCount = testResult?.skipCount ?: 0
-//
-//         // Calculate pass percentage
-//         def passPercentage = "N/A"
-//         if (totalCount != "N/A" && totalCount > 0) {
-//             passPercentage = String.format("%.1f", (passCount.toFloat() / totalCount * 100)) + "%"
-//         }
-//
-//         // ✅ EMAIL WITH TEST COUNTS
-//         mail to: 'srinivas.g@limitscale.io,srinivasg457@gmail.com,jeyasimhan@limitscale.io',
-//              subject: "✅ SUCCESS: Test Automation Completed - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-//              body: """Test automation completed successfully in Jenkins.
-//
-//                   🔗 Build URL: ${env.BUILD_URL}
-//                   📊 Test Reports: ${env.BUILD_URL}testReport/
-//                   📦 Artifacts: ${env.BUILD_URL}artifact/
-//
-//                   📋 BUILD INFORMATION:
-//                   --------------------------
-//                   Job: ${env.JOB_NAME}
-//                   Build: #${env.BUILD_NUMBER}
-//                   Status: ✅ SUCCESS
-//                   Duration: ${currentBuild.durationString ?: 'N/A'}
-//
-//                   📈 TEST RESULTS SUMMARY:
-//                   --------------------------
-//                   ✅ Total Tests Run: ${totalCount}
-//                   ✅ Tests Passed: ${passCount}
-//                   ❌ Tests Failed: ${failCount}
-//                   ⏭️ Tests Skipped: ${skipCount}
-//                   📊 Pass Rate: ${passPercentage}
-//
-//                   🎯 All tests passed successfully! 🎉
-//                   """
-//     }
-// }
-//
-// failure {
-//     echo "❌ Pipeline failed. Check server logs for details."
-//     echo "🔍 Debug URL: ${env.BUILD_URL}"
-//
-//     script {
-//         // Try to get test results from JUnit reports
-//         def testResult = null
-//         try {
-//             testResult = currentBuild.rawBuild?.getAction(hudson.tasks.junit.TestResultAction.class)
-//         } catch (Exception e) {
-//             echo "⚠️ Could not retrieve test results: ${e.message}"
-//         }
-//
-//         def totalCount = testResult?.totalCount ?: "N/A"
-//         def passCount = testResult?.passCount ?: "N/A"
-//         def failCount = testResult?.failCount ?: "N/A"
-//         def skipCount = testResult?.skipCount ?: 0
-//
-//         // Calculate failure percentage
-//         def failPercentage = "N/A"
-//         if (totalCount != "N/A" && totalCount > 0 && failCount != "N/A") {
-//             failPercentage = String.format("%.1f", (failCount.toFloat() / totalCount * 100)) + "%"
-//         }
-//
-//         // ❌ FAILURE EMAIL WITH TEST COUNTS
-//         mail to: 'srinivas.g@limitscale.io,srinivasg457@gmail.com,jeyasimhan@limitscale.io',
-//              subject: "❌ FAILURE: Test Automation Failed - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-//              body: """Test automation failed in Jenkins.
-//
-//                   🔗 Build URL: ${env.BUILD_URL}
-//                   📊 Test Reports: ${env.BUILD_URL}testReport/
-//                   🔍 Console Output: ${env.BUILD_URL}console
-//
-//                   📋 BUILD INFORMATION:
-//                   --------------------------
-//                   Job: ${env.JOB_NAME}
-//                   Build: #${env.BUILD_NUMBER}
-//                   Status: ❌ FAILURE
-//                   Duration: ${currentBuild.durationString ?: 'N/A'}
-//
-//                   📉 TEST RESULTS SUMMARY:
-//                   --------------------------
-//                   📊 Total Tests Run: ${totalCount}
-//                   ✅ Tests Passed: ${passCount}
-//                   ❌ Tests Failed: ${failCount}
-//                   ⏭️ Tests Skipped: ${skipCount}
-//                   📉 Failure Rate: ${failPercentage}
-//
-//                   ⚠️ Please check the build logs and test reports for details.
-//                   """
-//     }
-// }
         success {
-            echo "✅ Test automation completed successfully."
-            echo "📊 Test reports: ${env.BUILD_URL}testReport/"
-            echo "📦 Artifacts: ${env.BUILD_URL}artifact/"
+            script {
+                // Get test results
+                def testResult = currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction.class)
+                def total = testResult?.totalCount ?: 0
+                def failed = testResult?.failCount ?: 0
+                def passed = total - failed - (testResult?.skipCount ?: 0)
+                def skipped = testResult?.skipCount ?: 0
 
-            // ✅ EMAIL NOW ENABLED - Will work!
-            mail to: 'srinivas.g@limitscale.io,srinivasg457@gmail.com,jeyasimhan@limitscale.io,selvarajan@limitscale.com',
-                 subject: "✅ SUCCESS: Test Automation Completed - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                 body: """Test automation completed successfully in Jenkins.
+                echo "✅ Test automation completed successfully."
+                echo "📊 Test Summary:"
+                echo "   Total Tests: ${total}"
+                echo "   ✅ Passed: ${passed}"
+                echo "   ❌ Failed: ${failed}"
+                echo "   ⏩ Skipped: ${skipped}"
 
-                      🔗 Build URL: ${env.BUILD_URL}
-                      📊 Test Reports: ${env.BUILD_URL}testReport/
-                      📦 Artifacts: ${env.BUILD_URL}artifact/
+                mail to: 'srinivas.g@limitscale.io,srinivasg457@gmail.com',
+                     subject: "✅ SUCCESS: Test Automation - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                     body: """📊 TEST EXECUTION SUMMARY:
 
-                      Job: ${env.JOB_NAME}
-                      Build: #${env.BUILD_NUMBER}
-                      Status: ✅ SUCCESS
+✅ ALL TESTS PASSED!
 
-                      All tests passed successfully! 🎉
-                      """
+📈 Test Results:
+   Total Tests: ${total}
+   ✅ Passed: ${passed}
+   ❌ Failed: ${failed}
+   ⏩ Skipped: ${skipped}
+   📊 Pass Rate: ${total > 0 ? Math.round((passed/total)*100) : 0}%
+
+🔗 Build Details:
+   Build URL: ${env.BUILD_URL}
+   Test Reports: ${env.BUILD_URL}testReport/
+   Artifacts: ${env.BUILD_URL}artifact/
+   Job: ${env.JOB_NAME}
+   Build: #${env.BUILD_NUMBER}
+
+Excellent work! All automated tests have passed successfully! 🎉
+"""
+            }
         }
 
         failure {
-            echo "❌ Pipeline failed. Check server logs for details."
-            echo "🔍 Debug URL: ${env.BUILD_URL}"
+            script {
+                // Get test results
+                def testResult = currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction.class)
+                def total = testResult?.totalCount ?: 0
+                def failed = testResult?.failCount ?: 0
+                def passed = total - failed - (testResult?.skipCount ?: 0)
+                def skipped = testResult?.skipCount ?: 0
 
-            // ✅ EMAIL NOW ENABLED - Will work!
-            mail to: 'srinivas.g@limitscale.io,srinivasg457@gmail.com,jeyasimhan@limitscale.io,selvarajan@limitscale.com',
-                 subject: "❌ FAILURE: Test Automation Failed - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                 body: """Test automation failed in Jenkins.
+                echo "❌ Pipeline failed. Check server logs for details."
+                echo "📊 Test Summary:"
+                echo "   Total Tests: ${total}"
+                echo "   ✅ Passed: ${passed}"
+                echo "   ❌ Failed: ${failed}"
+                echo "   ⏩ Skipped: ${skipped}"
 
-                 🔗 Build URL: ${env.BUILD_URL}
-                📊 Test Reports: ${env.BUILD_URL}testReport/
-                🔍 Console Output: ${env.BUILD_URL}console
+                mail to: 'srinivas.g@limitscale.io,srinivasg457@gmail.com',
+                     subject: "❌ FAILURE: Test Automation - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                     body: """❌ TEST EXECUTION FAILED!
 
-                 Job: ${env.JOB_NAME}
-              Build: #${env.BUILD_NUMBER}
-             Status: ❌ FAILURE
+📈 Test Results:
+   Total Tests: ${total}
+   ✅ Passed: ${passed}
+   ❌ Failed: ${failed}
+   ⏩ Skipped: ${skipped}
+   📊 Pass Rate: ${total > 0 ? Math.round((passed/total)*100) : 0}%
 
-               Please check the build logs for details.
-                  """
+🔍 Failure Details:
+   Build URL: ${env.BUILD_URL}
+   Test Reports: ${env.BUILD_URL}testReport/
+   Console Output: ${env.BUILD_URL}console
+   Job: ${env.JOB_NAME}
+   Build: #${env.BUILD_NUMBER}
+
+⚠️ ${failed} test(s) failed. Please check the test reports for details.
+"""
+            }
         }
     }
+}
+
+
+
+//         success {
+//             echo "✅ Test automation completed successfully."
+//             echo "📊 Test reports: ${env.BUILD_URL}testReport/"
+//             echo "📦 Artifacts: ${env.BUILD_URL}artifact/"
+//
+//             // ✅ EMAIL NOW ENABLED - Will work!
+//             mail to: 'srinivas.g@limitscale.io,srinivasg457@gmail.com,jeyasimhan@limitscale.io,selvarajan@limitscale.com',
+//                  subject: "✅ SUCCESS: Test Automation Completed - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+//                  body: """Test automation completed successfully in Jenkins.
+//
+//                       🔗 Build URL: ${env.BUILD_URL}
+//                       📊 Test Reports: ${env.BUILD_URL}testReport/
+//                       📦 Artifacts: ${env.BUILD_URL}artifact/
+//
+//                       Job: ${env.JOB_NAME}
+//                       Build: #${env.BUILD_NUMBER}
+//                       Status: ✅ SUCCESS
+//
+//                       All tests passed successfully! 🎉
+//                       """
+//         }
+//
+//         failure {
+//             echo "❌ Pipeline failed. Check server logs for details."
+//             echo "🔍 Debug URL: ${env.BUILD_URL}"
+//
+//             // ✅ EMAIL NOW ENABLED - Will work!
+//             mail to: 'srinivas.g@limitscale.io,srinivasg457@gmail.com,jeyasimhan@limitscale.io,selvarajan@limitscale.com',
+//                  subject: "❌ FAILURE: Test Automation Failed - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+//                  body: """Test automation failed in Jenkins.
+//
+//                  🔗 Build URL: ${env.BUILD_URL}
+//                 📊 Test Reports: ${env.BUILD_URL}testReport/
+//                 🔍 Console Output: ${env.BUILD_URL}console
+//
+//                  Job: ${env.JOB_NAME}
+//               Build: #${env.BUILD_NUMBER}
+//              Status: ❌ FAILURE
+//
+//                Please check the build logs for details.
+//                   """
+//         }
+  //  }
 }
 
 

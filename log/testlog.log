@@ -9634,3 +9634,215 @@ Session ID: ce37d6d1c5b9c23155a38c2dc38fd57f
 2026-02-03 16:36:57,234 - WorkRoomWebApplication -INFO - Total files: 2
 2026-02-03 16:36:57,234 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
 2026-02-03 16:36:57,415 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-03 17:40:59,014 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-02-03 17:40:59,128 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 17:41:00,277 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 17:41:01,479 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 17:41:01,680 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 17:41:03,058 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 17:41:04,879 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:41:05,487 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-02-03 17:41:05,518 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 17:41:06,530 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 17:41:07,467 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 17:41:07,586 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 17:41:09,030 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 17:41:10,406 - WorkRoomWebApplication -INFO - *** clicked on the customer sub menu ***
+2026-02-03 17:41:15,088 - WorkRoomWebApplication -INFO - *** clicked on the '+' icon ***
+2026-02-03 17:41:15,273 - WorkRoomWebApplication -INFO - *** Selected the Customer ***
+2026-02-03 17:41:16,594 - WorkRoomWebApplication -INFO - *** Filing up the Customer All the Required field ***
+2026-02-03 17:41:21,886 - WorkRoomWebApplication -INFO - *** clicked the submit button ***
+2026-02-03 17:41:22,106 - WorkRoomWebApplication -INFO - *** clicked the Success ok Button ***
+2026-02-03 17:41:22,909 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:41:23,659 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-02-03 17:41:23,713 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 17:41:24,983 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 17:41:26,513 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 17:41:26,647 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 17:41:28,211 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 17:41:30,120 - WorkRoomWebApplication -INFO - *** clicked on the customer sub menu ***
+2026-02-03 17:41:35,654 - WorkRoomWebApplication -INFO - *** clicked on the '+' icon ***
+2026-02-03 17:41:35,924 - WorkRoomWebApplication -INFO - *** Selected the Customer ***
+2026-02-03 17:41:37,448 - WorkRoomWebApplication -INFO - *** Clicking the Submit Button ***
+2026-02-03 17:41:37,772 - WorkRoomWebApplication -INFO - *** Checking For The Error Message ***
+2026-02-03 17:41:39,119 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:41:39,820 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-02-03 17:41:39,922 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 17:41:41,354 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 17:41:42,860 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 17:41:43,049 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 17:41:44,697 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 17:41:46,924 - WorkRoomWebApplication -INFO - *** clicked on the customer sub menu ***
+2026-02-03 17:41:56,462 - WorkRoomWebApplication -INFO - *** Click On The Add Button '+' Icon ***
+2026-02-03 17:41:56,655 - WorkRoomWebApplication -INFO - *** Selecting The Customer Location Option ***
+2026-02-03 17:41:58,109 - WorkRoomWebApplication -INFO - *** Selecting The Customer Option  ***
+2026-02-03 17:41:59,914 - WorkRoomWebApplication -INFO - *** Select The SiteLocation if available ***
+2026-02-03 17:42:01,604 - WorkRoomWebApplication -INFO - *** Add The Loction  ***
+2026-02-03 17:42:02,247 - WorkRoomWebApplication -INFO - ***  Click The Submit Button ***
+2026-02-03 17:42:02,429 - WorkRoomWebApplication -INFO - *** Success Message For The Location Validation Done ***
+2026-02-03 17:42:03,415 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:42:04,310 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-02-03 17:42:04,381 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 17:42:05,710 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 17:42:07,173 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 17:42:07,329 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 17:42:08,747 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 17:42:10,585 - WorkRoomWebApplication -INFO - *** clicked on the customer sub menu ***
+2026-02-03 17:42:26,526 - WorkRoomWebApplication -INFO - *** Get The List of Data of Customers  ***
+2026-02-03 17:42:43,968 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:42:44,736 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-02-03 17:42:44,815 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 17:42:46,399 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 17:42:47,780 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 17:42:47,966 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 17:42:49,625 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 17:42:51,851 - WorkRoomWebApplication -INFO - *** click the Suppliers side menu ***
+2026-02-03 17:42:57,521 - WorkRoomWebApplication -INFO - *** Click on the Add button  ***
+2026-02-03 17:42:57,806 - WorkRoomWebApplication -INFO - ***  select the Suppliers dropdown ***
+2026-02-03 17:42:59,374 - WorkRoomWebApplication -INFO - ***  Fill all the Suppliers required  details and submit the details ***
+2026-02-03 17:43:03,207 - WorkRoomWebApplication -INFO - ***  Click The Submit Button ***
+2026-02-03 17:43:03,350 - WorkRoomWebApplication -INFO - Submit button clicked successfully.
+2026-02-03 17:43:03,350 - WorkRoomWebApplication -INFO - ***  Click The Success Button ***
+2026-02-03 17:43:04,123 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:43:04,698 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-02-03 17:43:04,748 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 17:43:05,868 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 17:43:07,001 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 17:43:07,226 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 17:43:08,594 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 17:43:10,046 - WorkRoomWebApplication -INFO - *** click the Suppliers side menu ***
+2026-02-03 17:43:14,250 - WorkRoomWebApplication -INFO - *** Click on the Add button  ***
+2026-02-03 17:43:14,438 - WorkRoomWebApplication -INFO - ***  select the Suppliers dropdown ***
+2026-02-03 17:43:17,054 - WorkRoomWebApplication -INFO - ***  click Supplier submit Button then check the Error Message details ***
+2026-02-03 17:43:17,367 - WorkRoomWebApplication -INFO - Submit button clicked successfully.
+2026-02-03 17:43:17,368 - WorkRoomWebApplication -INFO - ***  check the Error Message details ***
+2026-02-03 17:43:17,879 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:43:18,376 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-02-03 17:43:18,421 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 17:43:21,132 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 17:43:22,229 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 17:43:22,485 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 17:43:23,994 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 17:43:25,635 - WorkRoomWebApplication -INFO - *** click the Suppliers side menu ***
+2026-02-03 17:43:31,088 - WorkRoomWebApplication -INFO - *** Print The List of The Suppliers ***
+2026-02-03 17:43:40,019 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:43:41,271 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-02-03 17:43:41,391 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 17:43:43,172 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 17:43:44,952 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 17:43:45,247 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 17:43:46,657 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 17:43:48,252 - WorkRoomWebApplication -INFO - *** click the subContractor side menu ***
+2026-02-03 17:43:56,440 - WorkRoomWebApplication -INFO - *** Click on the SubContractor Add button  ***
+2026-02-03 17:43:56,707 - WorkRoomWebApplication -INFO - ***  select the subContractor dropdown ***
+2026-02-03 17:43:58,695 - WorkRoomWebApplication -INFO - ***  Fill all the SubContractor required  details  ***
+2026-02-03 17:44:03,518 - WorkRoomWebApplication -INFO - ***  Click The Submit Button ***
+2026-02-03 17:44:03,850 - WorkRoomWebApplication -INFO - Submit button clicked successfully.
+2026-02-03 17:44:03,851 - WorkRoomWebApplication -INFO - ***  Click The Success Button ***
+2026-02-03 17:44:04,937 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:44:06,482 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-02-03 17:44:06,601 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 17:44:09,702 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 17:44:11,318 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 17:44:11,618 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 17:44:12,771 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 17:44:15,266 - WorkRoomWebApplication -INFO - *** click the subContractor side menu ***
+2026-02-03 17:44:22,124 - WorkRoomWebApplication -INFO - *** Click on the SubContractor Add button  ***
+2026-02-03 17:44:22,547 - WorkRoomWebApplication -INFO - ***  select the subContractor dropdown ***
+2026-02-03 17:44:27,920 - WorkRoomWebApplication -INFO - ***  click Sucontractor submit Button  ***
+2026-02-03 17:44:28,435 - WorkRoomWebApplication -INFO - Submit button clicked successfully.
+2026-02-03 17:44:28,436 - WorkRoomWebApplication -INFO - ***   check the Error Message details ***
+2026-02-03 17:44:30,230 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:44:31,414 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-02-03 17:44:31,490 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 17:44:34,833 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 17:44:36,504 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 17:44:36,910 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 17:44:36,923 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 17:44:36,929 - WorkRoomWebApplication -INFO - *** click the subContractor side menu ***
+2026-02-03 17:44:36,935 - WorkRoomWebApplication -INFO - ***  Print The List of The Material Master Data ***
+2026-02-03 17:44:36,955 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:44:37,111 - WorkRoomWebApplication -ERROR - Error in tearDown: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '17.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35617}, goog:processID: 2136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.17.0.2:4444/sessio..., se:cdpVersion: 144.0.7559.109, se:containerName: 7933e5a61d6c, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.17.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.17.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+2026-02-03 17:44:37,112 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:44:37,203 - WorkRoomWebApplication -ERROR - Error in tearDown: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '17.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35617}, goog:processID: 2136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.17.0.2:4444/sessio..., se:cdpVersion: 144.0.7559.109, se:containerName: 7933e5a61d6c, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.17.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.17.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+2026-02-03 17:44:37,203 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:44:37,275 - WorkRoomWebApplication -ERROR - Error in tearDown: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '17.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35617}, goog:processID: 2136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.17.0.2:4444/sessio..., se:cdpVersion: 144.0.7559.109, se:containerName: 7933e5a61d6c, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.17.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.17.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+2026-02-03 17:44:37,275 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:44:37,346 - WorkRoomWebApplication -ERROR - Error in tearDown: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '17.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35617}, goog:processID: 2136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.17.0.2:4444/sessio..., se:cdpVersion: 144.0.7559.109, se:containerName: 7933e5a61d6c, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.17.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.17.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+2026-02-03 17:44:37,346 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:44:37,471 - WorkRoomWebApplication -ERROR - Error in tearDown: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '17.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35617}, goog:processID: 2136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.17.0.2:4444/sessio..., se:cdpVersion: 144.0.7559.109, se:containerName: 7933e5a61d6c, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.17.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.17.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+2026-02-03 17:44:37,474 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:44:37,647 - WorkRoomWebApplication -ERROR - Error in tearDown: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '17.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35617}, goog:processID: 2136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.17.0.2:4444/sessio..., se:cdpVersion: 144.0.7559.109, se:containerName: 7933e5a61d6c, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.17.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.17.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+2026-02-03 17:44:37,648 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:44:37,783 - WorkRoomWebApplication -ERROR - Error in tearDown: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '17.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35617}, goog:processID: 2136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.17.0.2:4444/sessio..., se:cdpVersion: 144.0.7559.109, se:containerName: 7933e5a61d6c, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.17.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.17.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+2026-02-03 17:44:37,789 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:44:37,907 - WorkRoomWebApplication -ERROR - Error in tearDown: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '17.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35617}, goog:processID: 2136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.17.0.2:4444/sessio..., se:cdpVersion: 144.0.7559.109, se:containerName: 7933e5a61d6c, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.17.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.17.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+2026-02-03 17:44:37,907 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:44:38,063 - WorkRoomWebApplication -ERROR - Error in tearDown: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '17.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35617}, goog:processID: 2136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.17.0.2:4444/sessio..., se:cdpVersion: 144.0.7559.109, se:containerName: 7933e5a61d6c, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.17.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.17.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+2026-02-03 17:44:38,065 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:44:38,276 - WorkRoomWebApplication -ERROR - Error in tearDown: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '17.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35617}, goog:processID: 2136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.17.0.2:4444/sessio..., se:cdpVersion: 144.0.7559.109, se:containerName: 7933e5a61d6c, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.17.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.17.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+2026-02-03 17:44:38,277 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:44:41,077 - WorkRoomWebApplication -ERROR - Error in tearDown: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '17.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35617}, goog:processID: 2136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.17.0.2:4444/sessio..., se:cdpVersion: 144.0.7559.109, se:containerName: 7933e5a61d6c, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.17.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.17.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+2026-02-03 17:44:41,077 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 17:44:41,108 - WorkRoomWebApplication -ERROR - Error in tearDown: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '17.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35617}, goog:processID: 2136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.17.0.2:4444/sessio..., se:cdpVersion: 144.0.7559.109, se:containerName: 7933e5a61d6c, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.17.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.17.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+2026-02-03 17:44:41,108 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
