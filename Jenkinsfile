@@ -190,7 +190,115 @@
 //             }
 //         }
 //}
-//**************************** Try 2 *************************
+//**************************** Try 2  working 100 percent *************************
+// pipeline {
+//     agent any
+//
+//     stages {
+//         stage('Clone Repo') {
+//             steps {
+//                 git branch: 'srinivas', url: 'https://github.com/Srinivasg457/MATERIALMANAGEMENTPROJECT_AUTOMATION.git'
+//             }
+//         }
+//
+//         stage('Run in Docker') {
+//             steps {
+//                 script {
+//                     sh 'docker pull selenium/standalone-chrome:latest'
+//
+//                     sh '''
+//                         echo "Checking for existing container using port 4444..."
+//                         PORT_IN_USE=$(docker ps --filter "publish=4444" --format "{{.ID}}")
+//                         if [ ! -z "$PORT_IN_USE" ]; then
+//                             echo "Stopping and removing container $PORT_IN_USE..."
+//                             docker stop $PORT_IN_USE || true
+//                             docker rm $PORT_IN_USE || true
+//                             sleep 2
+//                         fi
+//                     '''
+//
+//                     sh '''
+//                         if docker ps -a --format '{{.Names}}' | grep -q '^selenium-chrome$'; then
+//                             echo "Cleaning up old selenium-chrome container..."
+//                             docker stop selenium-chrome || true
+//                             docker rm selenium-chrome || true
+//                         fi
+//                     '''
+//
+//                     // FIXED: Added volume mount for test files
+//                     sh '''
+//                         echo "Starting selenium-chrome container with volume mount..."
+//                         docker run -d \
+//                             -p 4444:4444 \
+//                             --shm-size="2g" \
+//                             --name selenium-chrome \
+//                             -v ${WORKSPACE}:/home/seluser/automation \
+//                             selenium/standalone-chrome:latest
+//                     '''
+//
+//                     sh '''
+//                         echo "Waiting for Selenium to become ready..."
+//                         for i in {1..10}; do
+//                             if curl -s http://localhost:4444/status | grep -q "ready"; then
+//                                 echo "Selenium is ready."
+//                                 break
+//                             else
+//                                 echo "Waiting..."
+//                                 sleep 10
+//                             fi
+//                         done
+//                     '''
+//
+//                     sh '''
+//                         echo "Running tests inside Maven container..."
+//                         docker run --rm \
+//                             -v ${WORKSPACE}:/tests \
+//                             -w /tests \
+//                             --network=host \
+//                             -e "TEST_FILE_BASE_PATH=/home/seluser/automation" \
+//                             maven:3.9.6-eclipse-temurin-17 mvn clean test
+//                     '''
+//
+//                     sh 'docker stop selenium-chrome || true'
+//                 }
+//             }
+//         }
+//     }
+//
+// post {
+//             always {
+//                 script {
+//                     sh '''
+//                         echo "Final cleanup..."
+//                         docker rm -f selenium-chrome || true
+//                     '''
+//                 }
+//                 archiveArtifacts artifacts: '**/target/surefire-reports/*.xml', allowEmptyArchive: true
+//             }
+//
+//             success {
+//                 echo "✅ Test automation completed successfully."
+//
+//                 // Send email
+//                 mail to: 'srinivas.g@limitscale.io',
+//                      subject: "✅ Test automation completed successfully",
+//                      body: "Test automation completed successfully in Jenkins."
+//
+//             }
+//
+//             failure {
+//                 echo "❌ Pipeline failed. Check server logs for details."
+//
+//                 // Send email
+//                 mail to: 'srinivas.g@limitscale.io',
+//                      subject: "❌ Test automation Failed",
+//                      body: "Test automation Failed in Jenkins."
+//             }
+//         }
+// }
+
+
+// ***** Try 3 Testing Mode ******************
 pipeline {
     agent any
 
@@ -265,40 +373,53 @@ pipeline {
         }
     }
 
-post {
-            always {
-                script {
-                    sh '''
-                        echo "Final cleanup..."
-                        docker rm -f selenium-chrome || true
-                    '''
+    post {
+        always {
+            script {
+                sh '''
+                    echo "Final cleanup..."
+                    docker rm -f selenium-chrome || true
+                '''
+            }
+            archiveArtifacts artifacts: '**/target/surefire-reports/*.xml', allowEmptyArchive: true
+            junit '**/target/surefire-reports/*.xml'
+        }
+
+        success {
+            echo "✅ Test automation completed successfully."
+
+            // Try to send email with error handling
+            script {
+                try {
+                    mail to: 'srinivas.g@limitscale.io',
+                         subject: "✅ Test automation completed successfully",
+                         body: "Test automation completed successfully in Jenkins.\n\nBuild URL: ${env.BUILD_URL}"
+                    echo "📧 Success email sent"
+                } catch (Exception e) {
+                    echo "⚠️ Could not send success email: ${e.message}"
+                    echo "✅ Tests passed! Email notification skipped due to configuration issue."
                 }
-                archiveArtifacts artifacts: '**/target/surefire-reports/*.xml', allowEmptyArchive: true
-            }
-
-            success {
-                echo "✅ Test automation completed successfully."
-
-                // Send email
-                mail to: 'srinivas.g@limitscale.io',
-                     subject: "✅ Test automation completed successfully",
-                     body: "Test automation completed successfully in Jenkins."
-
-            }
-
-            failure {
-                echo "❌ Pipeline failed. Check server logs for details."
-
-                // Send email
-                mail to: 'srinivas.g@limitscale.io',
-                     subject: "❌ Test automation Failed",
-                     body: "Test automation Failed in Jenkins."
             }
         }
+
+        failure {
+            echo "❌ Pipeline failed. Check server logs for details."
+
+            // Try to send email with error handling
+            script {
+                try {
+                    mail to: 'srinivas.g@limitscale.io',
+                         subject: "❌ Test automation Failed",
+                         body: "Test automation Failed in Jenkins.\n\nCheck: ${env.BUILD_URL}"
+                    echo "📧 Failure email sent"
+                } catch (Exception e) {
+                    echo "⚠️ Could not send failure email: ${e.message}"
+                    echo "🔍 Check build logs at: ${env.BUILD_URL}"
+                }
+            }
+        }
+    }
 }
-
-
-
 
 
 

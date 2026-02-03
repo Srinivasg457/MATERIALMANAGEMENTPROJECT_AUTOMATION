@@ -8482,3 +8482,35 @@ Session ID: 6a8b3c8c8f96867987e149a43233fb81
 2026-02-03 10:09:25,375 - WorkRoomWebApplication -INFO - Total files: 2
 2026-02-03 10:09:25,375 - WorkRoomWebApplication -INFO - ************* Quitting Browser *****************
 2026-02-03 10:09:25,559 - WorkRoomWebApplication -INFO - ************* Browser Closed Successfully *****************
+2026-02-03 12:19:43,323 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-02-03 12:19:44,197 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 12:19:45,750 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 12:19:47,325 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 12:19:47,524 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 12:19:49,003 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 12:19:50,861 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-03 12:19:54,777 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-03 12:19:56,559 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-03 12:20:02,031 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-03 12:20:02,110 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-03 12:20:03,432 - WorkRoomWebApplication -INFO - *** Click Generate Report for The Inard materials ***
+2026-02-03 12:20:03,574 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 12:20:03,858 - WorkRoomWebApplication -INFO - *** Checking for The Success Message ***
+2026-02-03 12:20:04,154 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
+2026-02-03 12:20:05,258 - WorkRoomWebApplication -INFO - ************* Remote WebDriver Launched (Docker) *****************
+2026-02-03 12:20:05,314 - WorkRoomWebApplication -INFO - ************* Get The Application URL  *****************
+2026-02-03 12:20:06,522 - WorkRoomWebApplication -INFO - *** Enter The Share Point Email Id ***
+2026-02-03 12:20:08,161 - WorkRoomWebApplication -INFO - *** click the next button ***
+2026-02-03 12:20:08,363 - WorkRoomWebApplication -INFO - *** Enter The Password ***
+2026-02-03 12:20:10,024 - WorkRoomWebApplication -INFO - *** clicked on the sign in Button ***
+2026-02-03 12:20:12,262 - WorkRoomWebApplication -INFO - *** click the Materials Manager main menu ***
+2026-02-03 12:20:20,725 - WorkRoomWebApplication -INFO - *** click the Materials Report Sub menu ***
+2026-02-03 12:20:23,540 - WorkRoomWebApplication -INFO - *** click the Inward outward button ***
+2026-02-03 12:20:29,945 - WorkRoomWebApplication -INFO - *** The DropDown List Availability Checking***
+2026-02-03 12:20:30,237 - WorkRoomWebApplication -INFO - *** Selected the Customer Po from The Dropdown ***
+2026-02-03 12:20:32,351 - WorkRoomWebApplication -INFO - *** Click The Vendor Po DropDown  ***
+2026-02-03 12:20:33,032 - WorkRoomWebApplication -INFO - *** Select The Vendor Po number  ***
+2026-02-03 12:20:34,824 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 12:20:35,286 - WorkRoomWebApplication -INFO - *** clicked The Export button ***
+2026-02-03 12:20:36,211 - WorkRoomWebApplication -INFO - *** Check The Success message ***
+2026-02-03 12:20:36,591 - WorkRoomWebApplication -INFO - ************* Quitting Remote Browser *****************
