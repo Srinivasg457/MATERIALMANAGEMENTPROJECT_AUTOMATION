@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
  //      features="src/test/java/Features/2_materialManagementSupplierMasterData.feature",
   //      features ="src/test/java/Features/5_materialmanagementCableManager.feature",
 //        features="src/test/java/Features/3_materialManagementSubContractor.feature",
-        features="src/test/java/Features/6_SubcontractorPoUnitprice.feature",
-//           features="src/test/java/Features/7_MaterialSiteManger.feature",
+//        features="src/test/java/Features/6_SubcontractorPoUnitprice.feature",
+           features="src/test/java/Features/7_MaterialSiteManger.feature",
 
         //"src/test/java/Features/1_materialManagementCustomer.feature",
         //src/test/java/Features/workroomlogin.feature
