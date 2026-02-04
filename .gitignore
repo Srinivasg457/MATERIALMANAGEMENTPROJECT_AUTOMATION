@@ -36,3 +36,17 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+# Build & reports
+/target/
+/allure-report/
+/allure-results/
+/test-output/
+/log/
+/Downloaded Documents/
+
+# IDE
+.idea/
+
+# Logs
+*.log
