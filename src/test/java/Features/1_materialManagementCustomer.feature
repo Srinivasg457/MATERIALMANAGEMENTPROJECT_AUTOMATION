@@ -64,7 +64,6 @@ Feature: Material Management Customer Module
     Then Get The List of Data of Customers
 
 
-  # *********** View Button is Removed in the  Ui ************
 
 #      @regression
 #  Scenario: Moving to Customer Module And Check The VIEW Action Of The Customer

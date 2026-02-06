@@ -230,24 +230,24 @@ public class MaterialManagementMateialModulePage extends BaseClass {
     }
 
 
-
-
-
-    //To print The List of materials
     public void sharepointmaterialsGetTableList() {
         try {
             int currentPage = 1;
-            int totalPages = getTotalMaterialmasterDataPages(); // This method needs to be implemented
             int totalMaterials = 0;
+            int maxPages = 1000; // Safety limit to prevent infinite loops
+            boolean hasNextPage = true;
 
             System.out.println("=== MATERIALS LIST (ALL PAGES) ===");
-            System.out.println("Total pages to process: " + totalPages);
+            System.out.println();
+
+            // Get total entries info from the UI
+            String entriesInfo = ldriver.findElement(By.cssSelector(".dataTables_info")).getText();
+            System.out.println("Entries Info: " + entriesInfo);
             System.out.println();
 
             do {
                 System.out.println("--- PAGE " + currentPage + " ---");
 
-                // Wait for table to load using explicit wait
                 ldriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
                 List<WebElement> rows = ldriver.findElements(materials_List);
@@ -255,17 +255,14 @@ public class MaterialManagementMateialModulePage extends BaseClass {
                 if (rows.isEmpty()) {
                     System.out.println("NO Materials found on page " + currentPage);
                 } else {
-                    // Print table header for each page
+                    // Print table header
                     System.out.println("┌──────────────────────┬──────────────────────┬──────────────────────┬──────────────────────────────┐");
                     System.out.println("│ Material Number      │ Abb Project Number   │ HSN Number           │ Material Description         │");
                     System.out.println("├──────────────────────┼──────────────────────┼──────────────────────┼──────────────────────────────┤");
 
-
                     // Print rows for current page
                     for (WebElement row : rows) {
                         List<WebElement> cells = row.findElements(MaterialTable_Data);
-
-
 
                         if (cells.size() >= 4) {
                             String MaterialNumber = formatCellmaterials(cells.get(0).getText(), 20);
@@ -274,10 +271,9 @@ public class MaterialManagementMateialModulePage extends BaseClass {
                             String MaterialDescription = formatCellmaterials(cells.get(3).getText(), 28);
 
                             System.out.println("│ " + MaterialNumber + " │ " + AbbProjectNumber + " │ " + HSNNumber + " │ " + MaterialDescription + " │");
-
                         }
                     }
-                    // Print footer for current page
+                    // Print footer
                     System.out.println("└──────────────────────┴──────────────────────┴──────────────────────┴──────────────────────────────┘");
                     System.out.println("Page " + currentPage + ": " + rows.size() + " Materials");
 
@@ -286,21 +282,51 @@ public class MaterialManagementMateialModulePage extends BaseClass {
 
                 System.out.println();
 
-                // Move to next page if available
-                if (currentPage < totalPages) {
-                    materialsnavigateToNextPage(); // This method needs to be implemented
-                    currentPage++;
-                    // Add a small delay for page load
-                    Thread.sleep(2000);
-                } else {
-                    break; // Exit loop when we reach the last page
+                // Check if "Next" button exists and is NOT disabled
+                WebElement nextButton = null;
+                try {
+                    // Try to find the Next button that is NOT disabled
+                    nextButton = ldriver.findElement(By.cssSelector("#Table_Materials_next:not(.disabled)"));
+                } catch (NoSuchElementException e1) {
+                    // Try alternative selector
+                    try {
+                        nextButton = ldriver.findElement(By.cssSelector("a.paginate_button.next:not(.disabled)"));
+                    } catch (NoSuchElementException e2) {
+                        // Next button not found or is disabled
+                    }
                 }
 
-            } while (currentPage <= totalPages);
+                if (nextButton != null && nextButton.isDisplayed() && nextButton.isEnabled()) {
+                    System.out.println("Navigating to page " + (currentPage + 1) + "...");
+
+                    // Scroll to the next button if needed
+                    ((JavascriptExecutor) ldriver).executeScript("arguments[0].scrollIntoView(true);", nextButton);
+                    Thread.sleep(500);
+
+                    // Click using JavaScript to avoid interception issues
+                    ((JavascriptExecutor) ldriver).executeScript("arguments[0].click();", nextButton);
+                    currentPage++;
+
+                    // Wait for page to load
+                    Thread.sleep(3000);
+
+
+                    // Safety check to avoid infinite loop
+                    if (currentPage > maxPages) {
+                        System.out.println("Reached maximum page limit (" + maxPages + "). Stopping.");
+                        break;
+                    }
+                } else {
+                    System.out.println("No more pages available. Reached the last page.");
+                    hasNextPage = false;
+                }
+
+            } while (hasNextPage);
 
             // Print final summary
             System.out.println("==========================================");
             System.out.println("TOTAL MATERIALS ACROSS ALL PAGES: " + totalMaterials);
+            System.out.println("TOTAL PAGES PROCESSED: " + currentPage);
             System.out.println("==========================================");
 
         } catch (Exception e) {
@@ -308,6 +334,10 @@ public class MaterialManagementMateialModulePage extends BaseClass {
             e.printStackTrace();
         }
     }
+
+
+
+
 
 
 

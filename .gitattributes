@@ -4,6 +4,5 @@ allure-results/** linguist-generated
 test-output/** linguist-generated
 target/** linguist-generated
 log/** linguist-generated
-"Downloaded Documents/**" linguist-generated
 images/** linguist-generated
 .idea/** linguist-generated
