@@ -423,10 +423,216 @@
 
 
 //**** Try 3 Updated version ******************
+// pipeline {
+//     agent any
+//
+//     stages {
+//         stage('Clone Repo') {
+//             steps {
+//                 git branch: 'srinivas', url: 'https://github.com/Srinivasg457/MATERIALMANAGEMENTPROJECT_AUTOMATION.git'
+//             }
+//         }
+//
+//         stage('Run in Docker') {
+//             steps {
+//                 script {
+//                     sh 'docker pull selenium/standalone-chrome:latest'
+//
+//                     sh '''
+//                         echo "Checking for existing container using port 4444..."
+//                         PORT_IN_USE=$(docker ps --filter "publish=4444" --format "{{.ID}}")
+//                         if [ ! -z "$PORT_IN_USE" ]; then
+//                             echo "Stopping and removing container $PORT_IN_USE..."
+//                             docker stop $PORT_IN_USE || true
+//                             docker rm $PORT_IN_USE || true
+//                             sleep 2
+//                         fi
+//                     '''
+//
+//                     sh '''
+//                         if docker ps -a --format '{{.Names}}' | grep -q '^selenium-chrome$'; then
+//                             echo "Cleaning up old selenium-chrome container..."
+//                             docker stop selenium-chrome || true
+//                             docker rm selenium-chrome || true
+//                         fi
+//                     '''
+//
+//                     // FIXED: Added volume mount for test files
+//                     sh '''
+//                         echo "Starting selenium-chrome container with volume mount..."
+//                         docker run -d \
+//                             -p 4444:4444 \
+//                             --shm-size="2g" \
+//                             --name selenium-chrome \
+//                             -v ${WORKSPACE}:/home/seluser/automation \
+//                             selenium/standalone-chrome:latest
+//                     '''
+//
+//                     sh '''
+//                         echo "Waiting for Selenium to become ready..."
+//                         for i in {1..10}; do
+//                             if curl -s http://localhost:4444/status | grep -q "ready"; then
+//                                 echo "Selenium is ready."
+//                                 break
+//                             else
+//                                 echo "Waiting..."
+//                                 sleep 10
+//                             fi
+//                         done
+//                     '''
+//
+//                     sh '''
+//                         echo "Running tests inside Maven container..."
+//                         docker run --rm \
+//                             -v ${WORKSPACE}:/tests \
+//                             -w /tests \
+//                             --network=host \
+//                             -e "TEST_FILE_BASE_PATH=/home/seluser/automation" \
+//                             maven:3.9.6-eclipse-temurin-17 mvn clean test
+//                     '''
+//
+//                     sh 'docker stop selenium-chrome || true'
+//                 }
+//             }
+//         }
+//     }
+//
+// //     post {
+// //         always {
+// //             script {
+// //                 sh '''
+// //                     echo "Final cleanup..."
+// //                     docker rm -f selenium-chrome || true
+// //                 '''
+// //             }
+// //             // Archive test results
+// //             archiveArtifacts artifacts: '**/target/surefire-reports/*.xml', allowEmptyArchive: true
+// //
+// //             // Publish JUnit test results
+// //             junit '**/target/surefire-reports/*.xml'
+// //
+// //             // Clean workspace to save disk space
+// //             cleanWs()
+// //         }
+//
+// post {
+//         always {
+//             junit '**/target/surefire-reports/*.xml'
+//
+//             script {
+//                 // Get test results
+//                 def testResult = currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction.class)
+//
+//                 if (testResult) {
+//                     env.TOTAL_TESTS = testResult.totalCount
+//                     env.PASSED_TESTS = testResult.totalCount - testResult.failCount - testResult.skipCount
+//                     env.FAILED_TESTS = testResult.failCount
+//                     env.SKIPPED_TESTS = testResult.skipCount
+//
+//                     echo "📊 Test Summary:"
+//                     echo "   Total Tests: ${env.TOTAL_TESTS}"
+//                     echo "   ✅ Passed: ${env.PASSED_TESTS}"
+//                     echo "   ❌ Failed: ${env.FAILED_TESTS}"
+//                     echo "   ⏩ Skipped: ${env.SKIPPED_TESTS}"
+//                 }
+//             }
+//         }
+//
+//         success {
+//             script {
+//                 // Get test results
+//                 def testResult = currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction.class)
+//                 def total = testResult?.totalCount ?: 0
+//                 def failed = testResult?.failCount ?: 0
+//                 def passed = total - failed - (testResult?.skipCount ?: 0)
+//                 def skipped = testResult?.skipCount ?: 0
+//
+//                 echo "✅ Test automation completed successfully."
+//                 echo "📊 Test Summary:"
+//                 echo "   Total Tests: ${total}"
+//                 echo "   ✅ Passed: ${passed}"
+//                 echo "   ❌ Failed: ${failed}"
+//                 echo "   ⏩ Skipped: ${skipped}"
+//
+//                 mail to: 'srinivas.g@limitscale.io,srinivasg457@gmail.com',
+//                      subject: "✅ SUCCESS: Test Automation - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+//                      body: """📊 TEST EXECUTION SUMMARY:
+//
+// ✅ ALL TESTS PASSED!
+//
+// 📈 Test Results:
+//    Total Tests: ${total}
+//    ✅ Passed: ${passed}
+//    ❌ Failed: ${failed}
+//    ⏩ Skipped: ${skipped}
+//    📊 Pass Rate: ${total > 0 ? Math.round((passed/total)*100) : 0}%
+//
+// 🔗 Build Details:
+//    Build URL: ${env.BUILD_URL}
+//    Test Reports: ${env.BUILD_URL}testReport/
+//    Artifacts: ${env.BUILD_URL}artifact/
+//    Job: ${env.JOB_NAME}
+//    Build: #${env.BUILD_NUMBER}
+//
+// Excellent work! All automated tests have passed successfully! 🎉
+// """
+//             }
+//         }
+//
+//         failure {
+//             script {
+//                 // Get test results
+//                 def testResult = currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction.class)
+//                 def total = testResult?.totalCount ?: 0
+//                 def failed = testResult?.failCount ?: 0
+//                 def passed = total - failed - (testResult?.skipCount ?: 0)
+//                 def skipped = testResult?.skipCount ?: 0
+//
+//                 echo "❌ Pipeline failed. Check server logs for details."
+//                 echo "📊 Test Summary:"
+//                 echo "   Total Tests: ${total}"
+//                 echo "   ✅ Passed: ${passed}"
+//                 echo "   ❌ Failed: ${failed}"
+//                 echo "   ⏩ Skipped: ${skipped}"
+//
+//                 mail to: 'srinivas.g@limitscale.io,srinivasg457@gmail.com',
+//                      subject: "❌ FAILURE: Test Automation - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+//                      body: """❌ TEST EXECUTION FAILED!
+//
+// 📈 Test Results:
+//    Total Tests: ${total}
+//    ✅ Passed: ${passed}
+//    ❌ Failed: ${failed}
+//    ⏩ Skipped: ${skipped}
+//    📊 Pass Rate: ${total > 0 ? Math.round((passed/total)*100) : 0}%
+//
+// 🔍 Failure Details:
+//    Build URL: ${env.BUILD_URL}
+//    Test Reports: ${env.BUILD_URL}testReport/
+//    Console Output: ${env.BUILD_URL}console
+//    Job: ${env.JOB_NAME}
+//    Build: #${env.BUILD_NUMBER}
+//
+// ⚠️ ${failed} test(s) failed. Please check the test reports for details.
+// """
+//             }
+//         }
+//     }
+// }
+
+
+//claude code
 pipeline {
     agent any
 
     stages {
+        stage('Pre-Cleanup') {
+            steps {
+                sh 'chmod -R 777 . || true'
+                deleteDir()
+            }
+        }
+
         stage('Clone Repo') {
             steps {
                 git branch: 'srinivas', url: 'https://github.com/Srinivasg457/MATERIALMANAGEMENTPROJECT_AUTOMATION.git'
@@ -457,7 +663,6 @@ pipeline {
                         fi
                     '''
 
-                    // FIXED: Added volume mount for test files
                     sh '''
                         echo "Starting selenium-chrome container with volume mount..."
                         docker run -d \
@@ -497,62 +702,43 @@ pipeline {
         }
     }
 
-//     post {
-//         always {
-//             script {
-//                 sh '''
-//                     echo "Final cleanup..."
-//                     docker rm -f selenium-chrome || true
-//                 '''
-//             }
-//             // Archive test results
-//             archiveArtifacts artifacts: '**/target/surefire-reports/*.xml', allowEmptyArchive: true
-//
-//             // Publish JUnit test results
-//             junit '**/target/surefire-reports/*.xml'
-//
-//             // Clean workspace to save disk space
-//             cleanWs()
-//         }
-
-post {
+    post {
         always {
-            junit '**/target/surefire-reports/*.xml'
+            // Fix permissions before Jenkins tries to read/delete report files
+            sh 'chmod -R 777 . || true'
+
+            junit allowEmptyResults: true, testResults: '**/target/surefire-reports/*.xml'
 
             script {
-                // Get test results
-                def testResult = currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction.class)
+                // Use currentBuild instead of rawBuild (sandbox-safe)
+                def total   = currentBuild.testResultAction?.totalCount ?: 0
+                def failed  = currentBuild.testResultAction?.failCount ?: 0
+                def skipped = currentBuild.testResultAction?.skipCount ?: 0
+                def passed  = total - failed - skipped
 
-                if (testResult) {
-                    env.TOTAL_TESTS = testResult.totalCount
-                    env.PASSED_TESTS = testResult.totalCount - testResult.failCount - testResult.skipCount
-                    env.FAILED_TESTS = testResult.failCount
-                    env.SKIPPED_TESTS = testResult.skipCount
+                env.TOTAL_TESTS   = "${total}"
+                env.PASSED_TESTS  = "${passed}"
+                env.FAILED_TESTS  = "${failed}"
+                env.SKIPPED_TESTS = "${skipped}"
 
-                    echo "📊 Test Summary:"
-                    echo "   Total Tests: ${env.TOTAL_TESTS}"
-                    echo "   ✅ Passed: ${env.PASSED_TESTS}"
-                    echo "   ❌ Failed: ${env.FAILED_TESTS}"
-                    echo "   ⏩ Skipped: ${env.SKIPPED_TESTS}"
-                }
+                echo "📊 Test Summary:"
+                echo "   Total Tests : ${total}"
+                echo "   ✅ Passed   : ${passed}"
+                echo "   ❌ Failed   : ${failed}"
+                echo "   ⏩ Skipped  : ${skipped}"
             }
+
+            // Cleanup Docker container if still running
+            sh 'docker rm -f selenium-chrome || true'
         }
 
         success {
             script {
-                // Get test results
-                def testResult = currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction.class)
-                def total = testResult?.totalCount ?: 0
-                def failed = testResult?.failCount ?: 0
-                def passed = total - failed - (testResult?.skipCount ?: 0)
-                def skipped = testResult?.skipCount ?: 0
-
-                echo "✅ Test automation completed successfully."
-                echo "📊 Test Summary:"
-                echo "   Total Tests: ${total}"
-                echo "   ✅ Passed: ${passed}"
-                echo "   ❌ Failed: ${failed}"
-                echo "   ⏩ Skipped: ${skipped}"
+                def total   = currentBuild.testResultAction?.totalCount ?: 0
+                def failed  = currentBuild.testResultAction?.failCount ?: 0
+                def skipped = currentBuild.testResultAction?.skipCount ?: 0
+                def passed  = total - failed - skipped
+                def rate    = total > 0 ? Math.round((passed / total) * 100) : 0
 
                 mail to: 'srinivas.g@limitscale.io,srinivasg457@gmail.com',
                      subject: "✅ SUCCESS: Test Automation - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
@@ -561,18 +747,17 @@ post {
 ✅ ALL TESTS PASSED!
 
 📈 Test Results:
-   Total Tests: ${total}
-   ✅ Passed: ${passed}
-   ❌ Failed: ${failed}
-   ⏩ Skipped: ${skipped}
-   📊 Pass Rate: ${total > 0 ? Math.round((passed/total)*100) : 0}%
+   Total Tests : ${total}
+   ✅ Passed   : ${passed}
+   ❌ Failed   : ${failed}
+   ⏩ Skipped  : ${skipped}
+   📊 Pass Rate: ${rate}%
 
 🔗 Build Details:
-   Build URL: ${env.BUILD_URL}
-   Test Reports: ${env.BUILD_URL}testReport/
-   Artifacts: ${env.BUILD_URL}artifact/
-   Job: ${env.JOB_NAME}
-   Build: #${env.BUILD_NUMBER}
+   Build URL    : ${env.BUILD_URL}
+   Test Reports : ${env.BUILD_URL}testReport/
+   Job          : ${env.JOB_NAME}
+   Build        : #${env.BUILD_NUMBER}
 
 Excellent work! All automated tests have passed successfully! 🎉
 """
@@ -581,37 +766,29 @@ Excellent work! All automated tests have passed successfully! 🎉
 
         failure {
             script {
-                // Get test results
-                def testResult = currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction.class)
-                def total = testResult?.totalCount ?: 0
-                def failed = testResult?.failCount ?: 0
-                def passed = total - failed - (testResult?.skipCount ?: 0)
-                def skipped = testResult?.skipCount ?: 0
-
-                echo "❌ Pipeline failed. Check server logs for details."
-                echo "📊 Test Summary:"
-                echo "   Total Tests: ${total}"
-                echo "   ✅ Passed: ${passed}"
-                echo "   ❌ Failed: ${failed}"
-                echo "   ⏩ Skipped: ${skipped}"
+                def total   = currentBuild.testResultAction?.totalCount ?: 0
+                def failed  = currentBuild.testResultAction?.failCount ?: 0
+                def skipped = currentBuild.testResultAction?.skipCount ?: 0
+                def passed  = total - failed - skipped
+                def rate    = total > 0 ? Math.round((passed / total) * 100) : 0
 
                 mail to: 'srinivas.g@limitscale.io,srinivasg457@gmail.com',
                      subject: "❌ FAILURE: Test Automation - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                      body: """❌ TEST EXECUTION FAILED!
 
 📈 Test Results:
-   Total Tests: ${total}
-   ✅ Passed: ${passed}
-   ❌ Failed: ${failed}
-   ⏩ Skipped: ${skipped}
-   📊 Pass Rate: ${total > 0 ? Math.round((passed/total)*100) : 0}%
+   Total Tests : ${total}
+   ✅ Passed   : ${passed}
+   ❌ Failed   : ${failed}
+   ⏩ Skipped  : ${skipped}
+   📊 Pass Rate: ${rate}%
 
 🔍 Failure Details:
-   Build URL: ${env.BUILD_URL}
-   Test Reports: ${env.BUILD_URL}testReport/
-   Console Output: ${env.BUILD_URL}console
-   Job: ${env.JOB_NAME}
-   Build: #${env.BUILD_NUMBER}
+   Build URL      : ${env.BUILD_URL}
+   Test Reports   : ${env.BUILD_URL}testReport/
+   Console Output : ${env.BUILD_URL}console
+   Job            : ${env.JOB_NAME}
+   Build          : #${env.BUILD_NUMBER}
 
 ⚠️ ${failed} test(s) failed. Please check the test reports for details.
 """
@@ -619,7 +796,6 @@ Excellent work! All automated tests have passed successfully! 🎉
         }
     }
 }
-
 
 
 //         success {
